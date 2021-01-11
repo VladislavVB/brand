@@ -304,11 +304,16 @@ template {
 [hidden] {
   display: none; }
 
-.container-custom {
+.container {
   margin: auto;
-  max-width: 1440px;
+  max-width: 1250px;
   padding-left: 15px;
   padding-right: 15px; }
+  .container-custom {
+    margin: auto;
+    max-width: 1440px;
+    padding-left: 15px;
+    padding-right: 15px; }
 
 a {
   text-decoration: none; }
@@ -327,6 +332,13 @@ a {
   font-family: 'Museo Sans Cyrl 500';
   src: url("../fonts/MuseoSans/MuseoSansCyrl-500.woff2") format("woff2"), url("../fonts/MuseoSans/MuseoSansCyrl-500.woff") format("woff");
   font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Museo Sans Cyrl 700';
+  src: url("../fonts/MuseoSans/MuseoSansCyrl-700.woff2") format("woff2"), url("../fonts/MuseoSans/MuseoSansCyrl-700.woff") format("woff");
+  font-weight: 600;
   font-style: normal;
   font-display: swap; }
 
@@ -392,6 +404,8 @@ a {
   display: flex;
   align-items: center; }
   .firstb-menu svg {
+    display: flex;
+    align-items: center;
     margin-right: 20px; }
     .firstb-menu svg:hover {
       fill: #ffb000;
@@ -430,3 +444,117 @@ a {
   text-decoration-line: underline; }
   .thirdb-text:hover {
     color: #ffb000; }
+
+.services {
+  padding-top: 125px;
+  padding-bottom: 125px; }
+  .services-content {
+    display: flex;
+    justify-content: space-between; }
+    .services-content-title {
+      max-width: 760px;
+      font-family: 'Museo Sans Cyrl 700', sans-serif;
+      font-size: 32px;
+      margin-bottom: 45px; }
+    .services-content-left {
+      display: flex;
+      flex-direction: column;
+      align-content: space-between;
+      justify-content: space-between; }
+  .services-img {
+    margin-bottom: 15px; }
+  .services-text {
+    font-family: 'Museo Sans Cyrl 500', sans-serif;
+    font-size: 18px;
+    color: #1e1e1e; }
+  .services-cards {
+    display: flex;
+    flex-wrap: wrap; }
+  .services-card {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: 100%; }
+    .services-card-img {
+      display: flex;
+      justify-content: space-between; }
+    .services-card-content {
+      padding: 40px;
+      border: 1px solid #ffb000; }
+    .services-card-icon {
+      background-color: #fff7e5;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      width: 80px;
+      height: 80px;
+      border-right: 15px; }
+    .services-card-name {
+      margin-top: 40px;
+      font-family: 'Museo Sans Cyrl 700', sans-serif;
+      font-size: 26px; }
+    .services-card-text {
+      margin-top: 15px;
+      font-family: 'Museo Sans Cyrl 300', sans-serif;
+      font-size: 16px; }
+
+.advantages {
+  padding-top: 125px;
+  padding-bottom: 125px; }
+  .advantages-content {
+    display: flex;
+    justify-content: space-between; }
+    .advantages-content-title {
+      max-width: 760px;
+      font-family: 'Museo Sans Cyrl 700', sans-serif;
+      font-size: 32px;
+      margin-bottom: 45px; }
+    .advantages-content-left {
+      display: flex;
+      flex-direction: column;
+      align-content: space-between;
+      justify-content: space-between; }
+  .advantages-text {
+    font-family: 'Museo Sans Cyrl 500', sans-serif;
+    font-size: 18px;
+    color: #1e1e1e; }
+  .advantages-cards {
+    display: flex;
+    flex-wrap: wrap; }
+  .advantages-card {
+    height: 100%; }
+
+.about {
+  padding-top: 125px;
+  padding-bottom: 125px; }
+  .about-content {
+    display: flex;
+    justify-content: space-between; }
+    .about-content-title {
+      max-width: 760px;
+      font-family: 'Museo Sans Cyrl 700', sans-serif;
+      font-size: 32px;
+      margin-bottom: 45px; }
+    .about-content-left {
+      display: flex;
+      flex-direction: column;
+      align-content: space-between;
+      justify-content: space-between; }
+  .about-text {
+    font-family: 'Museo Sans Cyrl 500', sans-serif;
+    font-size: 18px;
+    color: #1e1e1e; }
+  .about-cards {
+    display: flex;
+    flex-wrap: wrap; }
+  .about-card {
+    height: 100%; }
+  .about-description {
+    font-family: 'Museo Sans Cyrl 300', sans-serif;
+    font-size: 18px;
+    margin-top: 20px; }
+
+.slide-title {
+  font-family: 'Museo Sans Cyrl 700', sans-serif;
+  font-size: 32px;
+  min-width: 583px;
+  color: #1e1e1e; }
