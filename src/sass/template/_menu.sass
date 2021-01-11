@@ -1,0 +1,63 @@
+.menu
+    background-color: transparent
+    position: fixed
+    top: 0
+    width: 100%
+    padding-top: 10px
+    padding-bottom: 10px
+    border-bottom: 0.5px solid #3d3d3d
+    &-content
+        display: flex
+        justify-content: space-between
+    &-firstb
+        display: flex
+    &-secondb
+        opacity: 0
+    &-thirdb
+        display: flex
+        align-items: center
+        
+
+.firstb
+    &-menu
+        color: $white
+        font-family: 'Museo Sans Cyrl 300', sans-serif
+        font-size: 18px
+        display: flex
+        align-items: center
+        svg
+            margin-right: 20px
+            &:hover
+                fill: $yellow
+                stroke: $yellow
+    &-lang
+        margin-left: 60px
+        color: $white
+        font-family: 'Museo Sans Cyrl 300', sans-serif
+        font-size: 18px
+        display: flex
+        align-items: center
+        svg
+            margin-right: 20px
+            margin-left: 10px
+            &:hover
+                fill: $yellow
+                stroke: $yellow
+.thirdb
+    &-socialb
+        display: flex
+        align-items: center
+        svg
+            margin-right: 10px
+            margin-left: 10px
+            &:hover
+                fill: $yellow
+                stroke: $yellow
+    &-text
+        font-family: 'Museo Sans Cyrl 300', sans-serif
+        font-size: 18px
+        margin-left: 70px
+        color: $white
+        text-decoration-line: underline
+        &:hover
+            color: $yellow
