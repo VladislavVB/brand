@@ -648,3 +648,40 @@ a {
       font-family: 'Museo Sans Cyrl 500', sans-serif;
       font-size: 17px;
       margin-top: 20px; }
+
+.locations {
+  padding-top: 125px;
+  padding-bottom: 125px;
+  background: url("../img/locations/map.png") top center/contain no-repeat; }
+  .locations-content {
+    display: flex;
+    justify-content: space-between; }
+    .locations-content-title {
+      max-width: 760px;
+      font-family: 'Museo Sans Cyrl 700', sans-serif;
+      font-size: 32px;
+      margin-bottom: 45px; }
+    .locations-content-left {
+      display: flex;
+      flex-direction: column;
+      align-content: space-between;
+      justify-content: space-between; }
+  .locations-img {
+    margin-bottom: 15px; }
+  .locations-text {
+    font-family: 'Museo Sans Cyrl 500', sans-serif;
+    font-size: 18px;
+    color: #1e1e1e; }
+  .locations-cards {
+    display: flex;
+    flex-wrap: wrap; }
+  .locations-card {
+    min-width: 280px; }
+    .locations-card-number {
+      color: #ffb000;
+      font-family: 'Rubik', sans-serif;
+      font-size: 62px; }
+    .locations-card-description {
+      font-family: 'Museo Sans Cyrl 500', sans-serif;
+      font-size: 24px;
+      color: #1e1e1e; }
