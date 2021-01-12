@@ -87,10 +87,28 @@
             border-top: 1px solid #e6e6e6
             
         &-left
-            border-left: 1px solid #e6e6e6
             
+            position: relative
+            &::after
+                position: absolute
+                content: ''
+                width: 1px
+                height: 198px
+                background-color: #e6e6e6
+                bottom: 0px
+                left: -15px
         &-right
-            border-right: 1px solid #e6e6e6
+            
+            position: relative
+            &::before
+                
+                position: absolute
+                content: ''
+                width: 1px
+                height: 198px
+                background-color: #e6e6e6
+                bottom: 0px
+                right: -15px
         &-bottom
             border-bottom: 1px solid #e6e6e6
     
