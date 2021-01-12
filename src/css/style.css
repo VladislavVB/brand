@@ -966,6 +966,8 @@ a:hover {
 
 .slide-text {
   opacity: 0;
+  font-family: 'Museo Sans Cyrl 500', sans-serif;
+  font-size: 18px;
 }
 
 .slide-title {
@@ -983,6 +985,28 @@ a:hover {
 
 .slide-item {
   margin-right: 15px;
+}
+
+.swiper-container {
+  width: 1230px;
+}
+
+.swiper-pagination {
+  text-align: right;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  top: 91%;
+}
+
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+  left: auto;
+  right: 100px;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+  left: auto;
+  right: 50px;
 }
 
 .news {
@@ -1031,6 +1055,10 @@ a:hover {
   font-size: 18px;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
+  color: #ffb000;
+}
+
+.news-all:hover {
   color: #ffb000;
 }
 
@@ -1136,6 +1164,10 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.brand-card-img img {
+  width: 100%;
 }
 
 .brand-air {
@@ -1287,6 +1319,10 @@ a:hover {
   height: 100px;
 }
 
+.form-width {
+  width: 100%;
+}
+
 .form-button {
   margin-top: 40px;
   display: -webkit-box;
@@ -1343,12 +1379,23 @@ a:hover {
 .footer-logo {
   padding-top: 40px;
   padding-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer-icon {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   margin-left: 10px;
+  color: #ffffff;
+}
+
+.footer-icon:hover {
+  color: #ffffff;
 }
 
 .footer-items {
@@ -1363,6 +1410,16 @@ a:hover {
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.footer-item {
+  color: #ffffff;
+}
+
+.footer-item:hover {
+  color: #ffffff;
 }
 
 .footer-card {
@@ -1461,5 +1518,69 @@ a:hover {
 
 .policy:hover {
   cursor: pointer;
+}
+
+@media screen and (max-width: 1349px) {
+  .swiper-container {
+    max-width: 1020px;
+  }
+  .news-card-img-sm {
+    height: 100px;
+  }
+  .news-card-img img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1139px) {
+  .swiper-container {
+    max-width: 875px;
+  }
+  .slide-item {
+    width: 200px;
+  }
+  .slide-item img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .services-card-content {
+    padding: 10px;
+  }
+  .about-img {
+    margin-top: 40px;
+  }
+  .about-img img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .swiper-container {
+    max-width: 600px;
+  }
+  .locations-card {
+    min-width: 100px;
+  }
+  .locations-card-number {
+    font-size: 30px;
+  }
+  .locations-card-description {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .swiper-container {
+    max-width: 280px;
+  }
+  .slide-title {
+    min-width: 100px;
+    max-width: 450px;
+  }
+  .hidden-sm {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
