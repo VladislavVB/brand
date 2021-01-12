@@ -23,4 +23,62 @@
         flex-wrap: wrap
     &-card
         height: 100%
+        &-content
+            padding: 40px
+            width: 100%
+            img
+                width: 100%
+            &-number
+                color: $yellowicon
+                font-family: 'Rubik', sans-serif
+                font-size: 62px
+                position: relative
+                &::after
+                    position: absolute
+                    content: ''
+                    width: 100px
+                    height: 3px
+                    background-color: $yellow
+                    color: $yellow
+                    bottom: 0px
+                    left: 0px
+                    border-radius: 10px
+            &-text
+                font-family: 'Museo Sans Cyrl 500', sans-serif
+                font-size: 16px
+                margin-top: 20px
+    &-none
+        padding-right: 0px
+    &-card
+        background-color: 
+        width: 100%
+        height: 198px
+        padding-top: 20px
+        padding-bottom: 20px
+        display: flex
+        justify-content: center
+        align-items: center
+        &-title
+            font-family: 'Museo Sans Cyrl 700', sans-serif
+            font-size: 32px
+        &-content
+       
+
+        &-img
+            img
+                background-size: cover
+    &-air
+        padding-top: 20px
+        padding-bottom: 20px
+    &-border
+        &-top
+            border-top: 1px solid #e6e6e6
+            
+        &-left
+            border-left: 1px solid #e6e6e6
+            
+        &-right
+            border-right: 1px solid #e6e6e6
+        &-bottom
+            border-bottom: 1px solid #e6e6e6
     
