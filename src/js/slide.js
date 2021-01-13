@@ -14,14 +14,14 @@ let swiper = new Swiper('.swiper-container', {
             slidesPerView: 4,
             spaceBetween: 10
         },
-        500: {
+        577: {
             slidesPerView: 3,
             spaceBetween: 30
         },
-        // 577: {
-        //     slidesPerView: 2,
-        //     spaceBetween: 10
-        // },
+        100: {
+            slidesPerView: 2,
+            spaceBetween: 10
+        }
         // 100: {
         //     slidesPerView: 1,
         //     spaceBetween: 10

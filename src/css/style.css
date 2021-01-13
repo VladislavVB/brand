@@ -929,6 +929,10 @@ a:hover {
           justify-content: flex-end;
 }
 
+.about-img img {
+  width: 100%;
+}
+
 .slide {
   padding-bottom: 125px;
 }
@@ -1543,7 +1547,7 @@ a:hover {
     max-width: 1020px;
   }
   .news-card-img-sm {
-    height: 100px;
+    width: 120px;
   }
   .news-card-img img {
     width: 100%;
@@ -1789,6 +1793,18 @@ a:hover {
   .brand-card-img img {
     width: 100px;
   }
+  .firstb-lang {
+    margin-left: 20px;
+  }
+  .thirdb-text {
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .about-img {
+    max-height: 550px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1817,11 +1833,17 @@ a:hover {
             align-items: center;
   }
   .brand-card-img img {
-    width: 50px;
+    width: 110px;
+  }
+  .about-img {
+    max-height: 420px;
   }
 }
 
 @media screen and (max-width: 576px) {
+  .hide-col {
+    display: none;
+  }
   .swiper-container {
     max-width: 280px;
   }
@@ -1831,6 +1853,279 @@ a:hover {
   }
   .hidden-sm {
     display: none;
+  }
+  .menu-firstb {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .firstb-lang svg {
+    margin-right: 10px;
+  }
+  .header-content img {
+    width: 240px;
+  }
+  .header-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header-button {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .services {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .services-text {
+    text-align: left;
+    margin-left: 15px;
+  }
+  .services-content-title {
+    text-align: left;
+    margin-bottom: 24px;
+  }
+  .services-card-name {
+    margin-top: 0px;
+    font-size: 16px;
+    color: #ffb000;
+    position: absolute;
+    top: 45px;
+    left: 100px;
+  }
+  .services-card-text {
+    font-size: 14px;
+  }
+  .services-card-more svg {
+    height: 20px;
+    width: 20px;
+    fill: #ffb000;
+    stroke: #ffb000;
+  }
+  .services-card-icon {
+    height: 40px;
+    width: 40px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .services-card-icon svg {
+    margin-top: 2px;
+    height: 24px;
+    width: 18.7px;
+  }
+  .services-card-content {
+    padding: 20px;
+  }
+  .services-card {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  .brand-border-none {
+    border: none;
+  }
+  .none-pselem::before {
+    content: none;
+  }
+  .none-pselem::after {
+    content: none;
+  }
+  .advantages {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .advantages-text {
+    text-align: left;
+    margin-left: 15px;
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  .advantages-content-title {
+    font-size: 18px;
+    text-align: left;
+    margin-bottom: 32px;
+  }
+  .advantages-card {
+    height: 90px;
+  }
+  .advantages-card-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+  }
+  .advantages-card-content-number {
+    font-size: 40px;
+    color: #fdde97;
+    margin-right: 20px;
+  }
+  .advantages-card-content-number::after {
+    width: 60px;
+  }
+  .padding-none-col {
+    padding: 0px;
+  }
+  .about {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .about-text {
+    text-align: left;
+    margin-left: 15px;
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  .about-content-title {
+    text-align: left;
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  .about-description {
+    font-size: 14px;
+    text-align: left;
+  }
+  .slide-title {
+    margin-top: 60px;
+    text-align: left;
+  }
+  .news {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .news-text {
+    text-align: left;
+    margin-left: 15px;
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  .news-title {
+    text-align: left;
+    margin-left: 15px;
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  .news-card-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .news-card-contentbig {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .news-card-descriptionbig-sm {
+    margin-left: 20px;
+  }
+  .news-card-imgbig-sm {
+    width: 120px;
+  }
+  .news-card-imgbig-sm img {
+    width: 100%;
+  }
+  .news-card-img-sm {
+    width: 100%;
+  }
+  .news-card-img-sm img {
+    background-size: cover;
+  }
+  .brand-card {
+    padding: 0px;
+    height: 100px;
+  }
+  .brand-card-title {
+    text-align: left;
+  }
+  .brand-card-img img {
+    width: 70px;
+  }
+  .brand-border-left::after {
+    height: 110px;
+  }
+  .brand-border-right::before {
+    content: none;
+  }
+  .locations {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .locations-text {
+    text-align: left;
+    font-size: 16px;
+    margin-bottom: 0px;
+  }
+  .locations-content-title {
+    text-align: left;
+    font-size: 18px;
+  }
+  .form-content {
+    padding-left: 15px;
+    padding-right: 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .form-content-title {
+    text-align: left;
+  }
+  .form-content-description {
+    text-align: left;
+  }
+  .form-input {
+    margin-top: 40px;
+  }
+  .form-message {
+    height: 140px;
+  }
+  .form-description {
+    width: 100%;
+    margin-left: 15px;
+  }
+  .form-button {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .footer-air-right {
+    padding-right: 15px;
+  }
+  .footer-air-left {
+    padding-left: 15px;
+  }
+  .footer-air-top {
+    padding-top: 20px;
+  }
+  .footer-air-bottom {
+    padding-bottom: 20px;
+  }
+  .footer-border-top-col {
+    border-top: 1px solid #494949;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -5,7 +5,7 @@
         &-card
             &-img
                 &-sm
-                    height: 100px
+                    width: 120px
                 img
                     width: 100%
 @media screen and ( max-width: 1139px )
@@ -163,8 +163,13 @@
         align-items: center
         img
             width: 100px
-            
-     
+    .firstb-lang
+        margin-left: 20px       
+    .thirdb-text
+        margin-left: 20px
+@media screen and ( max-width: 840px )
+    .about-img
+        max-height: 550px
 @media screen and ( max-width: 768px )
     .swiper-container
         max-width: 600px
@@ -181,8 +186,12 @@
         justify-content: center
         align-items: center
         img
-            width: 50px
+            width: 110px
+    .about-img
+        max-height: 420px
 @media screen and ( max-width: 576px )
+    .hide-col
+        display: none
     .swiper-container
         max-width: 280px
     .slide
@@ -192,3 +201,216 @@
     .hidden
         &-sm
             display: none
+    .menu
+        &-firstb
+            padding-top: 20px
+            padding-bottom: 20px
+            width: 100%
+            display: flex
+            justify-content: space-between
+    .firstb-lang svg
+        margin-right: 10px
+    .header-content
+        img
+            width: 240px
+    .header-buttons 
+        display: flex
+        flex-direction: column
+        justify-content: center
+    .header-button
+        margin: auto
+        margin-top: 10px
+        margin-bottom: 10px
+    .services
+        padding-top: 60px
+        padding-bottom: 60px
+    .services-text 
+        text-align: left
+        margin-left: 15px
+    .services-content-title
+        text-align: left
+        margin-bottom: 24px
+    .services-card-name
+        margin-top: 0px
+        font-size: 16px
+        color: $yellow
+        position: absolute
+        top: 45px
+        left: 100px
+        
+    .services-card-text
+        font-size: 14px
+    .services-card-more svg
+        height: 20px
+        width: 20px
+        fill: $yellow
+        stroke: $yellow
+    .services-card-icon
+        height: 40px
+        width: 40px
+        align-items: center
+        svg
+            margin-top: 2px
+            height: 24px
+            width: 18.7px
+    .services-card-content 
+        padding: 20px
+    .services-card
+        padding-top: 8px
+        padding-bottom: 8px
+    .brand-border-none
+        border: none
+    .none-pselem
+        &::before
+            content: none
+        &::after
+            content: none
+            
+            
+    .advantages
+        padding-top: 60px
+        padding-bottom: 60px
+        &-text 
+            text-align: left
+            margin-left: 15px
+            font-size: 16px
+            margin-bottom: 12px
+        &-content
+            &-title
+                font-size: 18px
+                text-align: left
+                margin-bottom: 32px
+        &-card
+            height: 90px
+            &-content
+                display: flex
+                padding: 0
+                &-number
+                    font-size: 40px
+                    color: #fdde97
+                    margin-right: 20px
+                    &::after
+                        width: 60px
+
+    .padding-none-col
+        padding: 0px
+    
+    .about
+        padding-top: 60px
+        padding-bottom: 60px
+        &-text
+            text-align: left
+            margin-left: 15px
+            font-size: 16px
+            margin-bottom: 12px
+        &-content
+            &-title
+                text-align: left
+                font-size: 16px
+                margin-bottom: 12px
+        &-description
+            font-size: 14px
+            text-align: left
+
+    .slide
+        &-title
+            margin-top: 60px 
+            text-align: left
+    
+    .news
+        padding-top: 60px
+        padding-bottom: 60px
+        &-text
+            text-align: left
+            margin-left: 15px
+            font-size: 16px
+            margin-bottom: 12px
+        &-title
+            text-align: left
+            margin-left: 15px
+            font-size: 16px
+            margin-bottom: 12px
+        &-card
+            &-content
+                display: flex
+                flex-direction: column
+            &-contentbig
+                display: flex
+                img
+            &-descriptionbig
+                &-sm
+                    margin-left: 20px
+            &-imgbig
+                &-sm
+                    width: 120px
+                    img
+                        width: 100%
+            &-img
+                &-sm
+                    width: 100%
+                    img
+                        background-size: cover
+    .brand
+        &-card
+            padding: 0px
+            height: 100px
+            &-title
+                text-align: left
+            &-img 
+                img
+                    width: 70px
+    .brand-border-left::after
+        height: 110px
+    .brand-border-right::before
+        content: none
+
+    .locations
+        padding-top: 60px
+        padding-bottom: 60px
+        &-text
+            text-align: left
+            font-size: 16px
+            margin-bottom: 0px
+        &-content
+            &-title
+                text-align: left
+                font-size: 18px
+    
+    .form
+        &-content 
+            padding-left: 15px
+            padding-right: 0
+            padding-top: 60px
+            padding-bottom: 60px
+            &-title
+                text-align: left
+            &-description
+                text-align: left
+        &-input
+            margin-top: 40px
+        &-message
+            height: 140px
+        &-description
+            width: 100%
+            margin-left: 15px
+        &-button
+            width: 100%
+            display: flex
+            justify-content: center
+                    
+    .footer
+        padding-top: 40px
+        padding-bottom: 40px
+        &-air
+            &-right
+                padding-right: 15px
+            &-left 
+                padding-left: 15px
+            &-top
+                padding-top: 20px
+            &-bottom
+                padding-bottom: 20px
+    .footer-border-top-col
+        border-top: 1px solid #494949
+
+
