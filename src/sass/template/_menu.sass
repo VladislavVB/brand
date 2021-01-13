@@ -26,6 +26,12 @@
         font-size: 18px
         display: flex
         align-items: center
+        background-color: transparent
+        border: none
+        outline: none
+        &:hover
+            border: none
+            outline: none
         svg
             display: flex
             align-items: center
@@ -72,3 +78,92 @@
         &:hover
             transition: 0.5s
             color: $yellow
+
+// большое меню
+.burger
+    &-menu
+        width: 100vw
+        padding-top: 80px
+        padding-bottom: 50px
+        background-color: $white
+        z-index: 2
+        position: fixed
+        transition: 0.5s
+        top: 0
+        left: -100vw
+        &.activebur
+            transition: 0.5s
+            left: 0
+    &-content
+        &-services
+            display: flex
+            padding-bottom: 30px
+            padding-top: 30px
+            border-bottom: 1px solid #f6f6f6
+    &-services
+        &-title
+            text-transform: uppercase
+            font-family: 'Museo Sans Cyrl 500', sans-serif
+            font-size: 18px
+            margin-top: 30px
+        &-item
+            font-family: 'Museo Sans Cyrl 300', sans-serif
+            color: $lightblack
+            font-size: 18px
+            text-decoration: underline
+            transition: 0.5s
+            margin-bottom: 30px
+            margin-top: 30px
+            &:hover
+                transition: 0.5s
+                color: $yellow
+        &-left
+            width: 18%
+        &-right
+            width: 100%
+    &-footer
+        &-input
+            border: none
+            &-wraper
+                display: flex
+                justify-content: space-between
+                border-bottom: 1px solid $darkwhite
+                max-width: 300px
+                padding-bottom: 10px
+                align-items: center
+                img
+                  width: 24px
+                  height: 11.62px  
+        &-policy
+            margin-left: 12px
+            font-family: 'Museo Sans Cyrl 300', sans-serif
+            font-size: 14px
+            a
+                text-decoration: underline
+                color: $black
+                font-family: 'Museo Sans Cyrl 500', sans-serif
+            &-wraper
+                margin-top: 18px
+                display: flex
+
+        &-content
+            display: flex
+        &-title
+            opacity: 0
+        &-item
+            margin-bottom: 15px
+            font-family: 'Museo Sans Cyrl 300', sans-serif
+            color: #1E1E1E
+            font-size: 16px
+            &-title
+                color: #1E1E1E
+                font-family: 'Museo Sans Cyrl 500', sans-serif
+                font-size: 16px
+                margin-top: 30px
+                margin-bottom: 20px
+        
+.burger-border-top
+    border-top: 1px solid #f6f6f6
+.burger-border-bottom-none
+    border-bottom: 0px solid #000
+

@@ -38,7 +38,25 @@
     .hidden-card-lg
         display: none
 @media screen and ( max-width: 992px )
-    
+    .burger
+        &-content
+            &-services
+                flex-direction: column
+                padding-top: 10px
+                padding-bottom: 0px
+        &-footer
+            display: none
+            &-content
+                flex-direction: column
+        &-services
+            
+            &-title
+                margin-top: 10px
+                font-size: 16px
+            &-item
+                font-size: 14px
+                margin-top: 10px
+                margin-bottom: 10px
     .hidden-card-md
         display: none
     .card-block-md
@@ -213,8 +231,26 @@
         margin-left: 20px
     .hide-col 
         display: none
+    
+    .menu
+        &-firstb
+            padding-top: 20px
+            padding-bottom: 20px
+            width: 100%
+            display: flex
+            justify-content: space-between
+
+@media screen and ( max-width: 840px )
+    .about-img
+        max-height: 550px
+    .visible-col
+        display: block
+    .hide-col 
+        display: none
     .news-all
-        
+        width: 100%
+        display: flex
+        justify-content: center
         margin: auto
         
         text-align: center
@@ -226,21 +262,22 @@
             justify-content: center
             a
                 margin: auto
-    .menu
-        &-firstb
-            padding-top: 20px
-            padding-bottom: 20px
+@media screen and ( max-width: 768px )
+    .news-all
+        width: 100%
+        display: flex
+        justify-content: center
+        margin: auto
+        
+        text-align: center
+        &-sm
+            padding-top: 40px
+            margin: auto
             width: 100%
             display: flex
-            justify-content: space-between
-@media screen and ( max-width: 840px )
-    .about-img
-        max-height: 550px
-    .visible-col
-        display: block
-    .hide-col 
-        display: none
-@media screen and ( max-width: 768px )
+            justify-content: center
+            a
+                margin: auto
     .news-adaptiv
         display: flex
         flex-direction: column
@@ -270,6 +307,21 @@
     .visible-col
         display: block
 @media screen and ( max-width: 576px )
+    .news-all
+        width: 100%
+        display: flex
+        justify-content: center
+        margin: auto
+        
+        text-align: center
+        &-sm
+            padding-top: 40px
+            margin: auto
+            width: 100%
+            display: flex
+            justify-content: center
+            a
+                margin: auto
     .container-custom
         max-width: 540px
     .visible-col
@@ -534,6 +586,21 @@
     .footer-border-top-col
         border-top: 1px solid #494949
 @media screen and ( max-width: 400px )
+    .news-all
+        width: 100%
+        display: flex
+        justify-content: center
+        margin: auto
+        
+        text-align: center
+        &-sm
+            padding-top: 40px
+            margin: auto
+            width: 100%
+            display: flex
+            justify-content: center
+            a
+                margin: auto
     .news-card-imgbig-sm
         height: 120px   
     .news-card-img-sm 
@@ -541,6 +608,21 @@
     .slide-title
         max-width: 281px
 @media screen and ( max-width: 325px )
+    .news-all
+        width: 100%
+        display: flex
+        justify-content: center
+        margin: auto
+        
+        text-align: center
+        &-sm
+            padding-top: 40px
+            margin: auto
+            width: 100%
+            display: flex
+            justify-content: center
+            a
+                margin: auto
     .slide
         &-title
             min-width: 100px
