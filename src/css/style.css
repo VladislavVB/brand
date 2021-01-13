@@ -364,6 +364,14 @@ a:hover {
   cursor: pointer;
 }
 
+.width {
+  width: 100%;
+}
+
+.margin-left {
+  margin-left: 15px;
+}
+
 @font-face {
   font-family: 'Museo Sans Cyrl 300';
   src: url("../fonts/MuseoSans/MuseoSansCyrl-300.woff2") format("woff2"), url("../fonts/MuseoSans/MuseoSansCyrl-300.woff") format("woff");
@@ -1546,6 +1554,9 @@ a:hover {
   .visible-col {
     display: none;
   }
+  .hidden-card-lg {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1349px) {
@@ -1555,11 +1566,32 @@ a:hover {
   .swiper-container {
     max-width: 1020px;
   }
+  .hidden-card-lg {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1250px) {
   .news-card-img-sm {
     width: 120px;
   }
   .news-card-img img {
     width: 100%;
+  }
+  .hidden-card-lg {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container-custom {
+    max-width: 1140px;
+  }
+  .visible-col {
+    display: none;
+  }
+  .hidden-card-lg {
+    display: none;
   }
 }
 
@@ -1573,11 +1605,46 @@ a:hover {
   .slide-item img {
     width: 100%;
   }
+  .hidden-card-lg {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 992px) {
-  .visible-col {
+  .hidden-card-md {
     display: none;
+  }
+  .card-block-md {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .news-card-img-sm {
+    width: 355px;
+  }
+  .no-border-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-bottom: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .container-custom {
+    max-width: 960px;
+  }
+  .row-custom-adaptiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .visible-col {
+    display: block;
   }
   .services {
     padding-top: 60px;
@@ -1811,6 +1878,38 @@ a:hover {
   .thirdb-text {
     margin-left: 20px;
   }
+  .hide-col {
+    display: none;
+  }
+  .news-all {
+    margin: auto;
+    text-align: center;
+  }
+  .news-all-sm {
+    padding-top: 40px;
+    margin: auto;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .news-all-sm a {
+    margin: auto;
+  }
+  .menu-firstb {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 @media screen and (max-width: 840px) {
@@ -1818,11 +1917,26 @@ a:hover {
     max-height: 550px;
   }
   .visible-col {
+    display: block;
+  }
+  .hide-col {
     display: none;
   }
 }
 
 @media screen and (max-width: 768px) {
+  .news-adaptiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container-custom {
+    max-width: 720px;
+  }
   .swiper-container {
     max-width: 600px;
   }
@@ -1853,27 +1967,20 @@ a:hover {
   .about-img {
     max-height: 420px;
   }
-  .visible-col {
+  .hide-col {
     display: none;
+  }
+  .visible-col {
+    display: block;
   }
 }
 
 @media screen and (max-width: 576px) {
+  .container-custom {
+    max-width: 540px;
+  }
   .visible-col {
     display: block;
-  }
-  .news-all {
-    margin-top: 40px;
-    text-align: center;
-  }
-  .news-all-sm {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   .hide-col {
     display: none;
@@ -1891,17 +1998,6 @@ a:hover {
   }
   .hidden-sm {
     display: none;
-  }
-  .menu-firstb {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
   .firstb-lang svg {
     margin-right: 10px;

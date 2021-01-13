@@ -1,11 +1,16 @@
 @media screen and ( max-width: 4000px )
     .visible-col
         display: none
+    .hidden-card-lg
+        display: none
 @media screen and ( max-width: 1349px )
     .visible-col
         display: none
     .swiper-container
         max-width: 1020px
+    .hidden-card-lg
+        display: none
+@media screen and ( max-width: 1250px )
     .news
         &-card
             &-img
@@ -13,6 +18,15 @@
                     width: 120px
                 img
                     width: 100%
+    .hidden-card-lg
+        display: none
+@media screen and ( max-width: 1200px )
+    .container-custom
+        max-width: 1140px
+    .visible-col
+        display: none
+    .hidden-card-lg
+        display: none
 @media screen and ( max-width: 1139px )
     .swiper-container
         max-width: 875px
@@ -21,9 +35,32 @@
             width: 160px
             img
                 width: 100%
-@media screen and ( max-width: 992px )
-    .visible-col
+    .hidden-card-lg
         display: none
+@media screen and ( max-width: 992px )
+    
+    .hidden-card-md
+        display: none
+    .card-block-md
+        display: flex
+    .news
+        &-card
+            &-img
+                &-sm
+                    width: 355px
+    .no-border-bottom
+        display: flex
+        border-bottom: none
+        
+        flex-direction: column
+        justify-content: space-between
+    .container-custom
+        max-width: 960px
+    .row-custom-adaptiv
+        display: flex
+
+    .visible-col
+        display: block
     .services
         padding-top: 60px
         &-card
@@ -174,12 +211,42 @@
         margin-left: 20px       
     .thirdb-text
         margin-left: 20px
+    .hide-col 
+        display: none
+    .news-all
+        
+        margin: auto
+        
+        text-align: center
+        &-sm
+            padding-top: 40px
+            margin: auto
+            width: 100%
+            display: flex
+            justify-content: center
+            a
+                margin: auto
+    .menu
+        &-firstb
+            padding-top: 20px
+            padding-bottom: 20px
+            width: 100%
+            display: flex
+            justify-content: space-between
 @media screen and ( max-width: 840px )
     .about-img
         max-height: 550px
     .visible-col
+        display: block
+    .hide-col 
         display: none
 @media screen and ( max-width: 768px )
+    .news-adaptiv
+        display: flex
+        flex-direction: column
+    
+    .container-custom
+        max-width: 720px
     .swiper-container
         max-width: 600px
     .locations
@@ -198,18 +265,16 @@
             width: 110px
     .about-img
         max-height: 420px
-    .visible-col
+    .hide-col 
         display: none
-@media screen and ( max-width: 576px )
     .visible-col
         display: block
-    .news-all
-        margin-top: 40px
-        text-align: center
-        &-sm
-            width: 100%
-            display: flex
-            justify-content: center
+@media screen and ( max-width: 576px )
+    .container-custom
+        max-width: 540px
+    .visible-col
+        display: block
+    
     .hide-col
         display: none
     .swiper-container
@@ -224,13 +289,7 @@
     .hidden
         &-sm
             display: none
-    .menu
-        &-firstb
-            padding-top: 20px
-            padding-bottom: 20px
-            width: 100%
-            display: flex
-            justify-content: space-between
+    
     .firstb-lang svg
         margin-right: 10px
     .header-content
