@@ -1,4 +1,9 @@
+@media screen and ( max-width: 4000px )
+    .visible-col
+        display: none
 @media screen and ( max-width: 1349px )
+    .visible-col
+        display: none
     .swiper-container
         max-width: 1020px
     .news
@@ -17,6 +22,8 @@
             img
                 width: 100%
 @media screen and ( max-width: 992px )
+    .visible-col
+        display: none
     .services
         padding-top: 60px
         &-card
@@ -170,6 +177,8 @@
 @media screen and ( max-width: 840px )
     .about-img
         max-height: 550px
+    .visible-col
+        display: none
 @media screen and ( max-width: 768px )
     .swiper-container
         max-width: 600px
@@ -189,15 +198,29 @@
             width: 110px
     .about-img
         max-height: 420px
+    .visible-col
+        display: none
 @media screen and ( max-width: 576px )
+    .visible-col
+        display: block
+    .news-all
+        margin-top: 40px
+        text-align: center
+        &-sm
+            width: 100%
+            display: flex
+            justify-content: center
     .hide-col
         display: none
     .swiper-container
-        max-width: 280px
+        max-width: 303px
     .slide
         &-title
             min-width: 100px
-            max-width: 450px
+            max-width: 315px
+            font-size: 18px
+        &-item
+            width: 140px
     .hidden
         &-sm
             display: none
@@ -227,6 +250,8 @@
     .services-text 
         text-align: left
         margin-left: 15px
+        font-size: 16px
+        font-size: 18px
     .services-content-title
         text-align: left
         margin-bottom: 24px
@@ -235,7 +260,7 @@
         font-size: 16px
         color: $yellow
         position: absolute
-        top: 45px
+        top: 38px
         left: 100px
         
     .services-card-text
@@ -285,6 +310,8 @@
             &-content
                 display: flex
                 padding: 0
+                &-text
+                    margin-top: 10px
                 &-number
                     font-size: 40px
                     color: #fdde97
@@ -316,41 +343,76 @@
         &-title
             margin-top: 60px 
             text-align: left
+            margin-bottom: 40px
     
     .news
         padding-top: 60px
         padding-bottom: 60px
         &-text
             text-align: left
-            margin-left: 15px
+            margin-left: 0px
             font-size: 16px
             margin-bottom: 12px
         &-title
             text-align: left
-            margin-left: 15px
+            margin-left: 0px
             font-size: 16px
             margin-bottom: 12px
         &-card
+            &-text
+                margin-top: 12px
+            &-date
+                margin-top: 0px
+                display: flex
+                justify-content: start
+                align-items: center
+                &-text
+                    margin-top: 20px
+                &-next
+                    margin-left: 17px
+                    height: 13.5px
+                    width: 16.5px
+                    img
+                        width: 100%
+                        height: 100%
+                        
+            &-time
+                margin-top: 16px
             &-content
                 display: flex
                 flex-direction: column
             &-contentbig
                 display: flex
+                flex-direction: column
                 img
+            &-description
+                margin-left: 0
             &-descriptionbig
                 &-sm
-                    margin-left: 20px
+                    margin-left: 0px
             &-imgbig
                 &-sm
-                    width: 120px
+                    overflow: hidden
+                    width: 100%
+                    height: 180px
+                    display: flex
+                    align-items: center
+                    justify-content: center
                     img
                         width: 100%
             &-img
                 &-sm
+                    overflow: hidden
                     width: 100%
+                    height: 180px
+                    display: flex
+                    align-items: center
+                    justify-content: center
                     img
-                        background-size: cover
+                        
+                        width: 100%
     .brand
+        padding-top: 30px
         &-card
             padding: 0px
             height: 100px
@@ -412,5 +474,17 @@
                 padding-bottom: 20px
     .footer-border-top-col
         border-top: 1px solid #494949
-
-
+@media screen and ( max-width: 400px )
+    .news-card-imgbig-sm
+        height: 120px   
+    .news-card-img-sm 
+        height: 120px     
+    .slide-title
+        max-width: 281px
+@media screen and ( max-width: 325px )
+    .slide
+        &-title
+            min-width: 100px
+            max-width: 273px
+    
+    

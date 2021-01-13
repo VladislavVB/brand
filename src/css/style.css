@@ -1542,7 +1542,16 @@ a:hover {
   cursor: pointer;
 }
 
+@media screen and (max-width: 4000px) {
+  .visible-col {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 1349px) {
+  .visible-col {
+    display: none;
+  }
   .swiper-container {
     max-width: 1020px;
   }
@@ -1567,6 +1576,9 @@ a:hover {
 }
 
 @media screen and (max-width: 992px) {
+  .visible-col {
+    display: none;
+  }
   .services {
     padding-top: 60px;
   }
@@ -1805,6 +1817,9 @@ a:hover {
   .about-img {
     max-height: 550px;
   }
+  .visible-col {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1838,18 +1853,41 @@ a:hover {
   .about-img {
     max-height: 420px;
   }
+  .visible-col {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 576px) {
+  .visible-col {
+    display: block;
+  }
+  .news-all {
+    margin-top: 40px;
+    text-align: center;
+  }
+  .news-all-sm {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .hide-col {
     display: none;
   }
   .swiper-container {
-    max-width: 280px;
+    max-width: 303px;
   }
   .slide-title {
     min-width: 100px;
-    max-width: 450px;
+    max-width: 315px;
+    font-size: 18px;
+  }
+  .slide-item {
+    width: 140px;
   }
   .hidden-sm {
     display: none;
@@ -1895,6 +1933,8 @@ a:hover {
   .services-text {
     text-align: left;
     margin-left: 15px;
+    font-size: 16px;
+    font-size: 18px;
   }
   .services-content-title {
     text-align: left;
@@ -1905,7 +1945,7 @@ a:hover {
     font-size: 16px;
     color: #ffb000;
     position: absolute;
-    top: 45px;
+    top: 38px;
     left: 100px;
   }
   .services-card-text {
@@ -1969,6 +2009,9 @@ a:hover {
     display: flex;
     padding: 0;
   }
+  .advantages-card-content-text {
+    margin-top: 10px;
+  }
   .advantages-card-content-number {
     font-size: 40px;
     color: #fdde97;
@@ -2002,6 +2045,7 @@ a:hover {
   .slide-title {
     margin-top: 60px;
     text-align: left;
+    margin-bottom: 40px;
   }
   .news {
     padding-top: 60px;
@@ -2009,15 +2053,45 @@ a:hover {
   }
   .news-text {
     text-align: left;
-    margin-left: 15px;
+    margin-left: 0px;
     font-size: 16px;
     margin-bottom: 12px;
   }
   .news-title {
     text-align: left;
-    margin-left: 15px;
+    margin-left: 0px;
     font-size: 16px;
     margin-bottom: 12px;
+  }
+  .news-card-text {
+    margin-top: 12px;
+  }
+  .news-card-date {
+    margin-top: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .news-card-date-text {
+    margin-top: 20px;
+  }
+  .news-card-date-next {
+    margin-left: 17px;
+    height: 13.5px;
+    width: 16.5px;
+  }
+  .news-card-date-next img {
+    width: 100%;
+    height: 100%;
+  }
+  .news-card-time {
+    margin-top: 16px;
   }
   .news-card-content {
     display: -webkit-box;
@@ -2032,21 +2106,53 @@ a:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .news-card-description {
+    margin-left: 0;
   }
   .news-card-descriptionbig-sm {
-    margin-left: 20px;
+    margin-left: 0px;
   }
   .news-card-imgbig-sm {
-    width: 120px;
+    overflow: hidden;
+    width: 100%;
+    height: 180px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .news-card-imgbig-sm img {
     width: 100%;
   }
   .news-card-img-sm {
+    overflow: hidden;
     width: 100%;
+    height: 180px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .news-card-img-sm img {
-    background-size: cover;
+    width: 100%;
+  }
+  .brand {
+    padding-top: 30px;
   }
   .brand-card {
     padding: 0px;
@@ -2126,6 +2232,25 @@ a:hover {
   }
   .footer-border-top-col {
     border-top: 1px solid #494949;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .news-card-imgbig-sm {
+    height: 120px;
+  }
+  .news-card-img-sm {
+    height: 120px;
+  }
+  .slide-title {
+    max-width: 281px;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  .slide-title {
+    min-width: 100px;
+    max-width: 273px;
   }
 }
 /*# sourceMappingURL=style.css.map */
