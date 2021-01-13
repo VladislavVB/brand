@@ -964,6 +964,19 @@ a:hover {
           justify-content: space-between;
 }
 
+.slide-content-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
 .slide-text {
   opacity: 0;
   font-family: 'Museo Sans Cyrl 500', sans-serif;
@@ -972,9 +985,11 @@ a:hover {
 
 .slide-title {
   font-family: 'Museo Sans Cyrl 700', sans-serif;
-  font-size: 32px;
+  font-size: 24px;
   min-width: 583px;
   color: #1e1e1e;
+  margin-top: 120px;
+  margin-left: 15px;
 }
 
 .slide-wraper {
@@ -997,16 +1012,19 @@ a:hover {
 
 .swiper-button-next, .swiper-button-prev {
   top: 91%;
+  color: #ffb000;
 }
 
 .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
   left: auto;
   right: 100px;
+  color: #ffb000;
 }
 
 .swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
   left: auto;
   right: 50px;
+  color: #ffb000;
 }
 
 .news {
@@ -1537,7 +1555,7 @@ a:hover {
     max-width: 875px;
   }
   .slide-item {
-    width: 200px;
+    width: 160px;
   }
   .slide-item img {
     width: 100%;
@@ -1545,14 +1563,231 @@ a:hover {
 }
 
 @media screen and (max-width: 992px) {
+  .services {
+    padding-top: 60px;
+  }
   .services-card-content {
-    padding: 10px;
+    padding: 30px;
   }
   .about-img {
     margin-top: 40px;
   }
   .about-img img {
     width: 100%;
+  }
+  .services-img {
+    display: none;
+  }
+  .services-text {
+    margin-bottom: 20px;
+  }
+  .services-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .services-content-title {
+    font-size: 24px;
+  }
+  .services-content-left {
+    text-align: center;
+  }
+  .advantages-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .advantages-text {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .advantages-content-title {
+    text-align: center;
+    max-width: 1000px;
+    font-size: 24px;
+  }
+  .about-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about-text {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .about-content-title {
+    max-width: 1000px;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+  .about-description {
+    font-size: 16px;
+  }
+  .about-img {
+    max-height: 720px;
+    width: 100%;
+  }
+  .about-img img {
+    width: 100%;
+  }
+  .slide-title {
+    max-width: 1000px;
+    text-align: center;
+  }
+  .slide-content-left {
+    display: none;
+  }
+  .news-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .news-text {
+    text-align: center;
+    font-size: 18px;
+  }
+  .news-title {
+    max-width: 1000px;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  .brand-border-bottom-sm {
+    border-bottom: 1px solid #e6e6e6;
+  }
+  .news-content-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .news-content-right {
+    width: 100%;
+  }
+  .locations-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .locations-text {
+    text-align: center;
+    font-size: 18px;
+  }
+  .locations-content-title {
+    max-width: 1000px;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  .locations-card {
+    min-width: 20px;
+  }
+  .locations-card-number {
+    font-size: 42px;
+  }
+  .locations-card-description {
+    font-size: 18px;
+  }
+  .form-content-title {
+    max-width: 1000px;
+    text-align: center;
+    font-size: 24px;
+  }
+  .form-content-description {
+    text-align: center;
+  }
+  .form-input {
+    font-size: 16px;
+  }
+  .form-description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: auto;
+    margin-top: 25px;
+  }
+  .footer-items {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .footer-boreder-top-sm {
+    border-top: 1px solid #494949;
+  }
+  .form-button {
+    margin: auto;
+    margin-top: 30px;
+  }
+  .footer-air-bottom {
+    padding-bottom: 40px;
+  }
+  .footer-air-left {
+    padding-left: 40px;
+  }
+  .footer-air-top {
+    padding-top: 40px;
+  }
+  .footer-air-right {
+    padding-right: 40px;
+  }
+  .none-sm {
+    display: none;
+  }
+  .services-content-title {
+    text-align: center;
+    max-width: 1000px;
+  }
+  .brand-card-title {
+    font-size: 24px;
+    text-align: center;
+  }
+  .brand-card-content img {
+    width: 100%;
+  }
+  .brand-card-img {
+    width: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .brand-card-img img {
+    width: 100px;
   }
 }
 
@@ -1568,6 +1803,21 @@ a:hover {
   }
   .locations-card-description {
     font-size: 18px;
+  }
+  .brand-card-img {
+    width: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .brand-card-img img {
+    width: 50px;
   }
 }
 
