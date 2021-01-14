@@ -47,11 +47,11 @@ $(function() {
             $(".menu").removeClass("menu-active");  
             toggle = true
         } else {
-            $(".menu-balck").css("color", "white")
-            $(".menu-balck-svg").css("fill", "white")
             $(".menu-balck-svg").css("stroke", "white")
             $(".balck-vector").css("fill", "white") 
             $(".balck-vector").css("stroke", "white")
+            $(".menu-balck").css("color", "white")
+            $(".menu-balck-svg").css("fill", "white")
             $(".menu-secondb").css("opacity", "0")
             $(".menu").removeClass("menu-active");  
             switchMenuColor($(window).scrollTop())
