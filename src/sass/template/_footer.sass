@@ -91,3 +91,31 @@
     &::before
         content: ''
         background-color: $white
+.policy
+    display: none
+    &-fake
+        display: inline-block
+        width: 16px
+        height: 16px
+        border: 1px solid $white
+        margin-right: 5px
+        margin-top: 10px
+        position: relative
+        &::before
+            content: ''
+            display: block
+            width: 10px
+            height: 10px
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            background-color: $white
+            background: url('../img/footer/polycy.png')  no-repeat center center
+            opacity: 0
+            transition: 0.3s
+
+.policy:checked + .policy-fake::before
+    opacity: 1
+
+   

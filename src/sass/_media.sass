@@ -341,6 +341,12 @@
     .visible-col
         display: block
 @media screen and ( max-width: 576px )
+    .firstb
+        &-menu 
+            span
+                display: none
+            svg
+                width: 35px
     .hidden-card-sm
         display: none
     .news-all
@@ -402,6 +408,7 @@
     .services-content-title
         text-align: left
         margin-bottom: 24px
+        font-size: 18px
     .services-card-name
         margin-top: 0px
         font-size: 16px
@@ -565,6 +572,7 @@
             height: 100px
             &-title
                 text-align: left
+                font-size: 18px
             &-img 
                 img
                     width: 70px
@@ -584,6 +592,11 @@
             &-title
                 text-align: left
                 font-size: 18px
+        &-card
+            &-description
+                font-size: 16px
+            &-number
+                font-size: 30px
     
     .form
         &-content 
@@ -593,6 +606,7 @@
             padding-bottom: 60px
             &-title
                 text-align: left
+                font-size: 18px
             &-description
                 text-align: left
         &-input
@@ -643,6 +657,8 @@
         height: 120px     
     .slide-title
         max-width: 281px
+    .hide-col 
+        display: none
 @media screen and ( max-width: 325px )
     .news-all
         width: 100%
@@ -663,5 +679,6 @@
         &-title
             min-width: 100px
             max-width: 273px
-    
+    .hide-col 
+        display: none
     

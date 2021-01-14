@@ -1862,6 +1862,41 @@ button:focus {
   background-color: #ffffff;
 }
 
+.policy {
+  display: none;
+}
+
+.policy-fake {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #ffffff;
+  margin-right: 5px;
+  margin-top: 10px;
+  position: relative;
+}
+
+.policy-fake::before {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  background: url("../img/footer/polycy.png") no-repeat center center;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.policy:checked + .policy-fake::before {
+  opacity: 1;
+}
+
 @media screen and (max-width: 4000px) {
   .visible-col {
     display: none;
@@ -2398,6 +2433,12 @@ button:focus {
 }
 
 @media screen and (max-width: 576px) {
+  .firstb-menu span {
+    display: none;
+  }
+  .firstb-menu svg {
+    width: 35px;
+  }
   .hidden-card-sm {
     display: none;
   }
@@ -2485,6 +2526,7 @@ button:focus {
   .services-content-title {
     text-align: left;
     margin-bottom: 24px;
+    font-size: 18px;
   }
   .services-card-name {
     margin-top: 0px;
@@ -2706,6 +2748,7 @@ button:focus {
   }
   .brand-card-title {
     text-align: left;
+    font-size: 18px;
   }
   .brand-card-img img {
     width: 70px;
@@ -2729,6 +2772,12 @@ button:focus {
     text-align: left;
     font-size: 18px;
   }
+  .locations-card-description {
+    font-size: 16px;
+  }
+  .locations-card-number {
+    font-size: 30px;
+  }
   .form-content {
     padding-left: 15px;
     padding-right: 0;
@@ -2737,6 +2786,7 @@ button:focus {
   }
   .form-content-title {
     text-align: left;
+    font-size: 18px;
   }
   .form-content-description {
     text-align: left;
@@ -2816,6 +2866,9 @@ button:focus {
   .slide-title {
     max-width: 281px;
   }
+  .hide-col {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 325px) {
@@ -2847,6 +2900,9 @@ button:focus {
   .slide-title {
     min-width: 100px;
     max-width: 273px;
+  }
+  .hide-col {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
