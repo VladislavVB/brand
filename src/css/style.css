@@ -463,7 +463,6 @@ a:hover {
 }
 
 .menu {
-  background-color: transparent;
   position: fixed;
   top: 0;
   width: 100%;
@@ -499,6 +498,17 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.menu-active {
+  color: #1e1e1e;
+  background-color: #ffffff;
+  border-bottom: 1px solid #f6f6f6;
+}
+
+.menu-balck-svg svg, .menu-balck-svg path {
+  stroke: #1e1e1e;
+  fill: #1e1e1e;
 }
 
 .firstb-menu {
@@ -587,7 +597,7 @@ a:hover {
   background-color: #ffffff;
   color: #ffb000;
   position: absolute;
-  top: 80px;
+  top: -800px;
   left: -35px;
   width: 200px;
   z-index: 3;
@@ -614,6 +624,7 @@ a:hover {
 }
 
 .menu-lang-active {
+  top: 80px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   opacity: 1;
@@ -900,9 +911,17 @@ a:hover {
   stroke: #ffffff;
 }
 
+.services-card-content:hover .services-card-icon path {
+  fill: #ffffff;
+}
+
 .services-card-content:hover .services-card-more svg {
   fill: #ffffff;
   stroke: #ffffff;
+}
+
+.services-card-content:hover .services-card-more path {
+  fill: #ffffff;
 }
 
 .services-card-icon {
@@ -934,6 +953,15 @@ a:hover {
   margin-top: 15px;
   font-family: 'Museo Sans Cyrl 300', sans-serif;
   font-size: 16px;
+}
+
+.services-card-more:hover svg {
+  fill: #ffffff;
+  stroke: #ffffff;
+}
+
+.services-card-more:hover path {
+  fill: #ffffff;
 }
 
 .advantages {
@@ -1539,6 +1567,21 @@ a:hover {
   height: 100%;
 }
 
+.form-img-success {
+  display: none;
+  max-width: 360px;
+  max-height: 360px;
+  margin-top: 60px;
+}
+
+.form-img-success img {
+  width: 100%;
+}
+
+.form-img-success-active {
+  display: block;
+}
+
 .form-input {
   width: 100%;
   border: none;
@@ -1605,6 +1648,10 @@ a:hover {
 .form-description {
   margin-left: 15px;
   margin-top: 40px;
+}
+
+.form-form-none {
+  display: none;
 }
 
 .footer {

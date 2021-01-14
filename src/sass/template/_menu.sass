@@ -1,5 +1,5 @@
 .menu
-    background-color: transparent
+    
     position: fixed
     top: 0
     width: 100%
@@ -17,6 +17,23 @@
     &-thirdb
         display: flex
         align-items: center
+    &-active
+        color: $black 
+        background-color: $white
+        border-bottom: 1px solid #f6f6f6
+.menu-balck
+
+.menu-balck-click
+
+.menu-click
+
+.menu-balck-svg
+    svg, path
+        stroke: $black
+        fill: $black
+    // path
+    //     fill: $black
+
         
 
 .firstb
@@ -41,6 +58,8 @@
                 transition: 0.5s
                 fill: $yellow
                 stroke: $yellow
+        path
+            fill: 
     &-lang
         margin-left: 60px
         color: $white
@@ -73,7 +92,7 @@
         background-color: $white
         color: $yellow
         position: absolute
-        top: 80px
+        top: -800px
         left: -35px
         width: 200px
         z-index: 3
@@ -90,6 +109,7 @@
             &-active
                 color: $black
 .menu-lang-active
+    top: 80px
     transition: 0.3s
     opacity: 1
 .lang-vector
