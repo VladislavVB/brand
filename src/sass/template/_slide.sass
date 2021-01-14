@@ -32,6 +32,7 @@
         display: flex
     &-item
         margin-right: 15px
+        margin-bottom: 30px
 .swiper-container
     width: 1230px
 .swiper-pagination
@@ -49,3 +50,13 @@
     color: $yellow
 // .swiper-button-next
 //     background: url('../img/slide/next.png')  no-repeat center
+.swiper-button-next
+    background: url('../img/slide/next.png')  no-repeat center center
+    background-size: 25px
+    &::after
+        display: none
+.swiper-button-prev
+    background: url('../img/slide/prev.png')  no-repeat center center
+    background-size: 25px
+    &::after
+        display: none

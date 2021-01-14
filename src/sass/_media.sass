@@ -7,7 +7,7 @@
     .visible-col
         display: none
     .swiper-container
-        max-width: 1020px
+        max-width: 1070px
     .hidden-card-lg
         display: none
 @media screen and ( max-width: 1250px )
@@ -20,6 +20,8 @@
                     width: 100%
     .hidden-card-lg
         display: none
+    .swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction
+        bottom: 2px
 @media screen and ( max-width: 1200px )
     .container-custom
         max-width: 1140px
@@ -38,6 +40,15 @@
     .hidden-card-lg
         display: none
 @media screen and ( max-width: 992px )
+    .swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction
+        margin: auto
+        text-align: center
+        width: 100%
+        right: 0
+    .swiper-button-prev, .swiper-container-rtl .swiper-button-next
+        left: 40%
+    .swiper-button-next, .swiper-container-rtl .swiper-button-prev
+        right: 40%
     .news-all
         width: 100%
         display: flex
@@ -280,6 +291,11 @@
                 margin: auto
     .hide-col 
         display: none
+@media screen and ( max-width: 634px )
+    .swiper-button-prev, .swiper-container-rtl .swiper-button-next
+        left: 30%
+    .swiper-button-next, .swiper-container-rtl .swiper-button-prev
+        right: 30%
 @media screen and ( max-width: 768px )
     .news-all
         width: 100%
