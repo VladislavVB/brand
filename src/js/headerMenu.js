@@ -14,6 +14,7 @@ $(function() {
             $(".menu-secondb").css("opacity", "1")
             $(".menu").addClass("menu-active");  
         } else {
+            toggleCollor = true
             $(".menu-balck").css("color", "white")
             $(".menu-balck-svg").css("fill", "white")
             $(".menu-balck-svg").css("stroke", "white")
@@ -25,10 +26,14 @@ $(function() {
     });
 
     let toggle = false;
+    let toggleCollor = false;
 
     $(".menu-click").click(function() {
         console.log($(".menu-active"));
         if (!toggle){
+            if (toggleCollor) {
+                return
+            } 
             $(".menu-balck").css("color", "#1e1e1e")
             $(".menu-balck-svg").css("fill", "#1e1e1e")
             $(".menu-balck-svg").css("stroke", "#1e1e1e")
@@ -38,6 +43,7 @@ $(function() {
             $(".menu").removeClass("menu-active");  
             toggle = true
         } else {
+            
             $(".menu-balck").css("color", "white")
             $(".menu-balck-svg").css("fill", "white")
             $(".menu-balck-svg").css("stroke", "white")
