@@ -551,6 +551,19 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  position: relative;
+}
+
+.firstb-lang:hover {
+  border: none;
+  outline: none;
+}
+
+.firstb-lang-text {
+  margin-top: 5px;
 }
 
 .firstb-lang svg {
@@ -565,6 +578,55 @@ a:hover {
   transition: 0.5s;
   fill: #ffb000;
   stroke: #ffb000;
+}
+
+.menu-lang {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0;
+  background-color: #ffffff;
+  color: #ffb000;
+  position: absolute;
+  top: 80px;
+  left: -35px;
+  width: 200px;
+  z-index: 3;
+}
+
+.menu-lang-content {
+  padding: 40px;
+  padding-bottom: 20px;
+  text-align: left;
+}
+
+.menu-lang-item {
+  font-family: 'Museo Sans Cyrl 700', sans-serif;
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+
+.menu-lang-item:hover {
+  cursor: pointer;
+}
+
+.menu-lang-item-active {
+  color: #1e1e1e;
+}
+
+.menu-lang-active {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 1;
+}
+
+.lang-vector {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.lang-vector-active {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .thirdb-socialb {
@@ -612,7 +674,7 @@ a:hover {
   padding-top: 80px;
   padding-bottom: 50px;
   background-color: #ffffff;
-  z-index: 2;
+  z-index: 6;
   position: fixed;
   -webkit-transition: 0.5s;
   transition: 0.5s;

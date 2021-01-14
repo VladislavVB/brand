@@ -48,6 +48,15 @@
         font-size: 18px
         display: flex
         align-items: center
+        background-color: transparent
+        border: none
+        outline: none
+        position: relative
+        &:hover
+            border: none
+            outline: none
+        &-text 
+            margin-top: 5px
         svg
             margin-right: 20px
             margin-left: 10px
@@ -56,6 +65,38 @@
                 transition: 0.5s
                 fill: $yellow
                 stroke: $yellow
+//меню языка
+.menu
+    &-lang
+        transition: 0.3s
+        opacity: 0
+        background-color: $white
+        color: $yellow
+        position: absolute
+        top: 80px
+        left: -35px
+        width: 200px
+        z-index: 3
+        &-content
+            padding: 40px
+            padding-bottom: 20px
+            text-align: left
+        &-item
+            font-family: 'Museo Sans Cyrl 700', sans-serif
+            font-size: 18px
+            padding-bottom: 20px
+            &:hover
+                cursor: pointer
+            &-active
+                color: $black
+.menu-lang-active
+    transition: 0.3s
+    opacity: 1
+.lang-vector
+    transform: rotate(0deg)
+    &-active
+        transform: rotate(90deg)
+
 .thirdb
     &-socialb
         display: flex
@@ -86,7 +127,7 @@
         padding-top: 80px
         padding-bottom: 50px
         background-color: $white
-        z-index: 2
+        z-index: 6
         position: fixed
         transition: 0.5s
         top: 0
