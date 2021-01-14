@@ -38,6 +38,21 @@
     .hidden-card-lg
         display: none
 @media screen and ( max-width: 992px )
+    .news-all
+        width: 100%
+        display: flex
+        justify-content: center
+        margin: auto
+        
+        text-align: center
+        &-sm
+            padding-top: 40px
+            margin: auto
+            width: 100%
+            display: flex
+            justify-content: center
+            a
+                margin: auto
     .burger
         &-content
             &-services
@@ -241,12 +256,13 @@
             justify-content: space-between
 
 @media screen and ( max-width: 840px )
+    .hide-col 
+        display: none
     .about-img
         max-height: 550px
     .visible-col
         display: block
-    .hide-col 
-        display: none
+    
     .news-all
         width: 100%
         display: flex
@@ -262,6 +278,8 @@
             justify-content: center
             a
                 margin: auto
+    .hide-col 
+        display: none
 @media screen and ( max-width: 768px )
     .news-all
         width: 100%
@@ -307,6 +325,8 @@
     .visible-col
         display: block
 @media screen and ( max-width: 576px )
+    .hidden-card-sm
+        display: none
     .news-all
         width: 100%
         display: flex

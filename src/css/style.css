@@ -372,6 +372,16 @@ a:hover {
   margin-left: 15px;
 }
 
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked + label::before {
+  -webkit-filter: invert(0);
+          filter: invert(0);
+  background: url("../img/footer/check.png") no-repeat center center;
+}
+
 @font-face {
   font-family: 'Museo Sans Cyrl 300';
   src: url("../fonts/MuseoSans/MuseoSansCyrl-300.woff2") format("woff2"), url("../fonts/MuseoSans/MuseoSansCyrl-300.woff") format("woff");
@@ -703,8 +713,8 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 30px;
-  padding-top: 30px;
+  padding-bottom: 20px;
+  padding-top: 20px;
   border-bottom: 1px solid #f6f6f6;
 }
 
@@ -1802,15 +1812,17 @@ a:hover {
   color: #ffffff;
 }
 
-.policy {
-  color: #ffffff;
-  border: 1px solid #ffffff;
-  margin-top: 5px;
+.footer-card-policy-text-cheak::before {
+  content: '';
+  background-color: transparent;
+  border: 1px solid #1e1e1e;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
   margin-right: 10px;
-}
-
-.policy:hover {
-  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 @media screen and (max-width: 4000px) {
@@ -1874,6 +1886,31 @@ a:hover {
 }
 
 @media screen and (max-width: 992px) {
+  .news-all {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+    text-align: center;
+  }
+  .news-all-sm {
+    padding-top: 40px;
+    margin: auto;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .news-all-sm a {
+    margin: auto;
+  }
   .burger-content-services {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2184,14 +2221,14 @@ a:hover {
 }
 
 @media screen and (max-width: 840px) {
+  .hide-col {
+    display: none;
+  }
   .about-img {
     max-height: 550px;
   }
   .visible-col {
     display: block;
-  }
-  .hide-col {
-    display: none;
   }
   .news-all {
     width: 100%;
@@ -2217,6 +2254,9 @@ a:hover {
   }
   .news-all-sm a {
     margin: auto;
+  }
+  .hide-col {
+    display: none;
   }
 }
 
@@ -2297,6 +2337,9 @@ a:hover {
 }
 
 @media screen and (max-width: 576px) {
+  .hidden-card-sm {
+    display: none;
+  }
   .news-all {
     width: 100%;
     display: -webkit-box;
