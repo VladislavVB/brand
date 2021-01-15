@@ -830,6 +830,13 @@ button:focus {
   border-bottom: 0px solid #000;
 }
 
+.rotate-lang {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
 .services {
   padding-top: 125px;
   padding-bottom: 125px;
@@ -1429,6 +1436,10 @@ button:focus {
   font-family: 'Museo Sans Cyrl 500', sans-serif;
   font-size: 17px;
   margin-top: 20px;
+}
+
+.hidden-card-all {
+  display: none;
 }
 
 .brand {

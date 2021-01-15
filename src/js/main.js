@@ -5,27 +5,30 @@ buttomMobileMenu.addEventListener('click', () => {
 
     navigationMenu.classList.toggle('activebur');
 })
-//язык
+//язык lang-vector navigationMenuLang.classList.toggle('rotate-lang'); 
 const buttomMobileMenuLang = document.querySelector('.firstb-lang');
 const navigationMenuLang = document.querySelector('.menu-lang');
+const rotateMenuLang = document.querySelector('.lang-vector');
 buttomMobileMenuLang.addEventListener('click', () => {
     navigationMenuLang.classList.toggle('menu-lang-active');
+    rotateMenuLang.classList.toggle('rotate-lang'); 
 })
-//показать/скрыть новости
-
+//показать/скрыть новости hidden-card-all
+let toggleAll = false
 const showAllCards = () => {
-    if (isOpen) {
-        document.querySelector('.news-all').innerHTML = 'Explore All'
-        hiddenCard.forEach(element => {
-            element.classList.add('hidden-card-sm');
-        });
-        isOpen = false;
+    
+    if (!toggleAll) {
+        document.querySelectorAll('.hidden-card-all').forEach((elem)  => {
+            elem.classList.remove('hidden-card-all')
+        })   
+        toggleAll = true
     } else {
-        document.querySelector('.news-all').innerHTML = 'Close'
-        hiddenCard.forEach(element => {
-            element.classList.remove('hidden-card-sm');
-        });
-        isOpen = true;
+        console.log(toggleAll);
+        toggleAll = false
+        document.querySelectorAll('.show-card-all').forEach((elem)  => { 
+            console.log(elem);
+            elem.classList.add('hidden-card-all')
+        }) 
     }
 }
 
