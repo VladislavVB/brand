@@ -476,6 +476,10 @@ button:focus {
   color: #000000;
 }
 
+.burger-menu-hide {
+  display: none !important;
+}
+
 .menu {
   position: fixed;
   top: 0;
@@ -638,7 +642,7 @@ button:focus {
 }
 
 .menu-lang-active {
-  top: 80px;
+  top: 70px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   opacity: 1;
@@ -831,10 +835,15 @@ button:focus {
 }
 
 .rotate-lang {
+  margin-top: 15px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
+}
+
+.burger-menu-cross {
+  display: none !important;
 }
 
 .services {

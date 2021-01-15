@@ -1,18 +1,47 @@
 //меню
 const buttomMobileMenu = document.querySelector('.firstb-menu');
 const navigationMenu = document.querySelector('.burger-menu');
+const navigationMenuCross = document.querySelector('.burger-btn')
+const navigationMenuHide = document.querySelector('.menu-hide')
 buttomMobileMenu.addEventListener('click', () => {
-
+    console.log(navigationMenuHide);
+    navigationMenuHide.classList.toggle('burger-menu-hide')
+    navigationMenuCross.classList.toggle('burger-menu-cross')
     navigationMenu.classList.toggle('activebur');
 })
-//язык lang-vector navigationMenuLang.classList.toggle('rotate-lang'); 
+// язык lang-vector navigationMenuLang.classList.toggle('rotate-lang'); 
+document.onclick = function (event){
+    
+    if (document.querySelector('.menu-lang').classList.value.indexOf('menu-lang-active')) {
+        let allBlocks = document.querySelectorAll('.block-wtf')
+        let tog = false
+        allBlocks.forEach(item => {
+            if (event.target === item) {
+                tog = true
+            }
+        }) 
+        if (tog) {
+            
+            return
+        }
+        document.querySelector('.menu-lang').classList.remove('menu-lang-active') 
+        document.querySelector('.lang-vector').classList.remove('rotate-lang')
+    }
+        
+    
+}
+
 const buttomMobileMenuLang = document.querySelector('.firstb-lang');
 const navigationMenuLang = document.querySelector('.menu-lang');
 const rotateMenuLang = document.querySelector('.lang-vector');
 buttomMobileMenuLang.addEventListener('click', () => {
-    navigationMenuLang.classList.toggle('menu-lang-active');
-    rotateMenuLang.classList.toggle('rotate-lang'); 
+    setTimeout(() => {
+        navigationMenuLang.classList.toggle('menu-lang-active');
+        rotateMenuLang.classList.toggle('rotate-lang'); 
+    })     
 })
+
+
 //показать/скрыть новости hidden-card-all
 let toggleAll = false
 const showAllCards = () => {
