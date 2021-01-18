@@ -33,6 +33,9 @@
     svg, path
         stroke: $black
         fill: $black
+        &:hover
+            stroke: $yellow
+            fill: $yellow
     // path
     //     fill: $black
 
@@ -123,14 +126,15 @@
     &-socialb
         display: flex
         align-items: center
-        svg
+        svg, path
             margin-right: 10px
             margin-left: 10px
             transition: 0.5s
             &:hover
-                transition: 0.5s
-                fill: $yellow
-                stroke: $yellow
+                svg, path
+                    transition: 0.5s
+                    fill: $yellow !important
+                    stroke: $yellow !important
     &-text
         font-family: 'Museo Sans Cyrl 300', sans-serif
         font-size: 18px
@@ -141,7 +145,13 @@
         &:hover
             transition: 0.5s
             color: $yellow
-
+// .menu-balck-svg 
+//     svg, path
+//         stroke: $white
+//         fill: $white
+//         &:hover
+//             stroke: $yellow !important
+//             fill: $yellow !important
 // большое меню
 .burger
     &-menu

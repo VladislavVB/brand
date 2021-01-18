@@ -382,6 +382,10 @@ input[type="checkbox"]:checked + label::before {
   background: url("../img/footer/check.png") no-repeat center center;
 }
 
+.sub-left-title {
+  margin-top: 10px;
+}
+
 button:focus {
   outline: none;
 }
@@ -529,6 +533,11 @@ button:focus {
   fill: #1e1e1e;
 }
 
+.menu-balck-svg svg:hover, .menu-balck-svg path:hover {
+  stroke: #ffb000;
+  fill: #ffb000;
+}
+
 .firstb-menu {
   color: #ffffff;
   font-family: 'Museo Sans Cyrl 300', sans-serif;
@@ -667,18 +676,18 @@ button:focus {
           align-items: center;
 }
 
-.thirdb-socialb svg {
+.thirdb-socialb svg, .thirdb-socialb path {
   margin-right: 10px;
   margin-left: 10px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-.thirdb-socialb svg:hover {
+.thirdb-socialb svg:hover svg, .thirdb-socialb svg:hover path, .thirdb-socialb path:hover svg, .thirdb-socialb path:hover path {
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  fill: #ffb000;
-  stroke: #ffb000;
+  fill: #ffb000 !important;
+  stroke: #ffb000 !important;
 }
 
 .thirdb-text {
@@ -920,12 +929,14 @@ button:focus {
   border: 1px solid #ffb000;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  display: block;
 }
 
 .services-card-content:hover {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   background-color: #ffb000;
+  cursor: pointer;
 }
 
 .services-card-content:hover .services-card-name, .services-card-content:hover .services-card-text {
@@ -1441,10 +1452,24 @@ button:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   color: #ffb000;
   font-family: 'Museo Sans Cyrl 500', sans-serif;
   font-size: 17px;
   margin-top: 20px;
+}
+
+.news-card-date-next {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .hidden-card-all {
@@ -1677,6 +1702,14 @@ button:focus {
   border: none;
   width: 182px;
   outline: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.form-button:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: #f6a800;
 }
 
 .form-button img {
@@ -1761,10 +1794,14 @@ button:focus {
 
 .footer-item {
   color: #ffffff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .footer-item:hover {
-  color: #ffffff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #ebebeb;
 }
 
 .footer-card {
@@ -1804,6 +1841,10 @@ button:focus {
   display: -ms-flexbox;
   display: flex;
   margin-top: 15px;
+  color: #d6d6d6;
+}
+
+.footer-card-item:hover {
   color: #d6d6d6;
 }
 
@@ -1911,6 +1952,11 @@ button:focus {
   opacity: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+.footer-form-button {
+  border: none;
+  background-color: transparent;
 }
 
 .policy:checked + .policy-fake::before {

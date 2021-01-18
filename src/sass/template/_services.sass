@@ -20,6 +20,7 @@
         font-family: 'Museo Sans Cyrl 500', sans-serif
         font-size: 18px
         color: $black
+        
     &-cards
         display: flex
         flex-wrap: wrap
@@ -34,9 +35,11 @@
             padding: 40px
             border: 1px solid $yellow
             transition: 0.5s
+            display: block
             &:hover
                 transition: 0.5s
                 background-color: $yellow
+                cursor: pointer
                 .services-card-name, .services-card-text
                     color: $white
                 .services-card-icon
