@@ -1,3 +1,4 @@
+
 .burger-menu-hide
     display: none !important
 .menu
@@ -91,11 +92,15 @@
                 stroke: $yellow
 //меню языка
 .menu
+    color: $white
+    svg, path
+        fill: $white 
+        stroke: $white
     &-lang
         transition: 0.3s
         opacity: 0
         background-color: $white
-        color: $yellow
+        
         position: absolute
         top: -800px
         left: -35px
@@ -109,10 +114,11 @@
             font-family: 'Museo Sans Cyrl 700', sans-serif
             font-size: 18px
             padding-bottom: 20px
+            color: $yellow !important
             &:hover
                 cursor: pointer
             &-active
-                color: $black
+                color: $black !important
 .menu-lang-active
     top: 70px
     transition: 0.3s
@@ -130,6 +136,7 @@
             margin-right: 10px
             margin-left: 10px
             transition: 0.5s
+            
             &:hover
                 svg, path
                     transition: 0.5s
@@ -248,3 +255,19 @@
 .burger-menu-cross
     display: none !important
 
+.body-menu-active
+    background-color: $white
+    border-bottom: 1px solid #f6f6f6
+    color: $black 
+    
+    span
+        color: $black 
+    a
+        color: $black 
+    div
+        color: $black 
+    svg, path
+        fill: $black 
+        stroke: $black 
+    .menu-secondb
+        opacity: 1

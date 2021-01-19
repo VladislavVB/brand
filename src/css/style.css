@@ -617,12 +617,20 @@ button:focus {
   stroke: #ffb000;
 }
 
+.menu {
+  color: #ffffff;
+}
+
+.menu svg, .menu path {
+  fill: #ffffff;
+  stroke: #ffffff;
+}
+
 .menu-lang {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   opacity: 0;
   background-color: #ffffff;
-  color: #ffb000;
   position: absolute;
   top: -800px;
   left: -35px;
@@ -640,6 +648,7 @@ button:focus {
   font-family: 'Museo Sans Cyrl 700', sans-serif;
   font-size: 18px;
   padding-bottom: 20px;
+  color: #ffb000 !important;
 }
 
 .menu-lang-item:hover {
@@ -647,7 +656,7 @@ button:focus {
 }
 
 .menu-lang-item-active {
-  color: #1e1e1e;
+  color: #1e1e1e !important;
 }
 
 .menu-lang-active {
@@ -853,6 +862,33 @@ button:focus {
 
 .burger-menu-cross {
   display: none !important;
+}
+
+.body-menu-active {
+  background-color: #ffffff;
+  border-bottom: 1px solid #f6f6f6;
+  color: #1e1e1e;
+}
+
+.body-menu-active span {
+  color: #1e1e1e;
+}
+
+.body-menu-active a {
+  color: #1e1e1e;
+}
+
+.body-menu-active div {
+  color: #1e1e1e;
+}
+
+.body-menu-active svg, .body-menu-active path {
+  fill: #1e1e1e;
+  stroke: #1e1e1e;
+}
+
+.body-menu-active .menu-secondb {
+  opacity: 1;
 }
 
 .services {
