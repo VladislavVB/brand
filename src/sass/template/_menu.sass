@@ -8,7 +8,7 @@
     width: 100%
     padding-top: 10px
     padding-bottom: 10px
-    border-bottom: 0.5px solid #3d3d3d
+    // border-bottom: 0.5px solid #3d3d3d
     z-index: 10
     &-content
         display: flex
@@ -64,8 +64,8 @@
                 transition: 0.5s
                 fill: $yellow
                 stroke: $yellow
-        path
-            fill: 
+            path
+                fill: $black
     &-lang
         margin-left: 30px
         color: $white
@@ -132,10 +132,13 @@
     &-socialb
         display: flex
         align-items: center
-        svg, path
+
+        svg 
             margin-right: 10px
             margin-left: 10px
             transition: 0.5s
+            path
+                
             
             &:hover
                 svg, path
@@ -169,11 +172,11 @@
         z-index: 6
         position: fixed
         transition: 0.5s
-        top: 0
-        left: -100vw
+        top: -2000px
+        left: 0
         &.activebur
             transition: 0.5s
-            left: 0
+            top: 0
     &-content
         &-services
             display: flex
@@ -266,8 +269,12 @@
         color: $black 
     div
         color: $black 
-    svg, path
+    svg, 
         fill: $black 
         stroke: $black 
+        path
+            fill: $black 
+            stroke: $black 
+
     .menu-secondb
         opacity: 1

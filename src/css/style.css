@@ -437,6 +437,7 @@ button:focus {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100%;
+  z-index: 2;
 }
 
 .header-buttons {
@@ -490,7 +491,6 @@ button:focus {
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
-  border-bottom: 0.5px solid #3d3d3d;
   z-index: 10;
 }
 
@@ -575,6 +575,10 @@ button:focus {
   transition: 0.5s;
   fill: #ffb000;
   stroke: #ffb000;
+}
+
+.firstb-menu svg path {
+  fill: #1e1e1e;
 }
 
 .firstb-lang {
@@ -685,14 +689,14 @@ button:focus {
           align-items: center;
 }
 
-.thirdb-socialb svg, .thirdb-socialb path {
+.thirdb-socialb svg {
   margin-right: 10px;
   margin-left: 10px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-.thirdb-socialb svg:hover svg, .thirdb-socialb svg:hover path, .thirdb-socialb path:hover svg, .thirdb-socialb path:hover path {
+.thirdb-socialb svg:hover svg, .thirdb-socialb svg:hover path {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   fill: #ffb000 !important;
@@ -725,14 +729,14 @@ button:focus {
   position: fixed;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  top: 0;
-  left: -100vw;
+  top: -2000px;
+  left: 0;
 }
 
 .burger-menu.activebur {
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  left: 0;
+  top: 0;
 }
 
 .burger-content-services {
@@ -882,7 +886,12 @@ button:focus {
   color: #1e1e1e;
 }
 
-.body-menu-active svg, .body-menu-active path {
+.body-menu-active svg {
+  fill: #1e1e1e;
+  stroke: #1e1e1e;
+}
+
+.body-menu-active svg path {
   fill: #1e1e1e;
   stroke: #1e1e1e;
 }
@@ -2063,6 +2072,12 @@ button:focus {
 }
 
 @media screen and (max-width: 992px) {
+  .header-content {
+    max-width: 400px;
+  }
+  .header-content img {
+    width: 400px;
+  }
   .swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
     margin: auto;
     text-align: center;
@@ -2242,6 +2257,8 @@ button:focus {
     width: 100%;
   }
   .slide-title {
+    margin: auto;
+    margin-top: 120px;
     max-width: 1000px;
     text-align: center;
   }
@@ -2535,6 +2552,9 @@ button:focus {
 }
 
 @media screen and (max-width: 576px) {
+  .hide-col-sm {
+    display: none;
+  }
   .firstb-menu span {
     display: none;
   }
@@ -2621,9 +2641,12 @@ button:focus {
   }
   .services-text {
     text-align: left;
-    margin-left: 15px;
     font-size: 16px;
     font-size: 18px;
+  }
+  .padding0 {
+    padding-left: 0;
+    padding-right: 0;
   }
   .services-content-title {
     text-align: left;
@@ -2640,6 +2663,7 @@ button:focus {
   }
   .services-card-text {
     font-size: 14px;
+    line-height: 21px;
   }
   .services-card-more svg {
     height: 20px;
@@ -2681,7 +2705,6 @@ button:focus {
   }
   .advantages-text {
     text-align: left;
-    margin-left: 15px;
     font-size: 16px;
     margin-bottom: 12px;
   }
@@ -2698,9 +2721,16 @@ button:focus {
     display: -ms-flexbox;
     display: flex;
     padding: 0;
+    min-height: 96px;
   }
   .advantages-card-content-text {
     margin-top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .advantages-card-content-number {
     font-size: 40px;
@@ -2736,6 +2766,7 @@ button:focus {
     margin-top: 60px;
     text-align: left;
     margin-bottom: 40px;
+    margin-left: 15px;
   }
   .news {
     padding-top: 60px;
@@ -2755,6 +2786,7 @@ button:focus {
   }
   .news-card-text {
     margin-top: 12px;
+    font-size: 14px;
   }
   .news-card-date {
     margin-top: 0px;
@@ -2767,9 +2799,16 @@ button:focus {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-top: 16px;
   }
   .news-card-date-text {
-    margin-top: 20px;
+    font-size: 14px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .news-card-date-next {
     margin-left: 17px;
@@ -2782,6 +2821,7 @@ button:focus {
   }
   .news-card-time {
     margin-top: 16px;
+    font-size: 14px;
   }
   .news-card-content {
     display: -webkit-box;
@@ -2878,7 +2918,7 @@ button:focus {
     font-size: 16px;
   }
   .locations-card-number {
-    font-size: 30px;
+    font-size: 36px;
   }
   .form-content {
     padding-left: 15px;
@@ -2930,6 +2970,16 @@ button:focus {
   }
   .footer-border-top-col {
     border-top: 1px solid #494949;
+  }
+  .footer-card-policy-text {
+    font-size: 12px;
+  }
+  .footer-card-title {
+    font-size: 14px;
+  }
+  .footer-card-item {
+    font-size: 12px;
+    color: #ffffffa9;
   }
 }
 

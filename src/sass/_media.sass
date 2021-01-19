@@ -40,6 +40,13 @@
     .hidden-card-lg
         display: none
 @media screen and ( max-width: 992px )
+    .header-content
+        max-width: 400px
+        img
+            width: 400px
+    // .header-button 
+    //     width: 10px   
+
     .swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction
         margin: auto
         text-align: center
@@ -159,9 +166,12 @@
         width: 100%
         img
             width: 100%
-    .slide-title 
+    .slide-title
+        margin: auto
+        margin-top: 120px
         max-width: 1000px
         text-align: center
+    
     .slide-content-left
         display: none
     // .news-content-left
@@ -341,6 +351,8 @@
     .visible-col
         display: block
 @media screen and ( max-width: 576px )
+    .hide-col-sm
+        display: none
     .firstb
         &-menu 
             span
@@ -402,9 +414,12 @@
         padding-bottom: 60px
     .services-text 
         text-align: left
-        margin-left: 15px
+        
         font-size: 16px
         font-size: 18px
+    .padding0
+        padding-left: 0
+        padding-right: 0
     .services-content-title
         text-align: left
         margin-bottom: 24px
@@ -419,6 +434,7 @@
         
     .services-card-text
         font-size: 14px
+        line-height: 21px
     .services-card-more svg
         height: 20px
         width: 20px
@@ -451,7 +467,7 @@
         padding-bottom: 60px
         &-text 
             text-align: left
-            margin-left: 15px
+            // margin-left: 15px
             font-size: 16px
             margin-bottom: 12px
         &-content
@@ -464,8 +480,11 @@
             &-content
                 display: flex
                 padding: 0
+                min-height: 96px
                 &-text
                     margin-top: 10px
+                    display: flex
+                    align-items: center
                 &-number
                     font-size: 40px
                     color: #fdde97
@@ -498,7 +517,7 @@
             margin-top: 60px 
             text-align: left
             margin-bottom: 40px
-    
+            margin-left: 15px
     .news
         padding-top: 60px
         padding-bottom: 60px
@@ -515,13 +534,18 @@
         &-card
             &-text
                 margin-top: 12px
+                font-size: 14px
             &-date
                 margin-top: 0px
                 display: flex
                 justify-content: start
                 align-items: center
+                margin-top: 16px
                 &-text
-                    margin-top: 20px
+                    
+                    font-size: 14px
+                    display: flex
+                    align-items: center
                 &-next
                     margin-left: 17px
                     height: 13.5px
@@ -532,6 +556,7 @@
                         
             &-time
                 margin-top: 16px
+                font-size: 14px
             &-content
                 display: flex
                 flex-direction: column
@@ -596,7 +621,7 @@
             &-description
                 font-size: 16px
             &-number
-                font-size: 30px
+                font-size: 36px
     
     .form
         &-content 
@@ -635,6 +660,13 @@
                 padding-bottom: 20px
     .footer-border-top-col
         border-top: 1px solid #494949
+    .footer-card-policy-text 
+        font-size: 12px
+    .footer-card-title
+        font-size: 14px
+    .footer-card-item
+        font-size: 12px
+        color: #ffffffa9
 @media screen and ( max-width: 400px )
     .news-all
         width: 100%
