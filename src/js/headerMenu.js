@@ -10,7 +10,7 @@ let switchMenuColor = (height) => {
         document.querySelector('.menu').classList.remove('body-menu-active');
     }
 }
-
+switchMenuColor($(window).scrollTop())
 const burgerMenu = document.querySelector('.firstb-menu');
 const buegerMunuSecond = document.querySelector('.menu');
 
