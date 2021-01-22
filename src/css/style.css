@@ -2071,7 +2071,7 @@ button:focus {
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   .header-content {
     max-width: 400px;
   }
@@ -2423,6 +2423,9 @@ button:focus {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  .header-content img {
+    max-height: 50vh;
   }
 }
 
