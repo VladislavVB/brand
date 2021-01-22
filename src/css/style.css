@@ -446,7 +446,7 @@ button:focus {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   z-index: 2;
 }
 
@@ -533,6 +533,7 @@ button:focus {
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
+  border-bottom: 0.5px solid #3d3d3d;
   z-index: 10;
 }
 
@@ -568,6 +569,32 @@ button:focus {
   color: #1e1e1e;
   background-color: #ffffff;
   border-bottom: 1px solid #f6f6f6;
+}
+
+ul.nav-burg-serv {
+  padding-left: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+ul.nav-burg-serv li {
+  padding-left: 15px;
+  width: 33.3%;
+}
+
+ul.nav-burg-serv li a.burger-services-item {
+  display: block;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding-bottom: 8px;
+  padding-top: 8px;
 }
 
 .menu-balck-svg svg, .menu-balck-svg path {
@@ -804,8 +831,8 @@ button:focus {
   text-decoration: underline;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  margin-bottom: 30px;
-  margin-top: 30px;
+  margin-bottom: 22px;
+  margin-top: 22px;
 }
 
 .burger-services-item:hover {
