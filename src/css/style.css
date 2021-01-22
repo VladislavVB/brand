@@ -691,6 +691,8 @@ ul.nav-burg-serv li a.burger-services-item {
 }
 
 .menu {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   color: #ffffff;
 }
 
@@ -941,6 +943,8 @@ ul.nav-burg-serv li a.burger-services-item {
   background-color: #ffffff;
   border-bottom: 1px solid #f6f6f6;
   color: #1e1e1e;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .body-menu-active span {
