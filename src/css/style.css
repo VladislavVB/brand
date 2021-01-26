@@ -604,12 +604,10 @@ ul.nav-burg-serv li a.burger-services-item {
 }
 
 .menu-balck-svg svg, .menu-balck-svg path {
-  stroke: #1e1e1e;
   fill: #1e1e1e;
 }
 
 .menu-balck-svg svg:hover, .menu-balck-svg path:hover {
-  stroke: #ffb000;
   fill: #ffb000;
 }
 
@@ -618,7 +616,6 @@ ul.nav-burg-serv li a.burger-services-item {
   -webkit-transition: 0.2s;
   transition: 0.2s;
   fill: #ffb000;
-  stroke: #ffb000;
 }
 
 .firstb-menu {
@@ -657,7 +654,6 @@ ul.nav-burg-serv li a.burger-services-item {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   fill: #ffb000;
-  stroke: #ffb000;
 }
 
 .firstb-menu svg path {
@@ -707,7 +703,6 @@ ul.nav-burg-serv li a.burger-services-item {
 
 .menu svg, .menu path {
   fill: #ffffff;
-  stroke: #ffffff;
 }
 
 .menu-lang {
@@ -780,7 +775,6 @@ ul.nav-burg-serv li a.burger-services-item {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   fill: #ffb000 !important;
-  stroke: #ffb000 !important;
 }
 
 .thirdb-text {
@@ -970,12 +964,10 @@ ul.nav-burg-serv li a.burger-services-item {
 
 .body-menu-active svg {
   fill: #1e1e1e;
-  stroke: #1e1e1e;
 }
 
 .body-menu-active svg path {
   fill: #1e1e1e;
-  stroke: #1e1e1e;
 }
 
 .body-menu-active .menu-secondb {
