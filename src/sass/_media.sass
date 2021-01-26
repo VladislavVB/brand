@@ -12,6 +12,7 @@
         display: none
 @media screen and ( max-width: 1250px )
     .news
+       
         &-card
             &-img
                 &-sm
@@ -40,6 +41,15 @@
     .hidden-card-lg
         display: none
 @media screen and ( max-width: 1024px )
+    
+    .about
+        padding-bottom: 60px
+    .news
+        padding-top: 60px
+    .menu
+        &-firstb
+            padding-top: 20px
+            padding-bottom: 20px
     .header-content
         max-width: 400px
         img
@@ -52,10 +62,13 @@
         text-align: center
         width: 100%
         right: 0
+        top: 160px
     .swiper-button-prev, .swiper-container-rtl .swiper-button-next
         left: 40%
+        top: 173px
     .swiper-button-next, .swiper-container-rtl .swiper-button-prev
         right: 40%
+        top: 173px
     .news-all
         width: 100%
         display: flex
@@ -167,11 +180,13 @@
         img
             width: 100%
     .slide-title
+        
         margin: auto
-        margin-top: 120px
+        // margin-top: 120px
         max-width: 1000px
+        min-width: 100px
         text-align: center
-    
+        margin-top: 60px
     .slide-content-left
         display: none
     // .news-content-left
@@ -268,16 +283,16 @@
     .hide-col 
         display: none
     
-    .menu
-        &-firstb
-            padding-top: 20px
-            padding-bottom: 20px
-            width: 100%
-            display: flex
-            justify-content: space-between
+    
     .header-content img 
         max-height: 50vh
-
+    .brand-card-img-width
+        max-width: 150px !important
+@media screen and ( max-width: 992px )
+    .brand-border-right-none::before
+        content: none
+    .brand-border-left-none::after
+        content: none
 @media screen and ( max-width: 840px )
     .hide-col 
         display: none
@@ -339,6 +354,7 @@
                 font-size: 30px
             &-description
                 font-size: 18px
+                
     .brand-card-img
         width: 70px
         display: flex
@@ -352,7 +368,27 @@
         display: none
     .visible-col
         display: block
+    .footer-border-right
+        border-right: none
 @media screen and ( max-width: 576px )
+    .menu
+        &-firstb
+            padding-top: 20px
+            padding-bottom: 20px
+            width: 100%
+            display: flex
+            justify-content: space-between
+    .section
+        padding-top: 60px
+        padding-bottom: 60px
+    .container
+        adding-right: 10px
+        padding-left: 10px
+        // max-width: 450px
+        &-custom
+            padding-right: 10px
+            padding-left: 10px
+            // max-width: 450px
     .hide-col-sm
         display: none
     .firstb
@@ -378,8 +414,8 @@
             justify-content: center
             a
                 margin: auto
-    .container-custom
-        max-width: 540px
+    // .container-custom
+    //     max-width: 540px
     .visible-col
         display: block
     
@@ -465,8 +501,8 @@
             
             
     .advantages
-        padding-top: 60px
-        padding-bottom: 60px
+        // padding-top: 60px
+        // padding-bottom: 60px
         &-text 
             text-align: left
             // margin-left: 15px
@@ -478,13 +514,13 @@
                 text-align: left
                 margin-bottom: 32px
         &-card
-            height: 90px
+            height: 56px
             &-content
                 display: flex
                 padding: 0
                 min-height: 96px
                 &-text
-                    margin-top: 10px
+                    margin-top: -33px
                     display: flex
                     align-items: center
                 &-number
@@ -493,16 +529,18 @@
                     margin-right: 20px
                     &::after
                         width: 60px
+                        top: 70px
+                        height: 1px
 
     .padding-none-col
         padding: 0px
     
     .about
-        padding-top: 60px
-        padding-bottom: 60px
+        // padding-top: 60px
+        // padding-bottom: 60px
         &-text
             text-align: left
-            margin-left: 15px
+            margin-left: 10px
             font-size: 16px
             margin-bottom: 12px
         &-content
@@ -521,8 +559,8 @@
             margin-bottom: 40px
             margin-left: 15px
     .news
-        padding-top: 60px
-        padding-bottom: 60px
+        // padding-top: 60px
+        // padding-bottom: 60px
         &-text
             text-align: left
             margin-left: 0px
@@ -609,8 +647,8 @@
         content: none
 
     .locations
-        padding-top: 60px
-        padding-bottom: 60px
+        // padding-top: 60px
+        // padding-bottom: 30px
         &-text
             text-align: left
             font-size: 16px
@@ -624,13 +662,16 @@
                 font-size: 16px
             &-number
                 font-size: 36px
+            &-content
+                margin-bottom: 32px
     
     .form
         &-content 
-            padding-left: 15px
+            padding-left: 10px
             padding-right: 0
-            padding-top: 60px
-            padding-bottom: 60px
+            padding-top: 0
+            // padding-top: 60px
+            // padding-bottom: 60px
             &-title
                 text-align: left
                 font-size: 18px
@@ -653,9 +694,9 @@
         padding-bottom: 40px
         &-air
             &-right
-                padding-right: 15px
+                padding-right: 10px
             &-left 
-                padding-left: 15px
+                padding-left: 10px
             &-top
                 padding-top: 20px
             &-bottom
@@ -669,6 +710,9 @@
     .footer-card-item
         font-size: 12px
         color: #ffffffa9
+    .form-button
+        display: flex
+        justify-content: space-between  
 @media screen and ( max-width: 400px )
     .news-all
         width: 100%

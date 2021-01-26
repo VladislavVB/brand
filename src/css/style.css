@@ -390,6 +390,11 @@ button:focus {
   outline: none;
 }
 
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 @font-face {
   font-family: 'Museo Sans Cyrl 300';
   src: url("../fonts/MuseoSans/MuseoSansCyrl-300.woff2") format("woff2"), url("../fonts/MuseoSans/MuseoSansCyrl-300.woff") format("woff");
@@ -483,7 +488,6 @@ button:focus {
 }
 
 .header-buttons {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -514,6 +518,8 @@ button:focus {
   letter-spacing: 1.3px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .header-button:hover {
@@ -973,11 +979,6 @@ ul.nav-burg-serv li a.burger-services-item {
   opacity: 1;
 }
 
-.services {
-  padding-top: 125px;
-  padding-bottom: 125px;
-}
-
 .services-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1033,6 +1034,14 @@ ul.nav-burg-serv li a.burger-services-item {
   height: 100%;
 }
 
+.services-card-link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
 .services-card-img {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1043,6 +1052,7 @@ ul.nav-burg-serv li a.burger-services-item {
 }
 
 .services-card-content {
+  position: relative;
   padding: 40px;
   border: 1px solid #ffb000;
   -webkit-transition: 0.5s;
@@ -1084,7 +1094,7 @@ ul.nav-burg-serv li a.burger-services-item {
 }
 
 .services-card-icon {
-  background-color: #fff7e5;
+  background-color: #fff2d4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1121,11 +1131,6 @@ ul.nav-burg-serv li a.burger-services-item {
 
 .services-card-more:hover path {
   fill: #ffffff;
-}
-
-.advantages {
-  padding-top: 125px;
-  padding-bottom: 125px;
 }
 
 .advantages-content {
@@ -1178,8 +1183,9 @@ ul.nav-burg-serv li a.burger-services-item {
 }
 
 .advantages-card-content {
-  padding: 40px;
+  padding-left: 40px;
   width: 100%;
+  height: 100%;
 }
 
 .advantages-card-content img {
@@ -1187,7 +1193,7 @@ ul.nav-burg-serv li a.burger-services-item {
 }
 
 .advantages-card-content-number {
-  color: #fff7e5;
+  color: #fff2d4;
   font-family: 'Rubik', sans-serif;
   font-size: 62px;
   position: relative;
@@ -1197,7 +1203,7 @@ ul.nav-burg-serv li a.burger-services-item {
   position: absolute;
   content: '';
   width: 100px;
-  height: 3px;
+  height: 2px;
   background-color: #ffb000;
   color: #ffb000;
   bottom: 0px;
@@ -1259,11 +1265,6 @@ ul.nav-burg-serv li a.burger-services-item {
 
 .advantages-border-bottom {
   border-bottom: 1px solid #e6e6e6;
-}
-
-.about {
-  padding-top: 125px;
-  padding-bottom: 125px;
 }
 
 .about-content {
@@ -1334,10 +1335,6 @@ ul.nav-burg-serv li a.burger-services-item {
   width: 100%;
 }
 
-.slide {
-  padding-bottom: 125px;
-}
-
 .slide-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1386,6 +1383,11 @@ ul.nav-burg-serv li a.burger-services-item {
   opacity: 0;
   font-family: 'Museo Sans Cyrl 500', sans-serif;
   font-size: 18px;
+}
+
+.slide-container {
+  position: relative;
+  margin: auto;
 }
 
 .slide-title {
@@ -1449,10 +1451,6 @@ ul.nav-burg-serv li a.burger-services-item {
 
 .swiper-button-prev::after {
   display: none;
-}
-
-.news {
-  padding-bottom: 125px;
 }
 
 .news-content {
@@ -1675,8 +1673,6 @@ ul.nav-burg-serv li a.burger-services-item {
 }
 
 .locations {
-  padding-top: 125px;
-  padding-bottom: 125px;
   background: url("../img/locations/map.png") top center/contain no-repeat;
 }
 
@@ -1743,6 +1739,10 @@ ul.nav-burg-serv li a.burger-services-item {
   font-family: 'Museo Sans Cyrl 500', sans-serif;
   font-size: 24px;
   color: #1e1e1e;
+}
+
+.form {
+  padding-bottom: 0px;
 }
 
 .form-content {
@@ -1887,11 +1887,11 @@ ul.nav-burg-serv li a.burger-services-item {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   margin-left: 10px;
-  color: #ffffff;
+  color: #d2d2d2;
 }
 
 .footer-icon:hover {
-  color: #ffffff;
+  color: #d2d2d2;
 }
 
 .footer-items {
@@ -1959,11 +1959,11 @@ ul.nav-burg-serv li a.burger-services-item {
   display: -ms-flexbox;
   display: flex;
   margin-top: 15px;
-  color: #d6d6d6;
+  color: #d2d2d2;
 }
 
 .footer-card-item:hover {
-  color: #d6d6d6;
+  color: #d2d2d2;
 }
 
 .footer-card-input {
@@ -1978,13 +1978,13 @@ ul.nav-burg-serv li a.burger-services-item {
 }
 
 .footer-card-policy-text {
-  color: #d6d6d6;
+  color: #d2d2d2;
 }
 
 .footer-card-policy-text a {
   font-family: 'Museo Sans Cyrl 700', sans-serif;
   text-decoration: underline;
-  color: #d6d6d6;
+  color: #d2d2d2;
 }
 
 .footer-card-policy-text a:hover {
@@ -2145,6 +2145,16 @@ ul.nav-burg-serv li a.burger-services-item {
 }
 
 @media screen and (max-width: 1024px) {
+  .about {
+    padding-bottom: 60px;
+  }
+  .news {
+    padding-top: 60px;
+  }
+  .menu-firstb {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
   .header-content {
     max-width: 400px;
   }
@@ -2156,12 +2166,15 @@ ul.nav-burg-serv li a.burger-services-item {
     text-align: center;
     width: 100%;
     right: 0;
+    top: 160px;
   }
   .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
     left: 40%;
+    top: 173px;
   }
   .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
     right: 40%;
+    top: 173px;
   }
   .news-all {
     width: 100%;
@@ -2331,9 +2344,10 @@ ul.nav-burg-serv li a.burger-services-item {
   }
   .slide-title {
     margin: auto;
-    margin-top: 120px;
     max-width: 1000px;
+    min-width: 100px;
     text-align: center;
+    margin-top: 60px;
   }
   .slide-content-left {
     display: none;
@@ -2486,19 +2500,20 @@ ul.nav-burg-serv li a.burger-services-item {
   .hide-col {
     display: none;
   }
-  .menu-firstb {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
   .header-content img {
     max-height: 50vh;
+  }
+  .brand-card-img-width {
+    max-width: 150px !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .brand-border-right-none::before {
+    content: none;
+  }
+  .brand-border-left-none::after {
+    content: none;
   }
 }
 
@@ -2625,9 +2640,35 @@ ul.nav-burg-serv li a.burger-services-item {
   .visible-col {
     display: block;
   }
+  .footer-border-right {
+    border-right: none;
+  }
 }
 
 @media screen and (max-width: 576px) {
+  .menu-firstb {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .container {
+    adding-right: 10px;
+    padding-left: 10px;
+  }
+  .container-custom {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
   .hide-col-sm {
     display: none;
   }
@@ -2664,9 +2705,6 @@ ul.nav-burg-serv li a.burger-services-item {
   }
   .news-all-sm a {
     margin: auto;
-  }
-  .container-custom {
-    max-width: 540px;
   }
   .visible-col {
     display: block;
@@ -2775,10 +2813,6 @@ ul.nav-burg-serv li a.burger-services-item {
   .none-pselem::after {
     content: none;
   }
-  .advantages {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
   .advantages-text {
     text-align: left;
     font-size: 16px;
@@ -2790,7 +2824,7 @@ ul.nav-burg-serv li a.burger-services-item {
     margin-bottom: 32px;
   }
   .advantages-card {
-    height: 90px;
+    height: 56px;
   }
   .advantages-card-content {
     display: -webkit-box;
@@ -2800,7 +2834,7 @@ ul.nav-burg-serv li a.burger-services-item {
     min-height: 96px;
   }
   .advantages-card-content-text {
-    margin-top: 10px;
+    margin-top: -33px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2815,17 +2849,15 @@ ul.nav-burg-serv li a.burger-services-item {
   }
   .advantages-card-content-number::after {
     width: 60px;
+    top: 70px;
+    height: 1px;
   }
   .padding-none-col {
     padding: 0px;
   }
-  .about {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
   .about-text {
     text-align: left;
-    margin-left: 15px;
+    margin-left: 10px;
     font-size: 16px;
     margin-bottom: 12px;
   }
@@ -2843,10 +2875,6 @@ ul.nav-burg-serv li a.burger-services-item {
     text-align: left;
     margin-bottom: 40px;
     margin-left: 15px;
-  }
-  .news {
-    padding-top: 60px;
-    padding-bottom: 60px;
   }
   .news-text {
     text-align: left;
@@ -2977,10 +3005,6 @@ ul.nav-burg-serv li a.burger-services-item {
   .brand-border-right::before {
     content: none;
   }
-  .locations {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
   .locations-text {
     text-align: left;
     font-size: 16px;
@@ -2996,11 +3020,13 @@ ul.nav-burg-serv li a.burger-services-item {
   .locations-card-number {
     font-size: 36px;
   }
+  .locations-card-content {
+    margin-bottom: 32px;
+  }
   .form-content {
-    padding-left: 15px;
+    padding-left: 10px;
     padding-right: 0;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 0;
   }
   .form-content-title {
     text-align: left;
@@ -3033,10 +3059,10 @@ ul.nav-burg-serv li a.burger-services-item {
     padding-bottom: 40px;
   }
   .footer-air-right {
-    padding-right: 15px;
+    padding-right: 10px;
   }
   .footer-air-left {
-    padding-left: 15px;
+    padding-left: 10px;
   }
   .footer-air-top {
     padding-top: 20px;
@@ -3056,6 +3082,14 @@ ul.nav-burg-serv li a.burger-services-item {
   .footer-card-item {
     font-size: 12px;
     color: #ffffffa9;
+  }
+  .form-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
