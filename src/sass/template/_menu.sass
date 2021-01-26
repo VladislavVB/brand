@@ -59,7 +59,12 @@ ul.nav-burg-serv li a.burger-services-item
     // path
     //     fill: $black
 
-        
+.menu .firstb-lang:hover svg path 
+    color: $yellow
+    transition: 0.2s
+    fill: #ffb000
+    stroke: #ffb000
+   
 
 .firstb
     &-menu
@@ -95,20 +100,30 @@ ul.nav-burg-serv li a.burger-services-item
         background-color: transparent
         border: none
         outline: none
-        position: relative
+        position: relative 
+        transition: 0.2s
         &:hover
-            border: none
-            outline: none
+            // margin-top: 100px
+            transition: 0.2s
+            
+            // svg
+            //     margin-right: 20px
+            //     margin-left: 10px
+            //     transition: 0.5s
+            //     fill: $yellow !important
+            //     stroke: $yellow !important
+                // fill: $yellow
+                // stroke: $yellow
         &-text 
             margin-top: 5px
         svg
             margin-right: 20px
             margin-left: 10px
             transition: 0.5s
-            &:hover
-                transition: 0.5s
-                fill: $yellow
-                stroke: $yellow
+            // &:hover
+            //     transition: 0.5s
+            //     fill: $yellow
+            //     stroke: $yellow
 //меню языка
 .menu
     transition: 0.5s
@@ -134,11 +149,11 @@ ul.nav-burg-serv li a.burger-services-item
             font-family: 'Museo Sans Cyrl 700', sans-serif
             font-size: 18px
             padding-bottom: 20px
-            color: $yellow !important
+            color: $yellow 
             &:hover
                 cursor: pointer
             &-active
-                color: $black !important
+                color: $black 
 .menu-lang-active
     top: 70px
     transition: 0.3s
@@ -295,6 +310,6 @@ ul.nav-burg-serv li a.burger-services-item
         path
             fill: $black 
             stroke: $black 
-
+    
     .menu-secondb
         opacity: 1

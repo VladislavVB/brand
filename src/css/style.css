@@ -613,6 +613,14 @@ ul.nav-burg-serv li a.burger-services-item {
   fill: #ffb000;
 }
 
+.menu .firstb-lang:hover svg path {
+  color: #ffb000;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  fill: #ffb000;
+  stroke: #ffb000;
+}
+
 .firstb-menu {
   color: #ffffff;
   font-family: 'Museo Sans Cyrl 300', sans-serif;
@@ -671,11 +679,13 @@ ul.nav-burg-serv li a.burger-services-item {
   border: none;
   outline: none;
   position: relative;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .firstb-lang:hover {
-  border: none;
-  outline: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .firstb-lang-text {
@@ -687,13 +697,6 @@ ul.nav-burg-serv li a.burger-services-item {
   margin-left: 10px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-}
-
-.firstb-lang svg:hover {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  fill: #ffb000;
-  stroke: #ffb000;
 }
 
 .menu {
@@ -729,7 +732,7 @@ ul.nav-burg-serv li a.burger-services-item {
   font-family: 'Museo Sans Cyrl 700', sans-serif;
   font-size: 18px;
   padding-bottom: 20px;
-  color: #ffb000 !important;
+  color: #ffb000;
 }
 
 .menu-lang-item:hover {
@@ -737,7 +740,7 @@ ul.nav-burg-serv li a.burger-services-item {
 }
 
 .menu-lang-item-active {
-  color: #1e1e1e !important;
+  color: #1e1e1e;
 }
 
 .menu-lang-active {
@@ -1457,6 +1460,7 @@ ul.nav-burg-serv li a.burger-services-item {
 }
 
 .slide-item {
+  margin: auto;
   margin-right: 15px;
   margin-bottom: 30px;
 }
@@ -1678,7 +1682,7 @@ ul.nav-burg-serv li a.burger-services-item {
   display: flex;
 }
 
-.brand-card-img img {
+.brand-card-img-uzor img {
   width: 100%;
 }
 
@@ -2524,9 +2528,6 @@ ul.nav-burg-serv li a.burger-services-item {
     font-size: 24px;
     text-align: center;
   }
-  .brand-card-content img {
-    width: 100%;
-  }
   .brand-card-img {
     width: 70px;
     display: -webkit-box;
@@ -2538,9 +2539,6 @@ ul.nav-burg-serv li a.burger-services-item {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-  .brand-card-img img {
-    width: 100px;
   }
   .firstb-lang {
     margin-left: 20px;
@@ -2769,12 +2767,12 @@ ul.nav-burg-serv li a.burger-services-item {
     padding-bottom: 60px;
   }
   .container {
-    adding-right: 10px;
-    padding-left: 10px;
+    adding-right: 15px;
+    padding-left: 15px;
   }
   .container-custom {
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
   }
   .hide-col-sm {
     display: none;
@@ -3157,9 +3155,6 @@ ul.nav-burg-serv li a.burger-services-item {
   .brand-card-title {
     text-align: left;
     font-size: 18px;
-  }
-  .brand-card-img img {
-    width: 70px;
   }
   .brand-border-left::after {
     height: 110px;
