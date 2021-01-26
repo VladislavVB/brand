@@ -1182,6 +1182,70 @@ ul.nav-burg-serv li a.burger-services-item {
   height: 100%;
 }
 
+.advantages-card-line-one {
+  position: relative;
+}
+
+.advantages-card-line-one::after {
+  position: absolute;
+  content: '';
+  width: 100px;
+  height: 3px;
+  background-color: #ffb000;
+  color: #ffb000;
+  bottom: 0px;
+  left: 0px;
+  border-radius: 10px;
+}
+
+.advantages-card-line-two {
+  position: relative;
+}
+
+.advantages-card-line-two::after {
+  position: absolute;
+  content: '';
+  width: 100px;
+  height: 3px;
+  background-color: #ffb000;
+  color: #ffb000;
+  bottom: 0px;
+  left: 0px;
+  border-radius: 10px;
+}
+
+.advantages-card-line-three {
+  position: relative;
+}
+
+.advantages-card-line-three::after {
+  position: absolute;
+  content: '';
+  width: 100px;
+  height: 3px;
+  background-color: #ffb000;
+  color: #ffb000;
+  bottom: 0px;
+  left: 0px;
+  border-radius: 10px;
+}
+
+.advantages-card-line-four {
+  position: relative;
+}
+
+.advantages-card-line-four::after {
+  position: absolute;
+  content: '';
+  width: 100px;
+  height: 3px;
+  background-color: #ffb000;
+  color: #ffb000;
+  bottom: 0px;
+  left: 0px;
+  border-radius: 10px;
+}
+
 .advantages-card-content {
   padding-left: 40px;
   width: 100%;
@@ -1196,19 +1260,6 @@ ul.nav-burg-serv li a.burger-services-item {
   color: #fff2d4;
   font-family: 'Rubik', sans-serif;
   font-size: 62px;
-  position: relative;
-}
-
-.advantages-card-content-number::after {
-  position: absolute;
-  content: '';
-  width: 100px;
-  height: 2px;
-  background-color: #ffb000;
-  color: #ffb000;
-  bottom: 0px;
-  left: 0px;
-  border-radius: 10px;
 }
 
 .advantages-card-content-text {
@@ -2515,6 +2566,62 @@ ul.nav-burg-serv li a.burger-services-item {
   .brand-border-left-none::after {
     content: none;
   }
+  .advantages-card-line-one {
+    position: relative;
+  }
+  .advantages-card-line-one::after {
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 2px;
+    background-color: #ffb000;
+    color: #ffb000;
+    bottom: 0px;
+    left: 0px;
+    border-radius: 10px;
+  }
+  .advantages-card-line-two {
+    position: relative;
+  }
+  .advantages-card-line-two::after {
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 2px;
+    background-color: #ffb000;
+    color: #ffb000;
+    bottom: 0px;
+    left: 0px;
+    border-radius: 10px;
+  }
+  .advantages-card-line-three {
+    position: relative;
+  }
+  .advantages-card-line-three::after {
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 2px;
+    background-color: #ffb000;
+    color: #ffb000;
+    bottom: 0px;
+    left: 0px;
+    border-radius: 10px;
+  }
+  .advantages-card-line-four {
+    position: relative;
+  }
+  .advantages-card-line-four::after {
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 2px;
+    background-color: #ffb000;
+    color: #ffb000;
+    bottom: 0px;
+    left: 0px;
+    border-radius: 10px;
+  }
 }
 
 @media screen and (max-width: 840px) {
@@ -2847,10 +2954,65 @@ ul.nav-burg-serv li a.burger-services-item {
     color: #fdde97;
     margin-right: 20px;
   }
-  .advantages-card-content-number::after {
+  .advantages-card-line-one {
+    position: relative;
+  }
+  .advantages-card-line-one::after {
+    position: absolute;
+    content: '';
     width: 60px;
-    top: 70px;
     height: 1px;
+    background-color: #ffb000;
+    color: #ffb000;
+    bottom: 0px;
+    left: 0px;
+    border-radius: 10px;
+    top: 70px;
+  }
+  .advantages-card-line-two {
+    position: relative;
+  }
+  .advantages-card-line-two::after {
+    position: absolute;
+    content: '';
+    width: 80px;
+    height: 1px;
+    background-color: #ffb000;
+    color: #ffb000;
+    bottom: 0px;
+    left: 0px;
+    border-radius: 10px;
+    top: 70px;
+  }
+  .advantages-card-line-three {
+    position: relative;
+  }
+  .advantages-card-line-three::after {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 1px;
+    background-color: #ffb000;
+    color: #ffb000;
+    bottom: 0px;
+    left: 0px;
+    border-radius: 10px;
+    top: 70px;
+  }
+  .advantages-card-line-four {
+    position: relative;
+  }
+  .advantages-card-line-four::after {
+    position: absolute;
+    content: '';
+    width: 120px;
+    height: 1px;
+    background-color: #ffb000;
+    color: #ffb000;
+    bottom: 0px;
+    left: 0px;
+    border-radius: 10px;
+    top: 70px;
   }
   .padding-none-col {
     padding: 0px;

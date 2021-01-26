@@ -293,6 +293,57 @@
         content: none
     .brand-border-left-none::after
         content: none
+    .advantages
+        &-card
+            &-line
+                &-one
+                    position: relative
+                    &::after
+                        position: absolute
+                        content: ''
+                        width: 60px
+                        height: 2px
+                        background-color: $yellow
+                        color: $yellow
+                        bottom: 0px
+                        left: 0px
+                        border-radius: 10px
+                &-two
+                    position: relative
+                    &::after
+                        position: absolute
+                        content: ''
+                        width: 60px
+                        height: 2px
+                        background-color: $yellow
+                        color: $yellow
+                        bottom: 0px
+                        left: 0px
+                        border-radius: 10px
+                &-three
+                    position: relative
+                    &::after
+                        position: absolute
+                        content: ''
+                        width: 60px
+                        height: 2px
+                        background-color: $yellow
+                        color: $yellow
+                        bottom: 0px
+                        left: 0px
+                        border-radius: 10px
+                &-four
+                    position: relative
+                    &::after
+                        position: absolute
+                        content: ''
+                        width: 60px
+                        height: 2px
+                        background-color: $yellow
+                        color: $yellow
+                        bottom: 0px
+                        left: 0px
+                        border-radius: 10px
 @media screen and ( max-width: 840px )
     .hide-col 
         display: none
@@ -371,6 +422,7 @@
     .footer-border-right
         border-right: none
 @media screen and ( max-width: 576px )
+    
     .menu
         &-firstb
             padding-top: 20px
@@ -527,11 +579,65 @@
                     font-size: 40px
                     color: #fdde97
                     margin-right: 20px
+                    // &::after
+                    //     width: 60px
+                    //     top: 70px
+                    //     height: 1px
+    .advantages
+        &-card
+            &-line
+                &-one
+                    position: relative
                     &::after
+                        position: absolute
+                        content: ''
                         width: 60px
-                        top: 70px
                         height: 1px
-
+                        background-color: $yellow
+                        color: $yellow
+                        bottom: 0px
+                        left: 0px
+                        border-radius: 10px
+                        top: 70px
+                &-two
+                    position: relative
+                    &::after
+                        position: absolute
+                        content: ''
+                        width: 80px
+                        height: 1px
+                        background-color: $yellow
+                        color: $yellow
+                        bottom: 0px
+                        left: 0px
+                        border-radius: 10px
+                        top: 70px
+                &-three
+                    position: relative
+                    &::after
+                        position: absolute
+                        content: ''
+                        width: 100px
+                        height: 1px
+                        background-color: $yellow
+                        color: $yellow
+                        bottom: 0px
+                        left: 0px
+                        border-radius: 10px
+                        top: 70px
+                &-four
+                    position: relative
+                    &::after
+                        position: absolute
+                        content: ''
+                        width: 120px
+                        height: 1px
+                        background-color: $yellow
+                        color: $yellow
+                        bottom: 0px
+                        left: 0px
+                        border-radius: 10px
+                        top: 70px
     .padding-none-col
         padding: 0px
     
