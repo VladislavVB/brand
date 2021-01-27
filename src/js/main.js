@@ -4,10 +4,8 @@ const navigationMenu = document.querySelector('.burger-menu');
 const navigationMenuCross = document.querySelector('.burger-btn')
 const navigationMenuHide = document.querySelector('.menu-hidden')
 buttomMobileMenu.addEventListener('click', () => {
-    console.log(buttomMobileMenu);
     navigationMenuHide.classList.toggle('burger-menu-hide')
     navigationMenuCross.classList.toggle('burger-menu-cross')
-    console.log(1);
     navigationMenu.classList.toggle('activebur');
 })
 // язык lang-vector navigationMenuLang.classList.toggle('rotate-lang'); 
@@ -83,3 +81,4 @@ for (let anchor of anchors) {
     })
   })
 }
+

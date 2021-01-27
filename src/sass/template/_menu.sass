@@ -13,10 +13,17 @@
     &-content
         display: flex
         justify-content: space-between
+        position: relative
     &-firstb
         display: flex
+        padding-top: 20px
+        padding-bottom: 20px
     &-secondb
         opacity: 0
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
     &-thirdb
         display: flex
         align-items: center
@@ -125,12 +132,18 @@ ul.nav-burg-serv li a.burger-services-item
             //     fill: $yellow
             //     stroke: $yellow
 //меню языка
+.menu-big-logo
+    // margin: auto
+    // margin-bottom: 0px
 .menu
     transition: 0.5s
     color: $white
     svg, path
         fill: $white 
-        // stroke: $white
+    //     // stroke: $white
+    // &-hidden
+    //     svg, path
+    //         fill: $black
     &-lang
         transition: 0.3s
         opacity: 0
@@ -298,6 +311,9 @@ ul.nav-burg-serv li a.burger-services-item
     border-bottom: 1px solid #f6f6f6
     color: $black 
     transition: 0.5s
+    .menu-hidden
+        svg, path, rect
+            fill: $black !important
     
     span
         color: $black 
@@ -310,7 +326,7 @@ ul.nav-burg-serv li a.burger-services-item
         // stroke: $black 
         path
             fill: $black 
-            // stroke: $black 
+            
     
     .menu-secondb
         opacity: 1

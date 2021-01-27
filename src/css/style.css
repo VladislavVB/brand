@@ -483,8 +483,8 @@ button:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100%;
   z-index: 2;
+  margin-bottom: 153px;
 }
 
 .header-buttons {
@@ -550,16 +550,24 @@ button:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
 }
 
 .menu-firstb {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .menu-secondb {
   opacity: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .menu-thirdb {
@@ -661,7 +669,7 @@ ul.nav-burg-serv li a.burger-services-item {
 }
 
 .firstb-lang {
-  margin-left: 30px;
+  margin-left: 4px;
   color: #ffffff;
   font-family: 'Museo Sans Cyrl 300', sans-serif;
   font-size: 18px;
@@ -950,6 +958,10 @@ ul.nav-burg-serv li a.burger-services-item {
   transition: 0.5s;
 }
 
+.body-menu-active .menu-hidden svg, .body-menu-active .menu-hidden path, .body-menu-active .menu-hidden rect {
+  fill: #1e1e1e !important;
+}
+
 .body-menu-active span {
   color: #1e1e1e;
 }
@@ -1029,7 +1041,6 @@ ul.nav-burg-serv li a.burger-services-item {
 .services-card {
   padding-top: 15px;
   padding-bottom: 15px;
-  height: 100%;
 }
 
 .services-card-link {
@@ -1050,6 +1061,7 @@ ul.nav-burg-serv li a.burger-services-item {
 }
 
 .services-card-content {
+  height: 100%;
   position: relative;
   padding: 40px;
   border: 1px solid #ffb000;
