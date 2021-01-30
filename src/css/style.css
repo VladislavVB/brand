@@ -690,17 +690,13 @@ ul.nav-burg-serv li a.burger-services-item {
 .firstb-lang:hover {
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  color: #ffb000;
 }
 
 .firstb-lang-text {
   margin-top: 5px;
-}
-
-.firstb-lang svg {
   margin-right: 20px;
-  margin-left: 10px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  margin-left: 20px;
 }
 
 .menu {
@@ -747,7 +743,7 @@ ul.nav-burg-serv li a.burger-services-item {
 }
 
 .menu-lang-active {
-  top: 70px;
+  top: 58px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   opacity: 1;
@@ -756,9 +752,19 @@ ul.nav-burg-serv li a.burger-services-item {
 .lang-vector {
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
+  position: absolute;
+  right: -9px;
+  top: 2px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
-.lang-vector-active {
+.rotate-lang {
+  position: absolute;
+  right: -12px;
+  top: 5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
@@ -936,14 +942,6 @@ ul.nav-burg-serv li a.burger-services-item {
 
 .burger-border-bottom-none {
   border-bottom: 0px solid #000;
-}
-
-.rotate-lang {
-  margin-top: 15px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
 }
 
 .burger-menu-cross {

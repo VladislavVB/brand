@@ -8,6 +8,7 @@ buttomMobileMenu.addEventListener('click', () => {
     navigationMenuCross.classList.toggle('burger-menu-cross')
     navigationMenu.classList.toggle('activebur');
 })
+
 // язык lang-vector navigationMenuLang.classList.toggle('rotate-lang'); 
 document.onclick = function (event){
     
