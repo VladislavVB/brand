@@ -1,8 +1,8 @@
 .container
-    margin: auto
-    max-width: 1250px
-    padding-left: 15px
-    padding-right: 15px
+    // margin: auto
+    // max-width: 1250px
+    // padding-left: 15px
+    // padding-right: 15px
     &-custom
         margin: auto
         max-width: 1440px
@@ -10,6 +10,7 @@
         padding-right: 15px
 a
     text-decoration: none
+    cursor: pointer
     &:hover
         text-decoration: none
         cursor: pointer
@@ -32,3 +33,40 @@ button
 .section
     padding-top: 120px
     padding-bottom: 120px
+.page
+    &-title
+        padding-top: 120px
+        padding-bottom: 120px
+        font-family: 'Museo Sans Cyrl 700'
+        font-size: 96px
+        text-align: center
+        color: $black
+        span
+            color: $yellow
+        &-main
+            position: relative
+        &-img
+            max-height: 420px
+            width: 100%
+            img
+                width: 100%
+                object-fit: cover
+    &-road
+        position: absolute
+        font-family: 'Museo Sans Cyrl 500'
+        color: rgba(black, 0.3 )    
+        top: 60px
+    &-content
+        display: flex
+        // justify-content: space-between
+        &-title
+            text-transform: uppercase
+            color: $black
+            font-family: 'Museo Sans Cyrl 500'
+            font-size: 18px
+        &-left
+            min-width: 180px
+
+.padding
+    &-none
+        padding: 0

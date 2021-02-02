@@ -341,13 +341,6 @@ template {
   display: none;
 }
 
-.container {
-  margin: auto;
-  max-width: 1250px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
 .container-custom {
   margin: auto;
   max-width: 1440px;
@@ -357,6 +350,7 @@ template {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 a:hover {
@@ -393,6 +387,62 @@ button:focus {
 .section {
   padding-top: 120px;
   padding-bottom: 120px;
+}
+
+.page-title {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  font-family: 'Museo Sans Cyrl 700';
+  font-size: 96px;
+  text-align: center;
+  color: #1e1e1e;
+}
+
+.page-title span {
+  color: #ffb000;
+}
+
+.page-title-main {
+  position: relative;
+}
+
+.page-title-img {
+  max-height: 420px;
+  width: 100%;
+}
+
+.page-title-img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.page-road {
+  position: absolute;
+  font-family: 'Museo Sans Cyrl 500';
+  color: rgba(0, 0, 0, 0.3);
+  top: 60px;
+}
+
+.page-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.page-content-title {
+  text-transform: uppercase;
+  color: #1e1e1e;
+  font-family: 'Museo Sans Cyrl 500';
+  font-size: 18px;
+}
+
+.page-content-left {
+  min-width: 180px;
+}
+
+.padding-none {
+  padding: 0;
 }
 
 @font-face {
@@ -1336,6 +1386,101 @@ ul.nav-burg-serv li a.burger-services-item {
   border-bottom: 1px solid #e6e6e6;
 }
 
+.advantage-border-top {
+  border-top: 1px solid rgba(30, 30, 30, 0.3);
+  padding-top: 60px;
+}
+
+.advantage-img {
+  max-height: 584px;
+  max-width: 430px;
+}
+
+.advantage-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.advantage-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+.advantage-title {
+  color: #1e1e1e;
+  font-family: 'Museo Sans Cyrl 700';
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.advantage-text {
+  color: #1e1e1e;
+  font-family: 'Museo Sans Cyrl 300';
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 0;
+}
+
+.advantage-text-first {
+  margin-bottom: 60px;
+}
+
+.advantage-cards {
+  padding-top: 60px;
+}
+
+.advantage-card {
+  padding: 40px;
+}
+
+.advantage-card-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+  background-color: rgba(255, 176, 0, 0.1);
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.advantage-card-border-top {
+  border-top: 1px solid rgba(30, 30, 30, 0.2);
+}
+
+.advantage-card-border-right {
+  position: relative;
+}
+
+.advantage-card-border-right::after {
+  position: absolute;
+  content: '';
+  height: 198px;
+  width: 1px;
+  background-color: rgba(30, 30, 30, 0.2);
+  color: rgba(30, 30, 30, 0.2);
+  right: -15px;
+  bottom: 20px;
+}
+
 .about-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1402,6 +1547,50 @@ ul.nav-burg-serv li a.burger-services-item {
 
 .about-img img {
   width: 100%;
+}
+
+.leadership-card {
+  padding: 15px;
+}
+
+.leadership-card-img {
+  max-width: 370px;
+  max-height: 390px;
+}
+
+.leadership-card-img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.leadership-card-text {
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.leadership-card-text::after {
+  position: absolute;
+  content: '';
+  width: 34px;
+  height: 2px;
+  background-color: #ffb000;
+  left: -50px;
+  top: 17px;
+}
+
+.leadership-card-text-name {
+  font-family: 'Museo Sans Cyrl 700', sans-serif;
+  font-size: 24px;
+  color: #1e1e1e;
+}
+
+.leadership-card-text-description {
+  font-family: 'Museo Sans Cyrl 500', sans-serif;
+  font-size: 16px;
+  color: rgba(30, 30, 30, 0.5);
 }
 
 .slide-content {
@@ -1742,6 +1931,124 @@ ul.nav-burg-serv li a.burger-services-item {
   border-bottom: 1px solid #e6e6e6;
 }
 
+.current {
+  padding-top: 0;
+}
+
+.current-card-title {
+  margin-bottom: 40px;
+}
+
+.current-card-title-text {
+  padding: 37px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.current-card-title-description {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: url("../img/news/bg.png") center center no-repeat;
+}
+
+.current-card-text {
+  color: #ffffff;
+  font-family: 'Museo Sans Cyrl 700', sans-serif;
+  font-size: 32px;
+  line-height: 44.8px;
+  max-width: 760px;
+}
+
+.current-card-text-time {
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 20px;
+  font-family: 'Museo Sans Cyrl 300', sans-serif;
+  font-size: 16px;
+}
+
+.current-card-text-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 84px;
+}
+
+.current-card-text-data-text {
+  color: #ffb000;
+}
+
+.current-card-text-data-vector {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 20.5px;
+}
+
+.current-card-sm {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.current-card-sm-img {
+  margin-bottom: 20px;
+  max-width: 390px;
+  max-height: 260px;
+}
+
+.current-card-sm-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.current-card-sm-time {
+  margin-bottom: 10px;
+  font-family: 'Museo Sans Cyrl 300', sans-serif;
+  font-size: 16px;
+  color: rgba(30, 30, 30, 0.5);
+}
+
+.current-card-sm-description {
+  margin-bottom: 21px;
+  font-family: 'Museo Sans Cyrl 300', sans-serif;
+  color: #1e1e1e;
+}
+
+.current-card-sm-date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #ffb000;
+  font-family: 'Museo Sans Cyrl 500', sans-serif;
+}
+
+.current-card-sm-vector {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.current-card-sm-border-bottom {
+  border-bottom: 1px solid rgba(30, 30, 30, 0.1);
+}
+
+.current-card-sm-border-top {
+  border-top: 1px solid rgba(30, 30, 30, 0.1);
+}
+
 .locations {
   background: url("../img/locations/map.png") top center/contain no-repeat;
 }
@@ -1811,8 +2118,51 @@ ul.nav-burg-serv li a.burger-services-item {
   color: #1e1e1e;
 }
 
+.locations-cards {
+  padding-bottom: 115px;
+}
+
+.statistics {
+  padding-top: 80px;
+  background: url("../img/locations/map-page.png") center 15% no-repeat;
+  background-size: 75%;
+}
+
+.countries-title {
+  font-family: 'Museo Sans Cyrl 700', sans-serif;
+  font-size: 32px;
+  color: #1e1e1e;
+  border-bottom: 1px solid rgba(30, 30, 30, 0.1);
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+.countries-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: disc;
+}
+
+.countries-list li {
+  width: 33.3%;
+  text-decoration: underline;
+  color: #ffb000;
+  font-family: 'Museo Sans Cyrl 500', sans-serif;
+  font-size: 24px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.countries-list li::hover {
+  cursor: pointer;
+}
+
 .form {
   padding-bottom: 0px;
+  padding-top: 0;
 }
 
 .form-content {
@@ -2149,6 +2499,34 @@ ul.nav-burg-serv li a.burger-services-item {
 
 .policy:checked + .policy-fake::before {
   opacity: 1;
+}
+
+.company-text {
+  color: #1e1e1e;
+  font-family: 'Museo Sans Cyrl 300';
+  font-size: 18px;
+}
+
+.company-text-air {
+  margin-bottom: 40px;
+}
+
+.contacts-img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.advantage-tab-title {
+  margin-top: 60px;
+  font-size: 24px;
+  font-family: 'Museo Sans Cyrl 300', sans-serif;
+}
+
+.advantage-tab-description {
+  margin-top: 30px;
+  font-family: 'Museo Sans Cyrl 500', sans-serif;
+  font-size: 24px;
 }
 
 @media screen and (max-width: 4000px) {

@@ -32,3 +32,36 @@
         justify-content: flex-end
         img
             width: 100%
+
+//about страница
+
+.leadership
+    &-card
+        padding: 15px
+        &-img
+            max-width: 370px
+            max-height: 390px
+            img
+                width: 100%
+                object-fit: cover
+        &-text
+            margin-top: 20px
+            margin-left: 50px
+            margin-bottom: 30px
+            position: relative
+            &::after
+                position: absolute
+                content: ''
+                width: 34px
+                height: 2px
+                background-color: $yellow
+                left: -50px
+                top: 17px
+            &-name
+                font-family: 'Museo Sans Cyrl 700', sans-serif
+                font-size: 24px
+                color: $black
+            &-description
+                font-family: 'Museo Sans Cyrl 500', sans-serif
+                font-size: 16px
+                color: rgba($black, 0.5 )
