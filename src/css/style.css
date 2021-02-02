@@ -2517,6 +2517,14 @@ ul.nav-burg-serv li a.burger-services-item {
      object-fit: cover;
 }
 
+.contact-title {
+  margin-bottom: 0;
+}
+
+.advantage {
+  padding-bottom: 0;
+}
+
 .advantage-tab-title {
   margin-top: 60px;
   font-size: 24px;
@@ -2527,6 +2535,106 @@ ul.nav-burg-serv li a.burger-services-item {
   margin-top: 30px;
   font-family: 'Museo Sans Cyrl 500', sans-serif;
   font-size: 24px;
+}
+
+.advantage-tabs {
+  padding-bottom: 60px;
+}
+
+.advantage-tabs-last {
+  padding-bottom: 0;
+}
+
+.documented {
+  padding-top: 0;
+}
+
+.documented-content {
+  border-top: 1px solid rgba(30, 30, 30, 0.1);
+  padding-top: 60px;
+}
+
+.documented-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.documented-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-bottom: 1px solid rgba(30, 30, 30, 0.1);
+  margin-bottom: 30px;
+  padding-bottom: 25px;
+}
+
+.documented-card-img {
+  margin-bottom: 20px;
+}
+
+.documented-card-title {
+  font-family: 'Museo Sans Cyrl 700', sans-serif;
+  font-size: 18px;
+  color: #1e1e1e;
+  margin-bottom: 10px;
+}
+
+.documented-card-description {
+  font-family: 'Museo Sans Cyrl 300', sans-serif;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.documented-card-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.documented-card-button-text {
+  font-family: 'Museo Sans Cyrl 500', sans-serif;
+  font-size: 18px;
+  color: #ffb000;
+}
+
+.documented-card-button-vector {
+  margin-left: 20px;
+}
+
+.documented-card-img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.documented-content-title-left {
+  font-family: 'Museo Sans Cyrl 500', sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: rgba(30, 30, 30, 0.5);
+  margin-bottom: 40px;
+}
+
+.documented-content-title-left:hover {
+  color: #ffb000;
+  text-decoration: underline;
+}
+
+.documented-content-title-left-active {
+  font-family: 'Museo Sans Cyrl 500', sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  color: #ffb000;
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 4000px) {
