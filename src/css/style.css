@@ -390,6 +390,10 @@ button:focus {
   padding-bottom: 120px;
 }
 
+.section-top-none {
+  padding-top: 0;
+}
+
 .page-title {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -1987,6 +1991,8 @@ ul.nav-burg-serv li a.burger-services-item {
 
 .current-card-text-data-text {
   color: #ffb000;
+  font-family: 'Museo Sans Cyrl 500', sans-serif;
+  font-size: 18px;
 }
 
 .current-card-text-data-vector {
@@ -2055,6 +2061,74 @@ ul.nav-burg-serv li a.burger-services-item {
 
 .current-card-sm-border-top {
   border-top: 1px solid rgba(30, 30, 30, 0.1);
+}
+
+.newscard {
+  padding-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(30, 30, 30, 0.1);
+}
+
+.newscard-time {
+  color: rgba(30, 30, 30, 0.5);
+  font-family: 'Museo Sans Cyrl 500', sans-serif;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.newscard-img {
+  max-width: 130px;
+  max-height: 169px;
+}
+
+.newscard-img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.newscard-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #ffb000;
+  font-family: 'Museo Sans Cyrl 500', sans-serif;
+  font-size: 18px;
+  background-color: transparent;
+  border: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.newscard-description {
+  max-width: 240px;
+  margin-left: 20px;
+}
+
+.newscard-text {
+  font-family: 'Museo Sans Cyrl 500', sans-serif;
+  color: #1e1e1e;
+  font-size: 16px;
+  margin-bottom: 29px;
+}
+
+.newscard-title {
+  text-transform: uppercase;
+  font-family: 'Museo Sans Cyrl 500', sans-serif;
+  font-size: 18px;
+  line-height: 21.6px;
+  color: #1e1e1e;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(30, 30, 30, 0.1);
 }
 
 .newscard-left {
@@ -2753,6 +2827,51 @@ ul.nav-burg-serv li a.burger-services-item {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.customerscard-description {
+  margin-left: 20px;
+}
+
+.customerscard-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.customerscard-button-text {
+  color: #ffb000;
+  font-family: 'Museo Sans Cyrl 500', sans-serif;
+  font-size: 18px;
+  margin-right: 20px;
+}
+
+.customerscard-img {
+  width: 40px;
+}
+
+.customerscard-img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.customerscard-title {
+  font-family: 'Museo Sans Cyrl 700', sans-serif;
+  color: #1e1e1e;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.customerscard-text {
+  font-family: 'Museo Sans Cyrl 300', sans-serif;
+  color: #1e1e1e;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 20px;
 }
 
 .tools-card-name {
