@@ -407,6 +407,13 @@ button:focus {
   position: relative;
 }
 
+.page-title-description {
+  padding-top: 60px;
+  padding-bottom: 45px;
+  font-family: 'Museo Sans Cyrl 500';
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .page-title-img {
   max-height: 420px;
   width: 100%;
@@ -2048,6 +2055,65 @@ ul.nav-burg-serv li a.burger-services-item {
 
 .current-card-sm-border-top {
   border-top: 1px solid rgba(30, 30, 30, 0.1);
+}
+
+.newscard-left {
+  opacity: 0;
+}
+
+.newscard-big-content p {
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+
+.newscard-big-title {
+  font-family: 'Museo Sans Cyrl 700', sans-serif;
+  font-size: 32px;
+  color: #1e1e1e;
+  line-height: 44.8px;
+  margin-bottom: 20px;
+}
+
+.newscard-big-title-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.newscard-big-title-description-data {
+  color: #ffb000;
+  font-family: 'Museo Sans Cyrl 500', sans-serif;
+  font-size: 18px;
+}
+
+.newscard-big-title-description-time {
+  color: rgba(30, 30, 30, 0.5);
+  font-family: 'Museo Sans Cyrl 500', sans-serif;
+  font-size: 16px;
+}
+
+.newscard-big-img {
+  margin-bottom: 20px;
+}
+
+.newscard-big-img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.newscard-big-img-src {
+  margin-bottom: 10px;
+  color: rgba(30, 30, 30, 0.5);
+}
+
+.newscard-big-img-src a {
+  color: rgba(30, 30, 30, 0.5);
+  text-decoration: none;
 }
 
 .locations {
