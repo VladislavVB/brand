@@ -385,6 +385,25 @@ button:focus {
   outline: none;
 }
 
+.button-getintouch {
+  width: 195px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffb000;
+  color: #ffffff;
+  margin: auto;
+  border: none;
+  font-family: 'Museo Sans Cyrl 500', sans-serif;
+}
+
 .section {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -2927,6 +2946,104 @@ ul.nav-burg-serv li a.burger-services-item {
   color: #1e1e1e;
   font-size: 24px;
   padding-top: 20px;
+}
+
+.serm-services-button {
+  margin-top: 60px;
+}
+
+.serm-services-card {
+  padding-bottom: 40px;
+  padding-top: 60px;
+  position: relative;
+}
+
+.serm-services-card::after {
+  position: absolute;
+  content: '';
+  background-color: #ffb000;
+  width: 80px;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+}
+
+.serm-services-card-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+  background-color: rgba(255, 176, 0, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 40px;
+}
+
+.serm-services-card-text {
+  font-family: 'Museo Sans Cyrl 300', sans-serif;
+  font-size: 18px;
+  line-height: 28.8px;
+  min-height: 56px;
+}
+
+.serm-faq-card-border-bottom {
+  border-bottom: 1px solid rgba(255, 176, 0, 0.2);
+}
+
+.serm-faq-card-trigger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top: 1px solid rgba(255, 176, 0, 0.2);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.serm-faq-card-trigger-num {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  color: #ffb000;
+  font-size: 32px;
+}
+
+.serm-faq-card-trigger-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  font-family: 'Museo Sans Cyrl 700', sans-serif;
+  font-size: 24px;
+  color: #1e1e1e;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 40px;
+}
+
+.serm-faq-card-content {
+  display: none;
+  margin-left: 76px;
+  font-family: 'Museo Sans Cyrl 300', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.serm-faq-card-active .serm-faq-card-content {
+  display: block;
+  padding-bottom: 30px;
+}
+
+.serm-faq-card-active .serm-faq-card-content .serm-faq-card-trigger {
+  padding-bottom: 0;
 }
 
 @media screen and (max-width: 4000px) {
