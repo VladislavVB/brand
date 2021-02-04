@@ -29,6 +29,111 @@
                 font-size: 18px
                 line-height: 28.8px
                 min-height: 56px
+    &-marketplace
+        &-title
+            max-width: 1070px
+        &-card
+            display: flex
+            justify-content: center
+            align-items: center
+            &::before 
+                
+                position: absolute
+                content: ''
+                height: 80px
+                width: 1px
+                background-color: rgba($black , 0.1 )
+                top: 50%
+                transform: translate(0, -50%)
+                right: 0px
+        &-content
+            &-card
+                margin: 20px
+                margin-top: 40px
+                margin-bottom: 40px
+                position: relative
+                // &:nth-child(6n)
+                img
+                    width: 100%
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    object-fit: cover
+                
+    &-process
+        &-button
+            margin-top: 60px
+        &-card
+            max-width: 350px
+            
+            &-img
+                display: flex
+                justify-content: space-between
+                margin-bottom: 40px
+            &-title
+                font-family: 'Museo Sans Cyrl 700', sans-serif  
+                font-size: 18px
+                line-height: 18px
+                margin-bottom: 20px
+            &-text
+                font-family: 'Museo Sans Cyrl 300', sans-serif  
+                font-size: 16px
+    &-distinction
+        &-text
+            font-family: 'Museo Sans Cyrl 300', sans-serif 
+            font-size: 16px
+            margin-bottom: 40px
+        &-button
+            float: left
+        &-card
+            &-yellow
+                padding: 40px
+                padding-left: 12px
+                padding-right: 12px
+            &-item
+                display: flex
+                padding-top: 30px
+                img
+                    width: 12px
+                    height: 12px
+                    margin-top: 5px
+                &-text
+                    margin-left: 15px
+                    color: $black
+                    font-family: 'Museo Sans Cyrl 500', sans-serif 
+                    font-size: 16px
+                    
+                    span
+                        color: $yellow
+                        font-family: 'Museo Sans Cyrl 700', sans-serif 
+            &-title
+                &-yellow
+                    font-family: 'Museo Sans Cyrl 300', sans-serif 
+                    font-size: 26px
+                    color: $yellow
+                    padding-bottom: 30px
+                    line-height: 26px
+                    border-bottom: 1px solid $yellow
+            &-content
+    &-description
+        &-content
+            &-low
+                margin-top: 20px
+        &-title
+            margin-bottom: 40px
+        &-text
+            margin-bottom: 20px
+            font-family: 'Museo Sans Cyrl 300', sans-serif 
+            font-size: 16px
+            line-height: 28.8px
+        &-button
+            background-color: transparent
+            border: none
+            padding: 0
+            color: $yellow
+            font-family: 'Museo Sans Cyrl 700', sans-serif 
+            text-decoration: underline
+            margin-top: 20px
     &-faq
         &-cards
         &-card
