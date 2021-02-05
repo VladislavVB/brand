@@ -3024,6 +3024,7 @@ ul.nav-burg-serv li a.burger-services-item {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .serm-marketplace-card::before {
@@ -3083,7 +3084,24 @@ ul.nav-burg-serv li a.burger-services-item {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 40px;
+}
+
+.serm-process-card-img-vector {
+  position: relative;
+}
+
+.serm-process-card-img-vector::before {
+  position: absolute;
+  content: '';
+  right: 0px;
+  top: 14px;
+  width: 200px;
+  height: 1px;
+  background-color: #ffb000;
 }
 
 .serm-process-card-title {
@@ -3177,11 +3195,45 @@ ul.nav-burg-serv li a.burger-services-item {
   margin-top: 20px;
 }
 
+.serm-description-video {
+  width: 100%;
+  height: 320px;
+  background: url("../img/serm/videobg.png") center center;
+  background-size: cover;
+  position: relative;
+}
+
+.serm-description-video::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(30, 30, 30, 0.5);
+}
+
+.serm-description-video img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.serm-faq-card {
+  position: relative;
+  margin-right: 30px;
+}
+
 .serm-faq-card-border-bottom {
   border-bottom: 1px solid rgba(255, 176, 0, 0.2);
 }
 
 .serm-faq-card-trigger {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3189,6 +3241,35 @@ ul.nav-burg-serv li a.burger-services-item {
   padding-top: 30px;
   padding-bottom: 30px;
   cursor: pointer;
+  z-index: 50;
+}
+
+.serm-faq-card-trigger-add {
+  position: relative;
+}
+
+.serm-faq-card-trigger-add::before {
+  position: absolute;
+  content: '';
+  width: 30px;
+  height: 4px;
+  background-color: #ffb000;
+  right: 0;
+  top: 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.serm-faq-card-trigger-add::after {
+  position: absolute;
+  content: '';
+  width: 4px;
+  height: 30px;
+  background-color: #ffb000;
+  top: -13px;
+  right: 13px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .serm-faq-card-trigger-num {
@@ -3216,20 +3297,43 @@ ul.nav-burg-serv li a.burger-services-item {
 }
 
 .serm-faq-card-content {
-  display: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: absolute;
+  opacity: 0;
+  top: 0;
   margin-left: 76px;
   font-family: 'Museo Sans Cyrl 300', sans-serif;
   font-size: 16px;
   line-height: 24px;
+  display: none;
 }
 
 .serm-faq-card-active .serm-faq-card-trigger {
-  padding-bottom: 20px;
+  padding-bottom: 150px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.serm-faq-card-active .serm-faq-card-trigger-add::after {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  background-color: transparent;
+  width: 30px;
+  height: 4px;
+  right: 0;
+  top: 0;
 }
 
 .serm-faq-card-active .serm-faq-card-content {
   display: block;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  top: 100px;
+  opacity: 1;
   padding-bottom: 30px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .serm-faq-card-active .serm-faq-card-content .serm-faq-card-trigger {
