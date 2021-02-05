@@ -1,67 +1,12 @@
-.slide
-    // padding-bottom: 125px
-    &-content
-        display: flex
-        justify-content: space-between
-        &-title
-            max-width: 760px
-            font-family: 'Museo Sans Cyrl 700', sans-serif
-            font-size: 32px
-            margin-bottom: 45px
-        &-left
-            display: flex
-            flex-direction: column
-            align-content: space-between
-            justify-content: space-between
-        &-right
-            display: flex
-            flex-direction: column
-            justify-content: start
-    &-text
-        opacity: 0
-        font-family: 'Museo Sans Cyrl 500', sans-serif
-        font-size: 18px
-    &-container
-        position: relative
-        margin: auto
-    &-title
-        font-family: 'Museo Sans Cyrl 700', sans-serif
-        font-size: 24px
-        min-width: 583px
-        color: $black
-        margin-top: 120px
-        margin-left: 15px
-    &-wraper
-        display: flex
-    &-item
-        margin: auto
-        margin-right: 15px
-        margin-bottom: 30px
-        
 .swiper-container
-    width: 1230px
-.swiper-pagination
-    text-align: right
-.swiper-button-next, .swiper-button-prev
-    top: 91%
-    color: $yellow
-.swiper-button-prev, .swiper-container-rtl .swiper-button-next 
-    left: auto
-    right: 100px
-    color: $yellow
-.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction 
-    left: auto
-    right: 50px
-    color: $yellow
-// .swiper-button-next
-//     background: url('../img/slide/next.png')  no-repeat center
-.swiper-button-next
-    background: url('../img/slide/next.png')  no-repeat center center
-    background-size: 25px
-    &::after
-        display: none
-.swiper-button-prev
-    background: url('../img/slide/prev.png')  no-repeat center center
-    background-size: 25px
-    &::after
-        display: none
+    width: 100%
+    height: 100%
+    // overflow: hidden
+.swiper-slide
+    text-align: center
+    font-size: 18px
+    background: #fff
+      /* Center slide text vertically */
+    display: flex
+    justify-content: center
+    align-items: center

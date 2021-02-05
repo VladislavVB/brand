@@ -28,6 +28,29 @@
             img
                 width: 100%
                 object-fit: cover
+    &-content
+        &-hidden
+            display: none
+        &-active
+            display: flex
+        &-title
+            &-left
+                font-family: 'Museo Sans Cyrl 500', sans-serif
+                font-size: 18px
+                text-transform: uppercase
+                color: rgba($black , 0.5 )
+                margin-bottom: 40px
+                &:hover
+                    color: $yellow
+                    text-decoration: underline
+                    cursor: pointer
+                &-active
+                    font-family: 'Museo Sans Cyrl 500', sans-serif
+                    font-size: 18px
+                    text-transform: uppercase
+                    margin-bottom: 40px
+                    color: $yellow
+                    text-decoration: underline  
 .customerscard
     &-description
         // margin-left: 20px

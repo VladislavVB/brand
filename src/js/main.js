@@ -83,6 +83,38 @@ for (let anchor of anchors) {
   })
 }
 
+//documents
+const CardsCertificates = document.querySelectorAll('.documents-cards-certificates');
+const ContentTitleLeft = document.querySelectorAll('.documented-content-title-left');
+
+const CardsCertificatesActive = (index) => {
+    CardsCertificates.forEach((elem) => {
+        elem.classList.remove('documents-cards-certificates-active');
+    });
+    CardsCertificates[index].classList.add('documents-cards-certificates-active');
+
+    ContentTitleLeft.forEach((elem) => {
+        elem.classList.remove('documented-content-title-left-active');
+    });
+    ContentTitleLeft[index].classList.add('documented-content-title-left-active');
+};
+
+//customers
+const CustomersContent = document.querySelectorAll('.customers-content-hidden');
+const CustomersContentTitle = document.querySelectorAll('.customers-content-title-left');
+
+const CustomersContentActive = (index) => {
+    CustomersContent.forEach((elem) => {
+        elem.classList.remove('customers-content-active');
+    });
+    CustomersContent[index].classList.add('customers-content-active');
+
+    CustomersContentTitle.forEach((elem) => {
+        elem.classList.remove('customers-content-title-left-active');
+    });
+    CustomersContentTitle[index].classList.add('customers-content-title-left-active')
+};
+
 //+-контент в serm
 document.querySelectorAll('.serm-faq-card-trigger').forEach((item) =>
     item.addEventListener('click', () => {
