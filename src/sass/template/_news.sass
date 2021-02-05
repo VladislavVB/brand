@@ -153,6 +153,8 @@
                 padding-top: 20px
                 padding-bottom: 20px
                 background: url('../img/news/bg.png')  center center no-repeat
+        &-img
+
         &-text
             color: $white
             font-family: 'Museo Sans Cyrl 700', sans-serif
@@ -209,10 +211,14 @@
                 &-top
                     border-top: 1px solid rgba( $black, 0.1 )
 .newscard
+
     padding-top: 40px
     display: flex
     padding-bottom: 40px
     border-bottom: 1px solid rgba( $black, 0.1 )
+    flex-wrap: wrap
+    justify-content: space-between
+
     &-time
         color: rgba($black , 0.5) 
         font-family: 'Museo Sans Cyrl 500', sans-serif

@@ -453,7 +453,7 @@ button:focus {
   position: absolute;
   font-family: 'Museo Sans Cyrl 500';
   color: rgba(0, 0, 0, 0.3);
-  top: 60px;
+  top: 45px;
 }
 
 .page-content {
@@ -471,6 +471,21 @@ button:focus {
 
 .page-content-left {
   min-width: 180px;
+}
+
+.page-content-left-plusimg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .breadcrumb {
@@ -2116,6 +2131,11 @@ ul.nav-burg-serv li a.burger-services-item {
   display: flex;
   padding-bottom: 40px;
   border-bottom: 1px solid rgba(30, 30, 30, 0.1);
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .newscard-time {
@@ -2770,6 +2790,19 @@ ul.nav-burg-serv li a.burger-services-item {
   padding-bottom: 25px;
 }
 
+.documented-card-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
 .documented-card-img {
   margin-bottom: 20px;
 }
@@ -2781,7 +2814,7 @@ ul.nav-burg-serv li a.burger-services-item {
   margin-bottom: 10px;
 }
 
-.documented-card-description {
+.documented-card-text {
   font-family: 'Museo Sans Cyrl 300', sans-serif;
   font-size: 16px;
   margin-bottom: 30px;
@@ -2883,7 +2916,7 @@ ul.nav-burg-serv li a.burger-services-item {
 }
 
 .customerscard-description {
-  margin-left: 20px;
+  max-width: 272px;
 }
 
 .customerscard-button {
@@ -2984,6 +3017,7 @@ ul.nav-burg-serv li a.burger-services-item {
 
 .serm-services-button {
   margin-top: 60px;
+  float: left;
 }
 
 .serm-services-card {
@@ -3078,6 +3112,10 @@ ul.nav-burg-serv li a.burger-services-item {
           align-items: center;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.serm-process-img {
+  padding-bottom: 110px;
 }
 
 .serm-process-button {
