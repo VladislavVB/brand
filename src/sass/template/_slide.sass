@@ -1,12 +1,52 @@
-.swiper-container
+.swiper
+  &-container
     width: 100%
     height: 100%
-    // overflow: hidden
-.swiper-slide
+    overflow: hidden
+    &-sponsor
+      width: 100%
+      height: 100%
+      overflow: hidden
+  &-pagination
+    &-sponsor
+      text-align: center
+      max-width: 50px
+  &-slide
     text-align: center
     font-size: 18px
     background: #fff
-      /* Center slide text vertically */
+        /* Center slide text vertically */
     display: flex
     justify-content: center
     align-items: center
+  &-button
+    &-prev
+      &-sponsor
+        display: flex
+        align-items: center
+        justify-content: center
+    &-next
+      &-sponsor
+        display: flex
+        align-items: center
+        justify-content: center
+.slide
+  &-sponsor
+    &-item
+      max-width: 292px
+      object-fit: cover
+      display: flex
+      justify-content: center
+      align-items: center
+      img
+        width: 100%
+    &-description
+      display: flex
+      justify-content: flex-end
+      align-items: center
+      color: $yellow
+      font-family: 'Museo Sans Cyrl 500', sans-serif
+      font-size: 18px
+      margin-top: 20px
+
+      

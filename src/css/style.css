@@ -350,6 +350,10 @@ template {
   padding-right: 15px;
 }
 
+.container-fluid-custom {
+  max-width: 1230px;
+}
+
 a {
   text-decoration: none;
   cursor: pointer;
@@ -1405,6 +1409,7 @@ ul.nav-burg-serv li a.burger-services-item {
   color: #fff2d4;
   font-family: 'Rubik', sans-serif;
   font-size: 62px;
+  font-weight: 900;
 }
 
 .advantages-card-content-text {
@@ -1673,6 +1678,18 @@ ul.nav-burg-serv li a.burger-services-item {
 .swiper-container {
   width: 100%;
   height: 100%;
+  overflow: hidden;
+}
+
+.swiper-container-sponsor {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.swiper-pagination-sponsor {
+  text-align: center;
+  max-width: 50px;
 }
 
 .swiper-slide {
@@ -1689,6 +1706,65 @@ ul.nav-burg-serv li a.burger-services-item {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.swiper-button-prev-sponsor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.swiper-button-next-sponsor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.slide-sponsor-item {
+  max-width: 292px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slide-sponsor-item img {
+  width: 100%;
+}
+
+.slide-sponsor-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffb000;
+  font-family: 'Museo Sans Cyrl 500', sans-serif;
+  font-size: 18px;
+  margin-top: 20px;
 }
 
 .news-content {
