@@ -36,8 +36,8 @@
             display: flex
             justify-content: center
             align-items: center
+            
             &::before 
-                
                 position: absolute
                 content: ''
                 height: 80px
@@ -46,6 +46,9 @@
                 top: 50%
                 transform: translate(0, -50%)
                 right: 0px
+            &:nth-child(6n)::before 
+                opacity: 0
+
         &-content
             &-card
                 margin: 20px
@@ -177,6 +180,7 @@
 // .serm-faq-card-input:checked ~ .serm-faq-card-content
 //     display: block
 .serm-faq-card-active .serm-faq-card-trigger
+    padding-bottom: 20px
 .serm-faq-card-active .serm-faq-card-content
     display: block
     padding-bottom: 30px

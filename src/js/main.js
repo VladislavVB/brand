@@ -87,7 +87,7 @@ for (let anchor of anchors) {
 document.querySelectorAll('.serm-faq-card-trigger').forEach((item) =>
     item.addEventListener('click', () => {
         const parent = item.parentNode;
-
+        
         parent.classList.toggle('serm-faq-card-active')
     })
 )

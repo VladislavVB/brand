@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -470,6 +471,31 @@ button:focus {
 
 .page-content-left {
   min-width: 180px;
+}
+
+.breadcrumb {
+  background-color: transparent;
+  color: rgba(30, 30, 30, 0.3);
+}
+
+.breadcrumb a {
+  color: rgba(30, 30, 30, 0.3);
+}
+
+.breadcrumb-item + .breadcrumb-item {
+  padding-left: 15px;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: '—';
+  color: rgba(30, 30, 30, 0.3);
+  padding-right: 15px;
+  font-family: 'Museo Sans Cyrl 500';
+}
+
+.breadcrumb-item.active {
+  color: rgba(30, 30, 30, 0.3);
+  font-family: 'Museo Sans Cyrl 500';
 }
 
 .padding-none {
@@ -2271,6 +2297,7 @@ ul.nav-burg-serv li a.burger-services-item {
   color: #ffb000;
   font-family: 'Rubik', sans-serif;
   font-size: 62px;
+  font-weight: 900;
 }
 
 .locations-card-description {
@@ -2285,8 +2312,8 @@ ul.nav-burg-serv li a.burger-services-item {
 
 .statistics {
   padding-top: 80px;
-  background: url("../img/locations/map-page.png") center 15% no-repeat;
-  background-size: 75%;
+  background: url("../img/locations/map-page.png") 70% 15% no-repeat;
+  background-size: 70%;
 }
 
 .countries-title {
@@ -2682,6 +2709,12 @@ ul.nav-burg-serv li a.burger-services-item {
   margin-bottom: 0;
 }
 
+.contact-left-title {
+  color: rgba(30, 30, 30, 0.6);
+  font-family: 'Museo Sans Cyrl 500', sans-serif;
+  font-size: 18px;
+}
+
 .advantage {
   padding-bottom: 0;
 }
@@ -3021,6 +3054,10 @@ ul.nav-burg-serv li a.burger-services-item {
   right: 0px;
 }
 
+.serm-marketplace-card:nth-child(6n)::before {
+  opacity: 0;
+}
+
 .serm-marketplace-content-card {
   margin: 20px;
   margin-top: 40px;
@@ -3191,6 +3228,10 @@ ul.nav-burg-serv li a.burger-services-item {
   font-family: 'Museo Sans Cyrl 300', sans-serif;
   font-size: 16px;
   line-height: 24px;
+}
+
+.serm-faq-card-active .serm-faq-card-trigger {
+  padding-bottom: 20px;
 }
 
 .serm-faq-card-active .serm-faq-card-content {

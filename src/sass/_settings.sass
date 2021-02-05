@@ -87,7 +87,22 @@ button
             font-size: 18px
         &-left
             min-width: 180px
-
+.breadcrumb
+    background-color: transparent
+    color: rgba($black , 0.3)
+    
+    a
+        color: rgba($black , 0.3)
+    &-item+.breadcrumb-item
+        padding-left: 15px
+        &::before
+            content: '—'
+            color: rgba($black , 0.3)
+            padding-right: 15px
+            font-family: 'Museo Sans Cyrl 500'
+    &-item.active
+        color: rgba($black , 0.3)
+        font-family: 'Museo Sans Cyrl 500'
 .padding
     &-none
         padding: 0
