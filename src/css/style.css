@@ -1687,9 +1687,20 @@ ul.nav-burg-serv li a.burger-services-item {
   overflow: hidden;
 }
 
+.swiper-container-customers {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
 .swiper-pagination-sponsor {
   text-align: center;
   max-width: 50px;
+}
+
+.swiper-pagination-customers {
+  max-width: 50px;
+  text-align: center;
 }
 
 .swiper-slide {
@@ -1706,6 +1717,26 @@ ul.nav-burg-serv li a.burger-services-item {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.swiper-slide-customers {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.swiper-description-customers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .swiper-button-prev-sponsor {
@@ -3414,6 +3445,151 @@ ul.nav-burg-serv li a.burger-services-item {
 
 .serm-faq-card-active .serm-faq-card-content .serm-faq-card-trigger {
   padding-bottom: 0;
+}
+
+.tools-ebay-cardimg img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.tools-ebay-title {
+  font-family: 'Museo Sans Cyrl 700', sans-serif;
+  font-size: 26px;
+  max-width: 820px;
+}
+
+.tools-ebay-title-top {
+  margin-top: 60px;
+  line-height: 44.8px;
+}
+
+.tools-ebay-air {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.tools-ebay-img {
+  max-width: 154px;
+}
+
+.tools-ebay-img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.tools-ebay-description-card {
+  margin-top: 40px;
+}
+
+.tools-ebay-description-card-status {
+  font-family: 'Museo Sans Cyrl 300', sans-serif;
+  font-size: 24px;
+}
+
+.tools-ebay-description-card-title {
+  margin-top: 20px;
+  font-family: 'Museo Sans Cyrl 500', sans-serif;
+  font-size: 24px;
+}
+
+.tools-ebay-cards {
+  margin-top: 40px;
+}
+
+.tools-ebay-card {
+  padding: 40px;
+  border: 1px solid #ffb000;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+.tools-ebay-card-link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.tools-ebay-card-up {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tools-ebay-card-up-img {
+  width: 80px;
+  height: 80px;
+  background-color: rgba(255, 176, 0, 0.1);
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 20px;
+}
+
+.tools-ebay-card-up-title {
+  font-family: 'Museo Sans Cyrl 700', sans-serif;
+  font-size: 26px;
+  line-height: 31.2px;
+  margin-top: 9px;
+}
+
+.tools-ebay-card-text {
+  margin-top: 30px;
+  font-family: 'Museo Sans Cyrl 300', sans-serif;
+  font-size: 16px;
+}
+
+.tools-ebay-card-text span {
+  font-family: 'Museo Sans Cyrl 700', sans-serif;
+}
+
+.tools-ebay-card-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 30px;
+  width: 223px;
+  color: #ffffff;
+  background-color: #ffb000;
+  border: none;
+  cursor: pointer;
+  height: 50px;
+  padding-right: 40px;
+  padding-left: 40px;
+  font-family: 'Museo Sans Cyrl 700', sans-serif;
+  font-size: 18px;
+}
+
+.tools-ebay-card-button-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (max-width: 4000px) {
