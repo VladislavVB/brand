@@ -1631,6 +1631,10 @@ ul.nav-burg-serv li a.burger-services-item {
   width: 100%;
 }
 
+.company-text {
+  margin-bottom: 40px;
+}
+
 .leadership-card {
   padding: 15px;
 }
@@ -1695,11 +1699,19 @@ ul.nav-burg-serv li a.burger-services-item {
 
 .swiper-pagination-sponsor {
   text-align: center;
-  max-width: 50px;
+  max-width: 70px;
+}
+
+.swiper-pagination-sponsor::before {
+  content: '0';
+}
+
+.swiper-pagination-total::before {
+  content: '0';
 }
 
 .swiper-pagination-customers {
-  max-width: 50px;
+  max-width: 70px;
   text-align: center;
 }
 
@@ -2033,9 +2045,20 @@ ul.nav-burg-serv li a.burger-services-item {
   margin-right: 20px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
   border-top: 1px solid rgba(255, 255, 255, 0.4);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  height: 100%;
 }
 
 .current-card-title-description {
+  min-height: 400px;
   padding-top: 20px;
   padding-bottom: 20px;
   background: url("../img/news/bg.png") center center no-repeat;
@@ -2060,7 +2083,7 @@ ul.nav-burg-serv li a.burger-services-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 84px;
+  margin-top: 60px;
 }
 
 .current-card-text-data-text {
@@ -3015,10 +3038,6 @@ ul.nav-burg-serv li a.burger-services-item {
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 20px;
-}
-
-.tools-card-name {
-  min-height: 78px;
 }
 
 .locations-country-description {
@@ -4126,9 +4145,126 @@ ul.nav-burg-serv li a.burger-services-item {
   .brand-card-img-width {
     max-width: 150px !important;
   }
+  .container-md {
+    max-width: 100%;
+  }
 }
 
 @media screen and (max-width: 992px) {
+  .padding-none-sm {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .col-md-none {
+    display: none;
+  }
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .page-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .page-content-title {
+    margin-bottom: 20px;
+  }
+  .page-content-title-md-none {
+    display: none;
+  }
+  .page-road {
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+  .page-title {
+    padding-bottom: 80px;
+    padding-top: 95px;
+  }
+  .page-title-img {
+    height: 320px;
+  }
+  .page-title-img img {
+    height: 100%;
+  }
+  .container-md {
+    max-width: 720px;
+  }
+  .advantage-text {
+    font-size: 16px;
+  }
+  .advantage-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .advantage-img {
+    max-height: 240px;
+    max-width: 100%;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .advantage-img img {
+    height: 100%;
+    width: 100%;
+  }
+  .advantage-card {
+    padding-left: 0;
+    padding-right: 25px;
+  }
+  .advantage-card-text {
+    font-size: 16px;
+  }
+  .advantage-card-border-top-md {
+    border-top: 1px solid rgba(30, 30, 30, 0.2);
+  }
+  .advantage-card-border-right::after {
+    content: none;
+  }
+  .leadership-card {
+    padding: 5px;
+  }
+  .leadership-card-text-name {
+    font-size: 18px;
+  }
+  .leadership-card-text-description {
+    font-size: 16px;
+  }
+  .statistics {
+    background: url(../img/locations/map-page.png) center 50% no-repeat;
+    background-size: 80%;
+  }
+  .locations-content-title {
+    text-align: left;
+  }
+  .countries-title {
+    font-size: 24px;
+    padding-bottom: 20px;
+  }
+  .countries-list li {
+    width: 50%;
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .services-content-title {
+    text-align: left;
+  }
+  .services-card-name {
+    font-size: 20px;
+    margin-top: 24px;
+  }
+  .services-card-text {
+    font-size: 14px;
+  }
   .brand-border-right-none::before {
     content: none;
   }
@@ -4190,6 +4326,117 @@ ul.nav-burg-serv li a.burger-services-item {
     bottom: 0px;
     left: 0px;
     border-radius: 10px;
+  }
+  .current-card-title-up {
+    text-align: center;
+  }
+  .current-card-sm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .current-card-sm-img {
+    max-width: 130px;
+    height: 174px;
+  }
+  .current-card-sm-img img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-size: 50%;
+  }
+  .current-card-sm-text {
+    max-width: 184px;
+    margin-left: 16px;
+  }
+  .current-card-sm-time {
+    font-family: 'Museo Sans Cyrl 500', sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .current-card-sm-description {
+    font-family: 'Museo Sans Cyrl 500', sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 48px;
+  }
+  .current-card-sm-description span {
+    display: none;
+  }
+  .current-card-sm-date {
+    font-size: 16px;
+  }
+  .advantage-border-top {
+    padding-top: 0px;
+    border-top: 0px;
+  }
+  .advantage-tab-title {
+    font-size: 18px;
+    margin-top: 40px;
+  }
+  .advantage-tab-description {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  .advantage-tabs {
+    padding-bottom: 40px;
+  }
+  .contacts-img {
+    margin-top: 40px;
+    max-height: 320px;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contacts-img img {
+    height: 100%;
+    background-size: 50%;
+  }
+  .contacts-border-top {
+    border-top: 1px solid rgba(30, 30, 30, 0.3);
+    padding-top: 40px;
+  }
+  .documented {
+    padding-top: 0;
+  }
+  .documented-tabs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 100%;
+  }
+  .documented-content {
+    border-top: 0;
+    padding-top: 0;
+  }
+  .documented-card-title {
+    font-size: 16px;
+  }
+  .documented-card-text {
+    font-size: 14px;
+  }
+  .documented-card-button-text {
+    font-size: 16px;
+  }
+  .documented-card-button-vector {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
