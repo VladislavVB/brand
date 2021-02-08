@@ -260,9 +260,7 @@
         padding-right: 40px
     .none-sm
         display: none
-    .services-content-title
-        text-align: center
-        max-width: 1000px
+
     .brand-card-title
         font-size: 24px
         text-align: center
@@ -662,41 +660,6 @@
                     justify-content: flex-start
     .locations
         background: url(../img/locations/map.png) 70% center/contain no-repeat
-
-        
-
-
-
-@media screen and ( max-width: 840px )
-    .hide-col
-        display: none
-    .about-img
-        max-height: 550px
-    .visible-col
-        display: block
-
-    .news-all
-        width: 100%
-        display: flex
-        justify-content: center
-        margin: auto
-
-        text-align: center
-        &-sm
-            padding-top: 40px
-            margin: auto
-            width: 100%
-            display: flex
-            justify-content: center
-            a
-                margin: auto
-    .hide-col
-        display: none
-@media screen and ( max-width: 634px )
-    .swiper-button-prev, .swiper-container-rtl .swiper-button-next
-        left: 30%
-    .swiper-button-next, .swiper-container-rtl .swiper-button-prev
-        right: 30%
 @media screen and ( max-width: 768px )
     .current
         &-card
@@ -756,8 +719,16 @@
                     img
                         margin: auto
                         left: 50%
-
+    .serm
+        &-faq
+            &-card
+                &-border
+                    &-bottom
+                        &-none
+                            &-md
+                                border-bottom: 0px solid #000
 @media screen and ( max-width: 576px )
+    
     .about
         padding-bottom: 0
     .page
@@ -890,13 +861,14 @@
         text-align: left
         margin-bottom: 24px
         font-size: 18px
+        line-height: 25.2px
     .services-card-name
         margin-top: 0px
         font-size: 16px
         color: $yellow
         position: absolute
-        top: 38px
-        left: 100px
+        top: 28px
+        left: 70px
 
     .services-card-text
         font-size: 14px
@@ -958,8 +930,6 @@
                     //     width: 60px
                     //     top: 70px
                     //     height: 1px
-    .advantages
-        &-card
             &-line
                 &-one
                     position: relative
@@ -1143,6 +1113,25 @@
                 font-size: 16px
             &-content
                 margin-bottom: 32px
+        &-country
+            &-card
+                margin-bottom: 32px
+                &-last
+                    margin-bottom: 0
+                &-number
+                    font-size: 42px
+                    line-height: 31.5px
+                    padding-bottom: 12px
+                &-description
+                    font-size: 16px
+                    padding-top: 12px
+                &-img
+                    min-height: 320px
+                    max-height: 320px
+                    overflow: hidden
+                    img
+                        height: 100%
+                        width: none
 
     .form
         &-content
@@ -1293,12 +1282,136 @@
                     line-height: 21px
     .serm-faq-card-active .serm-faq-card-content 
         top: 60px
-
+    .advantage
+        &-card
+            padding-top: 24px
+            padding-bottom: 24px
+            &-text
+                font-size: 14px
+            &-img
+                width: 40px
+                height: 40px
+                img
+                    width: 20px
+                    height: 15px
+        &-text
+            font-size: 14px
+            line-height: 21px
+            &-first
+                margin-bottom: 12px
+        &-title
+            font-size: 18px
     .button
         &-getintouch
             width: 100%
             font-size: 14px
-    
+    .leadership
+        &-card
+            padding: 0 
+            &-text
+                display: flex
+                justify-content: space-between
+                align-items: center
+                margin-left: 28px
+                &::after
+                    left: -28px
+                    top: 11px
+                    width: 20px
+                &-name
+                    font-size: 16px
+                &-description
+                    font-size: 12px
+            &-img
+                max-width: 100%
+                max-height: 300px
+                overflow: hidden
+    .statistics
+        padding-top: 0
+        background: none
+    .countries
+        &-title
+            font-size: 18px
+            padding-bottom: 24px
+            &-up
+                &-sm
+                    padding-top: 24px
+                    border-top: 1px solid rgba($black , 0.1 )
+        &-list 
+            li
+                font-size: 14px
+    .display
+        &-vivsible
+            display: block
+            &-countries
+                margin-bottom: 32px
+    .current
+        padding-top: 0
+        &-card
+            &-text
+                font-size: 14px
+                line-height: 21px
+                &-time
+                    font-size: 12px
+                    margin-top: 8px
+                &-data
+                    margin-top: 32px
+                    &-text
+                        font-size: 14px
+                        line-height: 14px
+                    &-vector
+                        width: 16.37px
+                        height: 13.51px
+                        img
+                            width: 100%
+            &-title
+                margin-bottom: 24px
+                &-text
+                    padding-left: 0
+                    padding-right: 0
+                    padding-bottom: 12px
+                    padding-top: 12px
+                &-description
+                    min-height: 200px
+                    padding-top: 12px
+                    padding-bottom: 12px
+            &-sm
+                padding-top: 24px
+                padding-bottom: 24px
+                &-text
+                    margin-left: 0
+                    max-width: 100%
+                &-img
+                    max-width: 100%
+                    max-height: 120px
+                    margin-bottom: 16px
+                &-description
+                    margin-bottom: 16px
+                &-date
+                    justify-content: flex-start
+                    align-items: center
+                    &-text
+                        margin-right: 16px
+                &-vector
+                    width: 16.37px
+                    height: 13.51px
+                    img
+                        width: 100%
+    .newscard
+        &-big
+            &-img
+                // height: 200px
+                &-src
+                    font-size: 14px
+                    
+            &-title
+                font-size: 18px
+                line-height: 25.2px
+                &-description
+                    &-data
+                        font-size: 14px
+            &-content
+                font-size: 14px
+                margin-top: 12px
 @media screen and ( max-width: 400px )
     .news-all
         width: 100%

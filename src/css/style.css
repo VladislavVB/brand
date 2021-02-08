@@ -4162,10 +4162,6 @@ ul.nav-burg-serv li a.burger-services-item {
   .none-sm {
     display: none;
   }
-  .services-content-title {
-    text-align: center;
-    max-width: 1000px;
-  }
   .brand-card-title {
     font-size: 24px;
     text-align: center;
@@ -4637,55 +4633,6 @@ ul.nav-burg-serv li a.burger-services-item {
   }
 }
 
-@media screen and (max-width: 840px) {
-  .hide-col {
-    display: none;
-  }
-  .about-img {
-    max-height: 550px;
-  }
-  .visible-col {
-    display: block;
-  }
-  .news-all {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin: auto;
-    text-align: center;
-  }
-  .news-all-sm {
-    padding-top: 40px;
-    margin: auto;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .news-all-sm a {
-    margin: auto;
-  }
-  .hide-col {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 634px) {
-  .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
-    left: 30%;
-  }
-  .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
-    right: 30%;
-  }
-}
-
 @media screen and (max-width: 768px) {
   .news-all {
     width: 100%;
@@ -4771,6 +4718,9 @@ ul.nav-burg-serv li a.burger-services-item {
   .form-img-success-active img {
     margin: auto;
     left: 50%;
+  }
+  .serm-faq-card-border-bottom-none-md {
+    border-bottom: 0px solid #000;
   }
 }
 
@@ -4937,14 +4887,15 @@ ul.nav-burg-serv li a.burger-services-item {
     text-align: left;
     margin-bottom: 24px;
     font-size: 18px;
+    line-height: 25.2px;
   }
   .services-card-name {
     margin-top: 0px;
     font-size: 16px;
     color: #ffb000;
     position: absolute;
-    top: 38px;
-    left: 100px;
+    top: 28px;
+    left: 70px;
   }
   .services-card-text {
     font-size: 14px;
@@ -5243,6 +5194,30 @@ ul.nav-burg-serv li a.burger-services-item {
   .locations-card-content {
     margin-bottom: 32px;
   }
+  .locations-country-card {
+    margin-bottom: 32px;
+  }
+  .locations-country-card-last {
+    margin-bottom: 0;
+  }
+  .locations-country-card-number {
+    font-size: 42px;
+    line-height: 31.5px;
+    padding-bottom: 12px;
+  }
+  .locations-country-card-description {
+    font-size: 16px;
+    padding-top: 12px;
+  }
+  .locations-country-card-img {
+    min-height: 320px;
+    max-height: 320px;
+    overflow: hidden;
+  }
+  .locations-country-card-img img {
+    height: 100%;
+    width: none;
+  }
   .form-content {
     padding-left: 10px;
     padding-right: 0;
@@ -5426,9 +5401,173 @@ ul.nav-burg-serv li a.burger-services-item {
   .serm-faq-card-active .serm-faq-card-content {
     top: 60px;
   }
+  .advantage-card {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .advantage-card-text {
+    font-size: 14px;
+  }
+  .advantage-card-img {
+    width: 40px;
+    height: 40px;
+  }
+  .advantage-card-img img {
+    width: 20px;
+    height: 15px;
+  }
+  .advantage-text {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .advantage-text-first {
+    margin-bottom: 12px;
+  }
+  .advantage-title {
+    font-size: 18px;
+  }
   .button-getintouch {
     width: 100%;
     font-size: 14px;
+  }
+  .leadership-card {
+    padding: 0;
+  }
+  .leadership-card-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 28px;
+  }
+  .leadership-card-text::after {
+    left: -28px;
+    top: 11px;
+    width: 20px;
+  }
+  .leadership-card-text-name {
+    font-size: 16px;
+  }
+  .leadership-card-text-description {
+    font-size: 12px;
+  }
+  .leadership-card-img {
+    max-width: 100%;
+    max-height: 300px;
+    overflow: hidden;
+  }
+  .statistics {
+    padding-top: 0;
+    background: none;
+  }
+  .countries-title {
+    font-size: 18px;
+    padding-bottom: 24px;
+  }
+  .countries-title-up-sm {
+    padding-top: 24px;
+    border-top: 1px solid rgba(30, 30, 30, 0.1);
+  }
+  .countries-list li {
+    font-size: 14px;
+  }
+  .display-vivsible {
+    display: block;
+  }
+  .display-vivsible-countries {
+    margin-bottom: 32px;
+  }
+  .current {
+    padding-top: 0;
+  }
+  .current-card-text {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .current-card-text-time {
+    font-size: 12px;
+    margin-top: 8px;
+  }
+  .current-card-text-data {
+    margin-top: 32px;
+  }
+  .current-card-text-data-text {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .current-card-text-data-vector {
+    width: 16.37px;
+    height: 13.51px;
+  }
+  .current-card-text-data-vector img {
+    width: 100%;
+  }
+  .current-card-title {
+    margin-bottom: 24px;
+  }
+  .current-card-title-text {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 12px;
+    padding-top: 12px;
+  }
+  .current-card-title-description {
+    min-height: 200px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  .current-card-sm {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .current-card-sm-text {
+    margin-left: 0;
+    max-width: 100%;
+  }
+  .current-card-sm-img {
+    max-width: 100%;
+    max-height: 120px;
+    margin-bottom: 16px;
+  }
+  .current-card-sm-description {
+    margin-bottom: 16px;
+  }
+  .current-card-sm-date {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .current-card-sm-date-text {
+    margin-right: 16px;
+  }
+  .current-card-sm-vector {
+    width: 16.37px;
+    height: 13.51px;
+  }
+  .current-card-sm-vector img {
+    width: 100%;
+  }
+  .newscard-big-img-src {
+    font-size: 14px;
+  }
+  .newscard-big-title {
+    font-size: 18px;
+    line-height: 25.2px;
+  }
+  .newscard-big-title-description-data {
+    font-size: 14px;
+  }
+  .newscard-big-content {
+    font-size: 14px;
+    margin-top: 12px;
   }
 }
 
