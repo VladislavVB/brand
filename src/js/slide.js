@@ -9,6 +9,16 @@ var swiperSponsors = new Swiper('.swiper-container-sponsor', {
         nextEl: '.swiper-button-next-sponsor',
         prevEl: '.swiper-button-prev-sponsor',
     },
+    breakpoints: {
+        575: {
+            slidesPerView: 4,
+            spaceBetween: 30
+        },
+        100: {
+          slidesPerView: 2,
+          spaceBetween: 30
+        }
+    }
 });
 
 var swiperCustomers = new Swiper('.swiper-container-customers', {

@@ -1118,6 +1118,10 @@ ul.nav-burg-serv li a.burger-services-item {
   opacity: 1;
 }
 
+.services-bullets {
+  padding-bottom: 15px;
+}
+
 .services-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1886,6 +1890,23 @@ ul.nav-burg-serv li a.burger-services-item {
   padding-bottom: 40px;
 }
 
+.news-card-img {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.news-card-imgbig {
+  height: 309px;
+}
+
 .news-card-butomnone {
   border-bottom: 0px solid #e6e6e6;
 }
@@ -1902,6 +1923,7 @@ ul.nav-burg-serv li a.burger-services-item {
 
 .news-card-description {
   margin-left: 20px;
+  max-width: 210px;
 }
 
 .news-card-descriptionbig {
@@ -1988,7 +2010,32 @@ ul.nav-burg-serv li a.burger-services-item {
   display: flex;
 }
 
+.brand-card-img {
+  max-width: 230px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.brand-card-img-uzor {
+  max-width: 386px;
+}
+
 .brand-card-img-uzor img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.brand-card-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
 }
 
@@ -2066,6 +2113,10 @@ ul.nav-burg-serv li a.burger-services-item {
   padding-top: 20px;
   padding-bottom: 20px;
   background: url("../img/news/bg.png") center center no-repeat;
+}
+
+.current-card-img {
+  overflow: hidden;
 }
 
 .current-card-text {
@@ -3755,9 +3806,6 @@ ul.nav-burg-serv li a.burger-services-item {
   .news-card-img-sm {
     width: 120px;
   }
-  .news-card-img img {
-    width: 100%;
-  }
   .hidden-card-lg {
     display: none;
   }
@@ -4122,18 +4170,6 @@ ul.nav-burg-serv li a.burger-services-item {
     font-size: 24px;
     text-align: center;
   }
-  .brand-card-img {
-    width: 70px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
   .firstb-lang {
     margin-left: 20px;
   }
@@ -4249,6 +4285,7 @@ ul.nav-burg-serv li a.burger-services-item {
   .statistics {
     background: url(../img/locations/map-page.png) center 50% no-repeat;
     background-size: 80%;
+    padding-top: 0;
   }
   .locations-content-title {
     text-align: left;
@@ -4333,6 +4370,19 @@ ul.nav-burg-serv li a.burger-services-item {
     bottom: 0px;
     left: 0px;
     border-radius: 10px;
+  }
+  .news-card {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .news-card-text {
+    font-size: 14px;
+  }
+  .news-card-data-text {
+    font-size: 16px;
+  }
+  .news-card-img {
+    max-height: 249px;
   }
   .current-card-title-up {
     text-align: center;
@@ -4522,6 +4572,69 @@ ul.nav-burg-serv li a.burger-services-item {
   .swiper-pagination-fraction {
     color: #1e1e1e;
   }
+  .about {
+    padding-bottom: 0;
+  }
+  .about-content-title {
+    text-align: left;
+  }
+  .about-img {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-height: 320px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: hidden;
+  }
+  .brand {
+    padding-top: 0;
+  }
+  .brand-border-right::before {
+    height: 100px;
+  }
+  .brand-border-right-none::before {
+    content: none;
+  }
+  .brand-border-left::after {
+    height: 100px;
+  }
+  .brand-border-left-none::after {
+    content: none;
+  }
+  .brand-card {
+    height: 100px;
+  }
+  .brand-card-img {
+    max-width: 120px;
+    max-height: 76px;
+  }
+  .brand-card-img img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .brand-card-title-md {
+    height: 34px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .locations {
+    background: url(../img/locations/map.png) 70% center/contain no-repeat;
+  }
 }
 
 @media screen and (max-width: 840px) {
@@ -4617,9 +4730,6 @@ ul.nav-burg-serv li a.burger-services-item {
   .locations-card {
     min-width: 100px;
   }
-  .locations-card-number {
-    font-size: 30px;
-  }
   .locations-card-description {
     font-size: 18px;
   }
@@ -4650,9 +4760,62 @@ ul.nav-burg-serv li a.burger-services-item {
   .footer-border-right {
     border-right: none;
   }
+  .form-img-success-active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .form-img-success-active img {
+    margin: auto;
+    left: 50%;
+  }
 }
 
 @media screen and (max-width: 576px) {
+  .about {
+    padding-bottom: 0;
+  }
+  .page-content-title {
+    margin-bottom: 12px;
+  }
+  .serm-description-title {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .about-description {
+    line-height: 21px;
+  }
+  .about-img {
+    padding-right: 0;
+    padding-left: 0;
+    max-height: 320px;
+  }
+  .about-img img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .section-top-none {
+    padding-top: 0;
+  }
+  .news-card-description {
+    max-width: 100%;
+  }
+  .news-card-descriptionbig {
+    margin-top: 0;
+  }
+  .news-card-img {
+    max-height: 120px;
+  }
+  .news-card-img img {
+    width: 100%;
+  }
+  .brand-card-title {
+    max-width: 250px;
+  }
   .menu-firstb {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -4673,8 +4836,9 @@ ul.nav-burg-serv li a.burger-services-item {
     padding-left: 15px;
   }
   .container-custom {
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 0px;
+    padding-left: 0px;
+    width: 100%;
   }
   .hide-col-sm {
     display: none;
@@ -5076,9 +5240,6 @@ ul.nav-burg-serv li a.burger-services-item {
   .locations-card-description {
     font-size: 16px;
   }
-  .locations-card-number {
-    font-size: 36px;
-  }
   .locations-card-content {
     margin-bottom: 32px;
   }
@@ -5114,6 +5275,8 @@ ul.nav-burg-serv li a.burger-services-item {
             justify-content: center;
   }
   .footer {
+    padding-right: 15px;
+    padding-left: 15px;
     padding-top: 40px;
     padding-bottom: 40px;
   }
@@ -5149,6 +5312,123 @@ ul.nav-burg-serv li a.burger-services-item {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  .about {
+    padding-bottom: 0;
+  }
+  .page-road {
+    display: none;
+  }
+  .page-title {
+    font-size: 24px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .page-title-img {
+    max-height: 200px;
+  }
+  .page-content-title {
+    font-size: 16px;
+  }
+  .serm-marketplace-card {
+    border-top: 1px solid rgba(30, 30, 30, 0.1);
+  }
+  .serm-marketplace-card:nth-child(0n)::before {
+    opacity: 0;
+  }
+  .serm-marketplace-card::before {
+    height: 40px;
+  }
+  .serm-marketplace-content-card {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    max-width: 100px;
+    max-height: 40px;
+  }
+  .serm-services-card {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .serm-services-card-img {
+    height: 40px;
+    width: 40px;
+    margin-bottom: 24px;
+  }
+  .serm-services-card-img svg {
+    height: 24px;
+    width: 24px;
+  }
+  .serm-services-card-text {
+    font-size: 14px;
+  }
+  .serm-description-title {
+    margin-bottom: 16px;
+  }
+  .serm-description-text {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+  .serm-description-video {
+    height: 200px;
+  }
+  .serm-process-card-description {
+    padding-bottom: 0;
+  }
+  .serm-process-card-title {
+    font-size: 16px;
+  }
+  .serm-process-card-text {
+    font-size: 14px;
+  }
+  .serm-distinction-text {
+    margin-bottom: 24px;
+  }
+  .serm-distinction-card-yellow {
+    padding: 20px;
+    margin-bottom: 32px;
+  }
+  .serm-distinction-card-yellow:last-child {
+    margin-bottom: 0;
+  }
+  .serm-distinction-card-title-yellow {
+    font-size: 18px;
+    padding-bottom: 20px;
+  }
+  .serm-distinction-card-item {
+    padding-top: 16px;
+  }
+  .serm-faq-card-trigger {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .serm-faq-card-trigger-num {
+    font-size: 18px;
+  }
+  .serm-faq-card-trigger-text {
+    font-size: 16px;
+    margin-left: 12px;
+  }
+  .serm-faq-card-trigger-add::after {
+    height: 16px;
+    width: 2px;
+    top: -7px;
+    right: 7px;
+  }
+  .serm-faq-card-trigger-add::before {
+    width: 16px;
+    height: 2px;
+  }
+  .serm-faq-card-content {
+    margin-left: 35px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .serm-faq-card-active .serm-faq-card-content {
+    top: 60px;
+  }
+  .button-getintouch {
+    width: 100%;
+    font-size: 14px;
   }
 }
 
