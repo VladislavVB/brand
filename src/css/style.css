@@ -4628,6 +4628,63 @@ ul.nav-burg-serv li a.burger-services-item {
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
+  .customers-content-titles {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 500px;
+    margin: auto;
+  }
+  .customers-content-title-left {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .customers-card-title {
+    font-size: 24px;
+    line-height: 33.6px;
+  }
+  .customers-card-img {
+    margin-bottom: 20px;
+    max-width: 115px;
+    max-height: 40px;
+  }
+  .customers-card-text {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .customers-card-button {
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .customers-card-button-text {
+    font-size: 16px;
+  }
+  .customers-card-button-img {
+    width: 18.9px;
+    height: 15.44px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .customers-card-button-img img {
+    width: 100%;
+  }
   .locations {
     background: url(../img/locations/map.png) 70% center/contain no-repeat;
   }
@@ -5568,6 +5625,30 @@ ul.nav-burg-serv li a.burger-services-item {
   .newscard-big-content {
     font-size: 14px;
     margin-top: 12px;
+  }
+  .contacts {
+    padding-top: 0;
+  }
+  .contacts-border-top {
+    padding-top: 24px;
+  }
+  .advantage-tab-title {
+    margin-top: 32px;
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .advantage-tab-description {
+    font-size: 14px;
+    margin-top: 12px;
+  }
+  .contact-title {
+    margin-bottom: 0;
+  }
+  .documented {
+    padding-top: 0;
+  }
+  .documented-card-text {
+    margin-bottom: 24px;
   }
 }
 
