@@ -343,6 +343,10 @@ template {
   display: none;
 }
 
+.height100 {
+  height: 100%;
+}
+
 .container-custom {
   margin: auto;
   max-width: 1440px;
@@ -3100,6 +3104,7 @@ ul.nav-burg-serv li a.burger-services-item {
   padding-bottom: 40px;
   padding-top: 60px;
   position: relative;
+  height: 100%;
 }
 
 .serm-services-card::after {
@@ -3133,7 +3138,6 @@ ul.nav-burg-serv li a.burger-services-item {
   font-family: 'Museo Sans Cyrl 300', sans-serif;
   font-size: 18px;
   line-height: 28.8px;
-  min-height: 56px;
 }
 
 .serm-marketplace-title {
@@ -4151,6 +4155,9 @@ ul.nav-burg-serv li a.burger-services-item {
 }
 
 @media screen and (max-width: 992px) {
+  .display-none-sm {
+    display: none;
+  }
   .padding-none-sm {
     padding-left: 15px;
     padding-right: 15px;
@@ -4437,6 +4444,74 @@ ul.nav-burg-serv li a.burger-services-item {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .serm-services-cards-title {
+    margin-bottom: 0;
+  }
+  .serm-services-card {
+    padding-top: 40px;
+  }
+  .serm-services-card-text {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .serm-description-title {
+    margin-bottom: 20px;
+  }
+  .serm-process-img {
+    display: none;
+  }
+  .serm-process-card {
+    padding-top: 20px;
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .serm-process-card-description {
+    margin-left: 30px;
+    padding-bottom: 40px;
+    padding-top: 10px;
+  }
+  .serm-process-card-img {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 0;
+  }
+  .serm-process-card-img-vector {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  .serm-process-card-img-vector::before {
+    width: 100px;
+  }
+  .serm-process-card-img-vector-none-md {
+    display: none;
+  }
+  .serm-distinction-title {
+    margin-bottom: 20px;
+  }
+  .serm-distinction-card-yellow {
+    padding: 30px;
+  }
+  .serm-distinction-card-item-text {
+    font-size: 14px;
+  }
+  .serm-slider-title {
+    max-width: 420px;
+  }
+  .serm-marketplace-card:nth-child(3n)::before {
+    opacity: 0;
+  }
+  .slide-sponsor-description {
+    max-width: 150px;
+    margin: auto;
+    margin-top: 40px;
+  }
+  .swiper-pagination-fraction {
+    color: #1e1e1e;
   }
 }
 

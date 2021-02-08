@@ -291,6 +291,10 @@
         &-md
             max-width: 100%
 @media screen and ( max-width: 992px )
+    .display
+        &-none
+            &-sm
+                display: none
     .padding
         &-none
             &-sm
@@ -539,6 +543,70 @@
             &-name
                 // min-height: 60px
     // tools\\
+    // serm
+    .serm
+        &-services
+            &-cards
+                &-title
+                    margin-bottom: 0
+            &-card
+                padding-top: 40px
+                &-text
+                    font-size: 16px
+                    line-height: 25px
+        &-description
+            &-title
+                margin-bottom: 20px
+        &-process
+            &-img
+                display: none
+            &-card
+                padding-top: 20px
+                max-width: 100%
+                display: flex
+                &-description
+                    margin-left: 30px
+                    padding-bottom: 40px
+                    padding-top: 10px
+                &-img
+                    flex-direction: column
+                    margin-bottom: 0
+                    &-vector
+                        transform: rotate(90deg)
+                        &::before
+                            width: 100px
+                        &-none-md
+                            display: none
+        &-distinction
+            &-title
+                margin-bottom: 20px
+            &-card
+                &-yellow
+                    padding: 30px 
+                &-item
+                    &-text
+                        font-size: 14px
+        &-slider
+            &-title
+                max-width: 420px
+        &-marketplace
+            &-card
+                &:nth-child(3n)::before
+                    opacity: 0
+    .slide
+        &-sponsor
+            &-description
+                max-width: 150px
+                margin: auto
+                margin-top: 40px
+    .swiper
+        &-pagination
+            &-fraction
+                color: $black
+
+    // serm\\
+
+    
 
         
 
