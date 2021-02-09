@@ -239,10 +239,11 @@ ul.nav-burg-serv li a.burger-services-item
         padding-bottom: 50px
         background-color: $white
         z-index: 6
-        position: fixed
+        position: absolute
         transition: 0.5s
         top: -2000px
         left: 0
+        // overflow-y: scroll
         &.activebur
             transition: 0.5s
             top: 0
@@ -287,9 +288,9 @@ ul.nav-burg-serv li a.burger-services-item
                   width: 24px
                   height: 11.62px  
         &-policy
-            margin-left: 12px
             font-family: 'Museo Sans Cyrl 300', sans-serif
             font-size: 14px
+            display: flex
             a
                 text-decoration: underline
                 color: $black

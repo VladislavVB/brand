@@ -3,6 +3,11 @@
         display: none
     .hidden-card-lg
         display: none
+@media screen and ( max-width: 1920px )
+    .page
+        &-title
+            &-img
+                max-height: 420px
 @media screen and ( max-width: 1349px )
     .visible-col
         display: none
@@ -54,21 +59,6 @@
         max-width: 400px
         img
             width: 400px
-    // .header-button 
-    //     width: 10px   
-
-    .swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction
-        margin: auto
-        text-align: center
-        width: 100%
-        right: 0
-        top: 160px
-    .swiper-button-prev, .swiper-container-rtl .swiper-button-next
-        left: 40%
-        top: 173px
-    .swiper-button-next, .swiper-container-rtl .swiper-button-prev
-        right: 40%
-        top: 173px
     .news-all
         width: 100%
         display: flex
@@ -91,7 +81,6 @@
                 padding-top: 10px
                 padding-bottom: 0px
         &-footer
-            display: none
             &-content
                 flex-direction: column
         &-services
@@ -212,8 +201,6 @@
     .locations-content
         display: flex
         flex-direction: column
-    // .locations-content-left
-    //     display: none
     .locations-text
         text-align: center
         font-size: 18px
@@ -279,6 +266,21 @@
         &-md
             max-width: 100%
 @media screen and ( max-width: 992px )
+    .burger
+        &-services
+            &-title
+                font-size: 18px
+                margin-top: 30px
+                margin-bottom: 30px
+        &-footer
+            &-title
+                display: none
+            &-input
+                &-wraper
+                    max-width: 100%
+    ul.nav-burg-serv li
+        width: 50%
+        font-size: 16px
     .swiper
         &-button
             &-next
@@ -1497,7 +1499,6 @@
                     margin-bottom: 0
                     border-top: 1px solid rgba($black , 0.1 )
             &-active
-                // transition: 0.5s
                 border-bottom: 0 solid #ffffff
                 &::before
                     
@@ -1681,6 +1682,61 @@
                     height: 14px
                     img
                         width: 100%
+    ul.nav-burg-serv li
+        width: 100%
+    .burger
+        &-services
+            &-title
+                font-family: 'Museo Sans Cyrl 300', sans-serif
+                font-size: 16px
+                margin-top: 24px
+                margin-bottom: 24px
+            &-right
+                display: none
+                &-active
+                    display: block
+            &-item
+                font-size: 14px
+                
+        &-footer
+            &-title
+                display: block
+                opacity: 1
+        &-content
+            &-services
+                padding-top: 0
+                position: relative
+                cursor: pointer
+                &::before
+                    position: absolute
+                    content: ''
+                    width: 10px
+                    height: 2px
+                    border-radius: 0.5px
+                    background-color: $black
+                    top: 38px
+                    right: 15px
+                    transform: rotate(45deg)
+                &::after
+                    position: absolute
+                    content: ''
+                    width: 10px
+                    height: 2px
+                    background-color: $black
+                    right: 15px
+                    top: 44px
+                    transform: rotate(135deg)
+                &-active
+                    &::before
+                        top: 43px
+                        right: 11px
+                        transform: rotate(135deg)
+                    &::after    
+                        right: 17px
+                        top: 43px
+                        transform: rotate(45deg)
+                    .burger-services-title
+                        margin-bottom: 8px
 
 @media screen and ( max-width: 400px )
     .news-all

@@ -23,7 +23,7 @@ burgerMenu.addEventListener('click', () => {
            $('body').css('overflow','auto');
            scrollToggle = false;
         } else {
-            $('body').css('overflow','hidden');
+            // $('body').css('overflow','hidden');
             scrollToggle = true;
         }
         switchMenuColor($(window).scrollTop())

@@ -451,8 +451,8 @@ button:focus {
 }
 
 .page-title-img {
-  max-height: 420px;
   width: 100%;
+  overflow: hidden;
 }
 
 .page-title-img img {
@@ -952,7 +952,7 @@ ul.nav-burg-serv li a.burger-services-item {
   padding-bottom: 50px;
   background-color: #ffffff;
   z-index: 6;
-  position: fixed;
+  position: absolute;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   top: -2000px;
@@ -1031,9 +1031,11 @@ ul.nav-burg-serv li a.burger-services-item {
 }
 
 .burger-footer-policy {
-  margin-left: 12px;
   font-family: 'Museo Sans Cyrl 300', sans-serif;
   font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .burger-footer-policy a {
@@ -2872,7 +2874,7 @@ ul.nav-burg-serv li a.burger-services-item {
   background-color: transparent;
   border: 1px solid #1e1e1e;
   display: inline-block;
-  width: 16px;
+  width: 27px;
   height: 16px;
   vertical-align: middle;
   margin-right: 10px;
@@ -3985,6 +3987,12 @@ ul.nav-burg-serv li a.burger-services-item {
   }
 }
 
+@media screen and (max-width: 1920px) {
+  .page-title-img {
+    max-height: 420px;
+  }
+}
+
 @media screen and (max-width: 1349px) {
   .visible-col {
     display: none;
@@ -4053,21 +4061,6 @@ ul.nav-burg-serv li a.burger-services-item {
   .header-content img {
     width: 400px;
   }
-  .swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
-    margin: auto;
-    text-align: center;
-    width: 100%;
-    right: 0;
-    top: 160px;
-  }
-  .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
-    left: 40%;
-    top: 173px;
-  }
-  .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
-    right: 40%;
-    top: 173px;
-  }
   .news-all {
     width: 100%;
     display: -webkit-box;
@@ -4100,9 +4093,6 @@ ul.nav-burg-serv li a.burger-services-item {
             flex-direction: column;
     padding-top: 10px;
     padding-bottom: 0px;
-  }
-  .burger-footer {
-    display: none;
   }
   .burger-footer-content {
     -webkit-box-orient: vertical;
@@ -4382,6 +4372,21 @@ ul.nav-burg-serv li a.burger-services-item {
 }
 
 @media screen and (max-width: 992px) {
+  .burger-services-title {
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .burger-footer-title {
+    display: none;
+  }
+  .burger-footer-input-wraper {
+    max-width: 100%;
+  }
+  ul.nav-burg-serv li {
+    width: 50%;
+    font-size: 16px;
+  }
   .swiper-button-next-news span {
     display: none;
   }
@@ -6102,6 +6107,71 @@ ul.nav-burg-serv li a.burger-services-item {
   }
   .customers-card-button-img img {
     width: 100%;
+  }
+  ul.nav-burg-serv li {
+    width: 100%;
+  }
+  .burger-services-title {
+    font-family: 'Museo Sans Cyrl 300', sans-serif;
+    font-size: 16px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+  .burger-services-right {
+    display: none;
+  }
+  .burger-services-right-active {
+    display: block;
+  }
+  .burger-services-item {
+    font-size: 14px;
+  }
+  .burger-footer-title {
+    display: block;
+    opacity: 1;
+  }
+  .burger-content-services {
+    padding-top: 0;
+    position: relative;
+    cursor: pointer;
+  }
+  .burger-content-services::before {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 2px;
+    border-radius: 0.5px;
+    background-color: #1e1e1e;
+    top: 38px;
+    right: 15px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .burger-content-services::after {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 2px;
+    background-color: #1e1e1e;
+    right: 15px;
+    top: 44px;
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+  .burger-content-services-active::before {
+    top: 43px;
+    right: 11px;
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+  .burger-content-services-active::after {
+    right: 17px;
+    top: 43px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .burger-content-services-active .burger-services-title {
+    margin-bottom: 8px;
   }
 }
 

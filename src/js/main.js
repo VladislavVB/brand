@@ -134,6 +134,18 @@ countriesTitle.forEach((elem, index) => {
         countriesList[index].classList.toggle('countries-list-active');
     });
 });
+
+//menu
+const burgerContentServices = document.querySelectorAll('.burger-content-services');
+const burgerServicesRight = document.querySelectorAll('.burger-services-right');
+
+burgerContentServices.forEach((elem, index) => {
+    elem.addEventListener('click', () => {
+        elem.classList.toggle('burger-content-services-active');
+        burgerServicesRight[index].classList.toggle('burger-services-right-active');
+    });
+});
+
 //contacts
 const contactLeftTitle  = document.querySelectorAll('.contact-left-title');
 const advantageTabs = document.querySelectorAll('.advantage-tabs');
