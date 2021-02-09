@@ -367,7 +367,11 @@
         &-title
             font-size: 24px
             padding-bottom: 20px
+            
+                
         &-list 
+            
+            border-bottom: 1px solid rgba($black , 0.1 )
             li
                 width: 50%
                 font-size: 18px
@@ -451,10 +455,33 @@
             &-img
                 max-height: 249px
     .current
+        padding-top: 0
         &-card
             &-title
                 &-up
                     text-align: center
+                &-description
+                    min-height: 300px
+                    max-height: 314px
+                &-text
+                    padding-top: 20px
+                    padding-bottom: 20px
+                    padding-left: 10px
+                    padding-right: 10px
+            &-text
+                font-size: 24px
+                line-height: 33.6px
+                &-data
+                    display: flex
+                    align-items: center
+                    margin-top: 57px
+                    &-text
+                        font-size: 16px
+                    &-vector
+                        width: 20.21px
+                        height: 16px
+                        img
+                            width: 100%
             &-sm
                 display: flex
                 flex-wrap: wrap
@@ -671,6 +698,7 @@
                     margin-left: 30px
                     margin-right: 30px
         &-card
+            padding: 40px
             &-title
                 font-size: 24px
                 line-height: 33.6px 
@@ -774,6 +802,8 @@
         &-content
             &-title
                 margin-bottom: 12px
+                padding-bottom: 24px
+                margin-bottom: 0
     .serm
         &-description
             &-title
@@ -1237,12 +1267,14 @@
         &-content
             &-title
                 font-size: 16px
+    .serm-marketplace-card:nth-child(2n)::before
+        opacity: 0
     .serm
         &-marketplace
             &-card
                 border-top: 1px solid rgba($black , 0.1 )
-                &:nth-child(0n)::before
-                    opacity: 0
+                // &:nth-child(2n)::before
+                //     opacity: 0
                 &::before
                     height: 40px
             &-content
@@ -1319,6 +1351,7 @@
                     margin-left: 35px
                     font-size: 14px
                     line-height: 21px
+                    padding-bottom: 24px
     .serm-faq-card-active .serm-faq-card-content 
         top: 60px
     .advantage
@@ -1364,18 +1397,65 @@
                 max-width: 100%
                 max-height: 300px
                 overflow: hidden
+            &-none
+                &-sm
+                    display: none
+                    &-active
+                        display: block
+            &-see
+                display: block
     .statistics
         padding-top: 0
         background: none
     .countries
         &-title
+            margin-bottom: 0
             font-size: 18px
+            padding-top: 24px
             padding-bottom: 24px
+            position: relative
+            cursor: pointer
+            &::before
+                position: absolute
+                content: ''
+                width: 10px
+                height: 2px
+                border-radius: 0.5px
+                background-color: $black
+                top: 33px
+                right: 0
+                transform: rotate(45deg)
+            &::after
+                position: absolute
+                content: ''
+                width: 10px
+                height: 2px
+                background-color: $black
+                right: 0
+                top: 40px
+                transform: rotate(135deg)
             &-up
                 &-sm
                     padding-top: 24px
+                    margin-bottom: 0
                     border-top: 1px solid rgba($black , 0.1 )
+            &-active
+                // transition: 0.5s
+                border-bottom: 0 solid #ffffff
+                &::before
+                    
+                    top: 43px
+                    right: 0
+                    transform: rotate(135deg)
+                &::after
+                    
+                    right: 6px
+                    top: 43px
+                    transform: rotate(45deg)
         &-list 
+            display: none
+            &-active
+                display: block
             li
                 font-size: 14px
     .display
@@ -1453,6 +1533,9 @@
                 margin-top: 12px
     .contacts
         padding-top: 0
+        &-img
+            max-height: 200px
+            align-items: flex-end
         &-border
             &-top
                 padding-top: 24px
@@ -1465,14 +1548,83 @@
             &-description
                 font-size: 14px    
                 margin-top: 12px
+        &-items
+            width: 100%
+        &-tabs
+            display: none
+            &-active
+                display: block
+        &-border
+            &-butom
+                &-sm
+                    border-bottom: 1px solid rgba($black ,0.3 )
     .contact
         &-title
             margin-bottom: 0
+        &-left
+            &-title
+                position: relative
+                cursor: pointer
+                &::before
+                    position: absolute
+                    content: ''
+                    width: 10px
+                    height: 2px
+                    border-radius: 0.5px
+                    background-color: $black
+                    top: 33px
+                    right: 0
+                    transform: rotate(45deg)
+                &::after
+                    position: absolute
+                    content: ''
+                    width: 10px
+                    height: 2px
+                    background-color: $black
+                    right: 0
+                    top: 40px
+                    transform: rotate(135deg)
+                &-active
+                    border-bottom: 0 solid #ffffff
+                    &::after
+                        content: none
+                    &::before
+                        content: none
+                        
+
     .documented
         padding-top: 0
         &-card
             &-text
                 margin-bottom: 24px
+    .customers
+        &-card
+            padding: 20px
+            margin-bottom: 14px
+            &-img
+                width: 57.5px
+                height: 20px
+            &-title
+                font-size: 18px
+                line-height: 25px
+                margin-bottom: 12px
+            p
+                font-size: 14px
+                line-height: 21px
+            &-text
+                margin-bottom: 24px
+                span
+                    display: none
+            &-button
+                &-text
+                    font-size: 14px
+                &-img
+                    margin-left: 16px
+                    width: 18px
+                    height: 14px
+                    img
+                        width: 100%
+
 @media screen and ( max-width: 400px )
     .news-all
         width: 100%

@@ -1,4 +1,5 @@
 .contacts
+    padding-top: 0
     &-img
         img
             width: 100%
@@ -18,11 +19,25 @@
             margin-top: 60px
             font-size: 24px
             font-family: 'Museo Sans Cyrl 300', sans-serif  
+            // max-width: 50%
+            // padding-right: 30px
         &-description
             margin-top: 30px
             font-family: 'Museo Sans Cyrl 500', sans-serif  
             font-size: 24px
+            // max-width: 50%
+            // padding-right: 30px
+    &-items
+        width: 50%
+        padding-right: 30px
+        &-right
+            padding-right: 0
     &-tabs
         padding-bottom: 60px
         &-last
             padding-bottom: 0
+        &-items
+            display: flex
+            flex-wrap: wrap
+            
+            // flex-direction: column
