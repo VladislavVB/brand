@@ -368,6 +368,10 @@ a:hover {
   cursor: pointer;
 }
 
+.margin-left0 {
+  margin-left: 0;
+}
+
 .width {
   width: 100%;
 }
@@ -1710,6 +1714,18 @@ ul.nav-burg-serv li a.burger-services-item {
   max-width: 230px;
 }
 
+.swiper-buttons-news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  max-width: 230px;
+  margin-top: 60px;
+}
+
 .swiper-wrapper-customers {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1736,6 +1752,11 @@ ul.nav-burg-serv li a.burger-services-item {
   width: 100%;
   height: 100%;
   overflow: hidden;
+}
+
+.swiper-pagination-news {
+  text-align: center;
+  font-family: 'Museo Sans Cyrl 500', sans-serif;
 }
 
 .swiper-pagination-fraction {
@@ -1822,6 +1843,25 @@ ul.nav-burg-serv li a.burger-services-item {
           transform: rotate(180deg);
 }
 
+.swiper-button-prev-news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffb000;
+  font-family: 'Museo Sans Cyrl 500', sans-serif;
+}
+
+.swiper-button-prev-news img {
+  margin-right: 10px;
+  width: 32.56px;
+  height: 19.37px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
 .swiper-button-next-sponsor {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1846,6 +1886,23 @@ ul.nav-burg-serv li a.burger-services-item {
 }
 
 .swiper-button-next-customers img {
+  width: 32.56px;
+  height: 19.37px;
+  margin-left: 10px;
+}
+
+.swiper-button-next-news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffb000;
+  font-family: 'Museo Sans Cyrl 500', sans-serif;
+}
+
+.swiper-button-next-news img {
   width: 32.56px;
   height: 19.37px;
   margin-left: 10px;
@@ -3244,7 +3301,6 @@ ul.nav-burg-serv li a.burger-services-item {
   padding-bottom: 40px;
   padding-top: 60px;
   position: relative;
-  height: 100%;
 }
 
 .serm-services-card::after {
@@ -3345,6 +3401,7 @@ ul.nav-burg-serv li a.burger-services-item {
 
 .serm-process-card {
   max-width: 300px;
+  height: 100%;
 }
 
 .serm-process-card-img {
@@ -3384,6 +3441,70 @@ ul.nav-burg-serv li a.burger-services-item {
 .serm-process-card-text {
   font-family: 'Museo Sans Cyrl 300', sans-serif;
   font-size: 16px;
+}
+
+.serm-process-card-description {
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.serm-process-second-img {
+  padding-bottom: 0;
+}
+
+.serm-process-second-card-buttom {
+  margin-bottom: 0;
+}
+
+.serm-process-second-card-button {
+  font-size: 18px;
+  font-family: 'Museo Sans Cyrl 500', sans-serif;
+  color: #ffb000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin-top: 65px;
+}
+
+.serm-process-second-card-button img {
+  width: 27.8px;
+  height: 16px;
+  margin-left: 16px;
+}
+
+.serm-process-second-card-button::before {
+  position: absolute;
+  content: '';
+  width: 222px;
+  height: 0.5px;
+  background-color: #ffb000;
+  bottom: -1px;
+}
+
+.serm-process-second-card-img-vector {
+  position: relative;
+}
+
+.serm-process-second-card-img-vector::before {
+  position: absolute;
+  content: '';
+  right: 100px;
+  top: 14px;
+  width: 100px;
+  height: 1px;
+  background-color: #ffb000;
 }
 
 .serm-slider-title {
@@ -3575,6 +3696,10 @@ ul.nav-burg-serv li a.burger-services-item {
   display: none;
 }
 
+.serm-faq-card-content-active {
+  display: block;
+}
+
 .serm-faq-card-active .serm-faq-card-trigger {
   padding-bottom: 150px;
   -webkit-transition: 0.2s;
@@ -3589,21 +3714,6 @@ ul.nav-burg-serv li a.burger-services-item {
   height: 4px;
   right: 0;
   top: 0;
-}
-
-.serm-faq-card-active .serm-faq-card-content {
-  display: block;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  top: 100px;
-  opacity: 1;
-  padding-bottom: 30px;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-}
-
-.serm-faq-card-active .serm-faq-card-content .serm-faq-card-trigger {
-  padding-bottom: 0;
 }
 
 .tools-ebay-cardimg img {
@@ -4272,6 +4382,15 @@ ul.nav-burg-serv li a.burger-services-item {
 }
 
 @media screen and (max-width: 992px) {
+  .swiper-button-next-news span {
+    display: none;
+  }
+  .swiper-button-prev-news span {
+    display: none;
+  }
+  .swiper-buttons-news {
+    max-width: 150px;
+  }
   .display-none-sm {
     display: none;
   }
@@ -4651,6 +4770,7 @@ ul.nav-burg-serv li a.burger-services-item {
     margin-left: 30px;
     padding-bottom: 40px;
     padding-top: 10px;
+    height: auto;
   }
   .serm-process-card-img {
     -webkit-box-orient: vertical;
@@ -4668,6 +4788,48 @@ ul.nav-burg-serv li a.burger-services-item {
   }
   .serm-process-card-img-vector-none-md {
     display: none;
+  }
+  .serm-process-second-description {
+    margin-top: 40px;
+  }
+  .serm-process-second-img {
+    display: none;
+  }
+  .serm-process-second-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 40px;
+  }
+  .serm-process-second-card-button {
+    margin-top: 40px;
+    font-size: 16px;
+  }
+  .serm-process-second-card-button img {
+    width: 20px;
+    height: 14px;
+  }
+  .serm-process-second-card-button::before {
+    width: 195px;
+  }
+  .serm-process-second-card-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .serm-process-second-card-img-vector::before {
+    right: -150px;
+    top: 20px;
+  }
+  .serm-process-second-card-description {
+    margin-left: 0;
   }
   .serm-distinction-title {
     margin-bottom: 20px;
@@ -4818,6 +4980,9 @@ ul.nav-burg-serv li a.burger-services-item {
 }
 
 @media screen and (max-width: 768px) {
+  .current-card-sm-img {
+    max-width: 100%;
+  }
   .news-all {
     width: 100%;
     display: -webkit-box;
@@ -4920,6 +5085,18 @@ ul.nav-burg-serv li a.burger-services-item {
   .serm-description-title {
     font-size: 18px;
     line-height: 25px;
+  }
+  .serm-process-card-description {
+    margin-left: 15px;
+  }
+  .serm-process-second-card-button {
+    font-size: 14px;
+  }
+  .serm-process-second-card-button::before {
+    width: 175px;
+  }
+  .serm-process-second-card-img-vector::before {
+    right: -120px;
   }
   .about-description {
     line-height: 21px;

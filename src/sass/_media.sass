@@ -279,6 +279,19 @@
         &-md
             max-width: 100%
 @media screen and ( max-width: 992px )
+    .swiper
+        &-button
+            &-next
+                &-news
+                    span
+                        display: none
+            &-prev
+                &-news
+                    span
+                        display: none
+        &-buttons
+            &-news
+                max-width: 150px
     .display
         &-none
             &-sm
@@ -592,6 +605,7 @@
             &-title
                 margin-bottom: 20px
         &-process
+            
             &-img
                 display: none
             &-card
@@ -602,6 +616,7 @@
                     margin-left: 30px
                     padding-bottom: 40px
                     padding-top: 10px
+                    height: auto
                 &-img
                     flex-direction: column
                     margin-bottom: 0
@@ -611,6 +626,34 @@
                             width: 100px
                         &-none-md
                             display: none
+            &-second
+                &-description
+                    margin-top: 40px
+                &-img
+                    display: none
+                &-card
+                    display: flex
+                    flex-direction: column
+                    margin-bottom: 40px
+                    &-button
+                        margin-top: 40px
+                        font-size: 16px
+                        img
+                            width: 20px
+                            height: 14px
+                        &::before
+                            width: 195px
+                    &-img
+                        display: flex
+                        align-items: flex-start
+                        &-vector
+                            &::before
+                                right: -150px
+                                top: 20px
+
+                    &-description
+                        margin-left: 0
+                        
         &-distinction
             &-title
                 margin-bottom: 20px
@@ -730,8 +773,8 @@
     .current
         &-card
             &-sm
-                &-text
-                    // max-width: 169px
+                &-img
+                    max-width: 100%
     .news-all
         width: 100%
         display: flex
@@ -809,6 +852,20 @@
             &-title
                 font-size: 18px
                 line-height: 25px
+        &-process
+            &-card
+                &-description
+                    margin-left: 15px
+            &-second
+                &-card
+                    &-button
+                        font-size: 14px
+                        &::before
+                            width: 175px
+                    &-img
+                        &-vector
+                            &::before
+                                right: -120px
     .about
         &-description
             line-height: 21px

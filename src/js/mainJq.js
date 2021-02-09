@@ -13,9 +13,9 @@ $( document ).ready(function() {
   }
 
   //faq
-  $('.serm-faq-card-trigger').click(function(){
-    $(this).next('.serm-faq-card-content').toggle(200);
-  });
+  // $('.serm-faq-card-trigger').click(function(){
+  //   $(this).next('.serm-faq-card-content').toggle(200);
+  // });
 
   //countries
   // $('.countries-title').click(function(){

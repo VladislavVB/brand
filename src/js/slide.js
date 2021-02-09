@@ -21,6 +21,19 @@ var swiperSponsors = new Swiper('.swiper-container-sponsor', {
     }
 });
 
+var swiperNews = new Swiper('.swiper-container-news', {
+    slidesPerView: 1,
+    simulateTouch: false,
+    pagination: {
+        el: '.swiper-pagination-news',
+        type: 'fraction',
+    },
+    navigation: {   
+        nextEl: '.swiper-button-next-news',
+        prevEl: '.swiper-button-prev-news',
+    },
+});
+
 var swiperCustomers = new Swiper('.swiper-container-customers', {
     slidesPerView: 1,
     simulateTouch: false,

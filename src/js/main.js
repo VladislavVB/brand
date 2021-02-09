@@ -145,6 +145,17 @@ contactLeftTitle.forEach((elem, index) => {
     });
 });
 
+//faq
+const sermFaqCardTrigger = document.querySelectorAll('.serm-faq-card-trigger');
+const sermFaqCardContent = document.querySelectorAll('.serm-faq-card-content');
+
+sermFaqCardTrigger.forEach((elem, index) => {
+    elem.addEventListener('click', () => {
+        elem.classList.toggle('serm-faq-card-active');
+        sermFaqCardContent[index].classList.toggle('serm-faq-card-content-active');
+    });
+});
+
 //leadership
 const leadershipCardSee = document.querySelector('.leadership-card-see');
 const leadershipCardNoneSm = document.querySelectorAll('.leadership-card-none-sm');

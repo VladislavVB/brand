@@ -6,6 +6,12 @@
       align-items: center
       margin: auto
       max-width: 230px
+    &-news
+      display: flex
+      align-items: center
+      margin: auto
+      max-width: 230px
+      margin-top: 60px
   &-wrapper
     &-customers
       display: flex
@@ -23,7 +29,9 @@
       height: 100%
       overflow: hidden
   &-pagination
-    
+    &-news
+      text-align: center
+      font-family: 'Museo Sans Cyrl 500', sans-serif
     &-fraction
       font-family: 'Museo Sans Cyrl 500', sans-serif
       &::before
@@ -72,6 +80,16 @@
           width: 32.56px
           height: 19.37px
           transform: rotate(180deg)
+      &-news
+        display: flex
+        align-items: center
+        color: $yellow
+        font-family: 'Museo Sans Cyrl 500', sans-serif
+        img
+          margin-right: 10px
+          width: 32.56px
+          height: 19.37px
+          transform: rotate(180deg)
     &-next
       &-sponsor
         display: flex
@@ -86,6 +104,16 @@
           width: 32.56px
           height: 19.37px
           margin-left: 10px
+      &-news
+        display: flex
+        align-items: center
+        color: $yellow
+        font-family: 'Museo Sans Cyrl 500', sans-serif
+        img
+          width: 32.56px
+          height: 19.37px
+          margin-left: 10px
+        
 .slide
   &-sponsor
     &-item

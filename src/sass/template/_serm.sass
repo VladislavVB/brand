@@ -7,7 +7,7 @@
             padding-bottom: 40px
             padding-top: 60px
             position: relative
-            height: 100%
+            // height: 100%
             &::after
                 position: absolute
                 content: ''
@@ -71,6 +71,7 @@
             margin-top: 60px
         &-card
             max-width: 300px
+            height: 100%
             &-img
                 display: flex
                 justify-content: space-between
@@ -94,6 +95,52 @@
             &-text
                 font-family: 'Museo Sans Cyrl 300', sans-serif
                 font-size: 16px
+            &-description
+                height: 70%
+                display: flex
+                align-content: space-between
+                flex-direction: column
+        &-second
+            &-img
+                padding-bottom: 0
+            &-card
+                &-buttom
+                    margin-bottom: 0
+                &-button
+                    font-size: 18px
+                    font-family: 'Museo Sans Cyrl 500', sans-serif
+                    color: $yellow
+                    display: flex
+                    align-items: center
+                    position: relative
+                    margin-top: 65px
+                    img
+                        width: 27.8px
+                        height: 16px
+                        margin-left: 16px
+                    &::before
+                        position: absolute
+                        content: ''
+                        width: 222px
+                        height: 0.5px
+                        background-color: $yellow
+                        bottom: -1px
+                &-img
+                    &-vector
+                        position: relative
+                        &::before
+                            position: absolute
+                            content: ''
+                            right: 100px
+                            top: 14px
+                            width: 100px
+                            height: 1px
+                            background-color: $yellow
+
+                        
+
+            &-description
+                // height: 100%
     &-slider
         &-title
             max-width: 590px
@@ -226,10 +273,6 @@
                     align-items: center
                     margin-left: 40px
             &-content
-                // transition: 0.5s
-                // position: absolute
-                // opacity: 0
-                // top: 0
                 margin-left: 76px
                 max-width: 390px
                 padding-bottom: 30px
@@ -237,10 +280,8 @@
                 font-size: 16px
                 line-height: 24px
                 display: none
-// .serm-faq-card-input:checked ~ .serm-faq-card-trigger
-// .serm-faq-card-input:checked ~ .serm-faq-card-content
-//     display: block
-                    
+                &-active
+                    display: block
 .serm-faq-card-active 
     .serm-faq-card-trigger
         padding-bottom: 150px
@@ -252,12 +293,3 @@
             height: 4px
             right: 0
             top: 0
-.serm-faq-card-active .serm-faq-card-content
-    display: block
-    transition: 0.5s
-    top: 100px
-    opacity: 1
-    padding-bottom: 30px
-    transition: 0.2s
-    .serm-faq-card-trigger
-        padding-bottom: 0
