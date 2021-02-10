@@ -2397,7 +2397,7 @@ ul.nav-burg-serv li a.burger-services-item {
 }
 
 .newscard-description {
-  max-width: 240px;
+  max-width: 195px;
   margin-left: 20px;
 }
 
@@ -2555,8 +2555,8 @@ ul.nav-burg-serv li a.burger-services-item {
 
 .statistics {
   padding-top: 80px;
-  background: url("../img/locations/map-page.png") 70% 15% no-repeat;
-  background-size: 70%;
+  background: url("../img/locations/map-page.png") 60% 15% no-repeat;
+  background-size: 65%;
 }
 
 .countries-title {
@@ -2615,6 +2615,8 @@ ul.nav-burg-serv li a.burger-services-item {
 .form img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .form-img-success {
@@ -2698,6 +2700,9 @@ ul.nav-burg-serv li a.burger-services-item {
   max-width: 400px;
   font-family: 'Museo Sans Cyrl 300', sans-serif;
   font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .form-text-description a {
@@ -2835,6 +2840,9 @@ ul.nav-burg-serv li a.burger-services-item {
 }
 
 .footer-card-policy-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   color: #d2d2d2;
 }
 
@@ -2854,6 +2862,10 @@ ul.nav-burg-serv li a.burger-services-item {
 
 .footer-air-right {
   padding-right: 60px;
+}
+
+.footer-air-right-first {
+  padding-right: 40px;
 }
 
 .footer-air-left {
@@ -2880,12 +2892,30 @@ ul.nav-burg-serv li a.burger-services-item {
   color: #ffffff;
 }
 
+.footer-policy-text {
+  max-width: 89%;
+  margin-left: 10px;
+}
+
 .footer-card-policy-text-cheak::before {
   content: '';
   background-color: transparent;
   border: 1px solid #1e1e1e;
   display: inline-block;
-  width: 27px;
+  width: 38px;
+  height: 16px;
+  vertical-align: middle;
+  margin-right: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.footer-form-card-policy-text-cheak::before {
+  content: '';
+  background-color: transparent;
+  border: 1px solid #1e1e1e;
+  display: inline-block;
+  width: 28px;
   height: 16px;
   vertical-align: middle;
   margin-right: 10px;
@@ -3125,12 +3155,9 @@ ul.nav-burg-serv li a.burger-services-item {
   display: flex;
 }
 
-.customers {
-  padding-top: 0;
-}
-
 .customers-card {
   padding: 60px;
+  margin-bottom: 40px;
 }
 
 .customers-card-title {
@@ -3207,6 +3234,10 @@ ul.nav-burg-serv li a.burger-services-item {
   margin-bottom: 40px;
   color: #ffb000;
   text-decoration: underline;
+}
+
+.customers-content-tab-show-sm {
+  display: none;
 }
 
 .customerscard-description {
@@ -4083,7 +4114,7 @@ ul.nav-burg-serv li a.burger-services-item {
   }
 }
 
-@media screen and (max-width: 1349px) {
+@media screen and (max-width: 1353px) {
   .visible-col {
     display: none;
   }
@@ -4092,6 +4123,15 @@ ul.nav-burg-serv li a.burger-services-item {
   }
   .hidden-card-lg {
     display: none;
+  }
+  .swiper-container-sponsor {
+    max-width: 897px;
+  }
+  .newscard-description {
+    max-width: 195px;
+  }
+  .newscard-img {
+    max-width: 82px;
   }
 }
 
@@ -4102,12 +4142,13 @@ ul.nav-burg-serv li a.burger-services-item {
   .hidden-card-lg {
     display: none;
   }
-  .swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
-    bottom: 2px;
+  .newscard-description {
+    max-width: 192px;
+    margin-left: 0;
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1205px) {
   .container-custom {
     max-width: 1140px;
   }
@@ -4131,6 +4172,9 @@ ul.nav-burg-serv li a.burger-services-item {
   }
   .hidden-card-lg {
     display: none;
+  }
+  .swiper-container-sponsor {
+    max-width: 700px;
   }
 }
 
@@ -5012,6 +5056,9 @@ ul.nav-burg-serv li a.burger-services-item {
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
+  .customers {
+    padding-top: 0;
+  }
   .customers-content-titles {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -5023,6 +5070,16 @@ ul.nav-burg-serv li a.burger-services-item {
             justify-content: center;
     max-width: 500px;
     margin: auto;
+    padding-top: 40px;
+    position: relative;
+  }
+  .customers-content-titles::before {
+    position: absolute;
+    content: '';
+    width: 630px;
+    height: 0.5px;
+    background-color: rgba(30, 30, 30, 0.3);
+    top: 0px;
   }
   .customers-content-title-left {
     margin-left: 30px;
@@ -5078,6 +5135,17 @@ ul.nav-burg-serv li a.burger-services-item {
 }
 
 @media screen and (max-width: 768px) {
+  .current-card-text-data {
+    margin-top: 20px;
+  }
+  .customers-content-titles::before {
+    position: absolute;
+    content: '';
+    width: 430px;
+    height: 0.5px;
+    background-color: rgba(30, 30, 30, 0.3);
+    top: 0px;
+  }
   .menu-firstb {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -5211,6 +5279,13 @@ ul.nav-burg-serv li a.burger-services-item {
 }
 
 @media screen and (max-width: 576px) {
+  .countries-list li {
+    display: inline-block;
+    width: 49%;
+  }
+  .countries-lists ul {
+    padding-left: 0;
+  }
   .bg-light-blue {
     background-color: #ffffff;
   }
@@ -5728,6 +5803,7 @@ ul.nav-burg-serv li a.burger-services-item {
   .form-description {
     width: 100%;
     margin-left: 15px;
+    margin-right: 15px;
   }
   .form-button {
     width: 100%;
@@ -6042,7 +6118,7 @@ ul.nav-burg-serv li a.burger-services-item {
     margin-top: 8px;
   }
   .current-card-text-data {
-    margin-top: 32px;
+    margin-top: 65px;
   }
   .current-card-text-data-text {
     font-size: 14px;
@@ -6195,6 +6271,9 @@ ul.nav-burg-serv li a.burger-services-item {
   .documented-card-text {
     margin-bottom: 24px;
   }
+  .customers {
+    padding-top: 0;
+  }
   .customers-card {
     padding: 20px;
     margin-bottom: 14px;
@@ -6228,6 +6307,79 @@ ul.nav-burg-serv li a.burger-services-item {
   }
   .customers-card-button-img img {
     width: 100%;
+  }
+  .customers-content-tab-show-sm {
+    display: block;
+    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-top: 1px solid rgba(30, 30, 30, 0.3);
+    border-bottom: 1px solid rgba(30, 30, 30, 0.3);
+    position: relative;
+    cursor: pointer;
+    color: #ffb000;
+    font-family: 'Museo Sans Cyrl 500', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
+  .customers-content-tab-show-sm::before {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 2px;
+    border-radius: 0.5px;
+    background-color: #ffb000;
+    top: 38px;
+    right: 15px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .customers-content-tab-show-sm::after {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 2px;
+    background-color: #ffb000;
+    right: 15px;
+    top: 44px;
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+  .customers-content-tab-show-sm-active::before {
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+  .customers-content-tab-show-sm-active::after {
+    top: 38px;
+    right: 21px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .customers-content-titles {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-top: 0 solid #000;
+    display: none;
+  }
+  .customers-content-titles::before {
+    content: none;
+  }
+  .customers-content-titles-active {
+    display: block;
+  }
+  .customers-content-title-left {
+    font-size: 14px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
   ul.nav-burg-serv li {
     width: 100%;
@@ -6293,6 +6445,21 @@ ul.nav-burg-serv li a.burger-services-item {
   }
   .burger-content-services-active .burger-services-title {
     margin-bottom: 8px;
+  }
+  .form-content-right {
+    padding-right: 15px;
+  }
+  .opacity-content-active {
+    position: relative;
+  }
+  .opacity-content-active::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(30, 30, 30, 0.3);
+    z-index: 2;
   }
 }
 

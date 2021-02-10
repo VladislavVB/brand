@@ -50,6 +50,7 @@
         &-policy
             display: flex
             &-text
+                display: flex
                 color: $gray
                 a
                     font-family: 'Museo Sans Cyrl 700', sans-serif
@@ -63,6 +64,8 @@
             padding-top: 60px
         &-right
             padding-right: 60px
+            &-first
+                padding-right: 40px
         &-left
             padding-left: 60px
         &-bottom
@@ -79,13 +82,28 @@
         outline: none
         width: 100%
         color: $white
+    &-policy
+        &-text
+            max-width: 89%
+            margin-left: 10px
 .footer-card-policy-text-cheak
     &::before
         content: ''
         background-color: transparent
         border: 1px solid $black
         display: inline-block
-        width: 27px
+        width: 38px
+        height: 16px
+        vertical-align: middle
+        margin-right: 10px
+        transition: 0.3s
+.footer-form-card-policy-text-cheak
+    &::before
+        content: ''
+        background-color: transparent
+        border: 1px solid $black
+        display: inline-block
+        width: 28px
         height: 16px
         vertical-align: middle
         margin-right: 10px
@@ -97,6 +115,7 @@
         background-color: $white
 .policy
     display: none
+    
     &-fake
         display: inline-block
         width: 16px

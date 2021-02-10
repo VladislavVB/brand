@@ -119,23 +119,23 @@
       <div class="page-content">
         <div class="page-content-left">
           <div class="container ">
+            <div class="customers-content-tab-show-sm">all categories</div>
             <div class="customers-content-titles">
-              <div onclick="CustomersContentActive(0)"
-                class="customers-content-title-left customers-content-title-left-active">all categories</div>
-              <div onclick="CustomersContentActive(1)" class="customers-content-title-left">bank</div>
-              <div onclick="CustomersContentActive(2)" class="customers-content-title-left">media</div>
-              <div onclick="CustomersContentActive(3)" class="customers-content-title-left">retail</div>
-              <div onclick="CustomersContentActive(4)" class="customers-content-title-left">education</div>
+              <div onclick="CustomersContentActive(0, 'all categories')"class="customers-content-title-left customers-content-title-left-active">all categories</div>
+              <div onclick="CustomersContentActive(1, 'bank')" class="customers-content-title-left">bank</div>
+              <div onclick="CustomersContentActive(2, 'media')" class="customers-content-title-left">media</div>
+              <div onclick="CustomersContentActive(3, 'retail')" class="customers-content-title-left">retail</div>
+              <div onclick="CustomersContentActive(4, 'education')" class="customers-content-title-left">education</div>
             </div>
           </div>
         </div>
-        <div class="page-content-right">
-          <div class="container-fluid">
+        <div class="page-content-right opacity-content width">
+          <div class="container">
             <div class="row customers-content-hidden customers-content-active">
               <div class="swiper-container-customers">
                 <div class="swiper-wrapper swiper-wrapper-customers">
                   <div class="swiper-slide ">
-                    <div class="col-lg-12">
+                    <div class="col-lg-12 bg-light-blue">
                       <div class="customers-card">
                         <div class="customers-card-img">
                           <img src="img/customers/logo bank.png" alt="">
@@ -151,7 +151,7 @@
                         </button>
                       </div>
                     </div>
-                    <div class="col-lg-12">
+                    <div class="col-lg-12 bg-light-blue">
                       <div class="customers-card">
                         <div class="customers-card-img">
                           <img src="img/customers/logo bank.png" alt="">
@@ -169,7 +169,7 @@
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <div class="col-lg-12">
+                    <div class="col-lg-12 bg-light-blue">
                       <div class="customers-card">
                         <div class="customers-card-img">
                           <img src="img/customers/logo bank.png" alt="">
@@ -401,10 +401,10 @@
     </div>
   </section>
   <!-- конец customers -->
-  <!-- начало footer  -->
+  <!-- начало footer -->
   <footer class="footer">
     <div class="container-custom">
-      <div class="row hide-col-sm">
+      <div class="row ">
         <div class="col-md-3 footer-border-right footer-border-bottom none-sm">
           <a href="#" class="footer-logo"><img src="img/footer/footer-logo.png" alt=""></a>
         </div>
@@ -421,7 +421,7 @@
       </div>
       <div class="row">
         <div
-          class="col-lg-3 col-md-6 order-1 order-md-1 order-lg-1 footer-air-top footer-border-right footer-air-bottom footer-air-right">
+          class="col-lg-3 col-md-6 order-1 order-md-1 order-lg-1 footer-air-top footer-border-right footer-air-bottom footer-air-right footer-air-right-first">
           <div class="footer-card">
             <div class="footer-card-title">Newsletter Subscription</div>
             <div class="footer-card-item footer-card-input"><input class="footer-input" type="text"
@@ -433,8 +433,8 @@
               <label for="policy-footer" class="footer-card-policy-text">
                 <input id="policy-footer" class="policy" type="checkbox" checked="checked">
                 <span class="policy-fake"></span>
-                <span>I consent to the processing of my personal data in accordance with
-                  the terms of the <a href="#">privacy policy</a></span></label>
+                <div class="footer-policy-text">I consent to the processing of my personal data in accordance with
+                  the terms of the <a href="#">privacy policy</a></div></label>
             </div>
 
           </div>
@@ -506,6 +506,7 @@
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="js/slide.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/mainSecond.js"></script>
   <script src="js/headerMenu.js"></script>
 </body>
 

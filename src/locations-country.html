@@ -169,7 +169,7 @@
   </section>
   <!-- конец advantages -->
   <!-- начало statistics  -->
-  <section class="section">
+  <section class="section bg-light-blue">
     <div class="container-custom">
       <div class="page-content">
         <div class="page-content-left">
@@ -538,48 +538,53 @@
     </div>
   </section>
   <!-- конец services -->
-  <!-- начало contacts  -->
-  <section id="contacts" class="form section">
-    <div class="row form-width">
-      <div class="col-md-5 form-img none-sm">
-        <img src="img/form/Rectangle.png" alt="">
-      </div>
-      <div class="col-md-12 col-lg-7">
-        <div class="form-content">
-          <div class="form-content-title">Enter your details and our Manager will contact you as soon as possible</div>
-          <div class="form-content-description">All fields are required. Please write truthful information*</div>
-          <form class="form-form" action="#">
-            <div class="row">
-              <div class="col-sm-6"><input class="form-input" placeholder="Your name" type="text"></div>
-              <div class="col-sm-6"><input class="form-input" placeholder="Your phone number" type="tel"></div>
-              <div class="col-sm-6"><input class="form-input" placeholder="Neme company" type="text"></div>
-              <div class="col-sm-6"><input class="form-input" placeholder="E-mail" type="text"></div>
-              <div class="col-12"><textarea class="form-message" placeholder="Your question" type="text"></textarea>
-              </div>
-              <div class="form-description">
-                <div class="form-text">
-                  <input id="form-policy" class="form-policy" type="checkbox" checked="checked">
-                  <label for="form-policy" class="form-text-description footer-card-policy-text-cheak">I consent to the
-                    processing of my personal data in accordance with
-                    the terms of the <a href="#">privacy policy</a></label>
-                </div>
-                <button onclick="sendSuccess()" class="form-button">Send <img class="" src="img/form/send.png"
-                    alt=""></button>
-              </div>
+  <!-- начало contacts -->
+  <section id="contacts" class="form section bg-light-blue">
+    <div class="container-fluid">
+      <div class="row   ">
+        <div class="col-md-5 form-img none-sm padding-none">
+          <img src="img/form/Rectangle.png" alt="">
+        </div>
+        <div class="col-md-12 col-lg-7 form-content-right">
+          <div class="form-content">
+            <div class="form-content-title">Enter your details and our Manager will contact you as soon as possible
             </div>
-          </form>
-          <div class="form-img-success">
-            <img src="img/form/success.png" alt="">
+            <div class="form-content-description">All fields are required. Please write truthful information*</div>
+            <form class="form-form" action="#">
+              <div class="row">
+                <div class="col-sm-6"><input class="form-input" placeholder="Your name" type="text"></div>
+                <div class="col-sm-6"><input class="form-input" placeholder="Your phone number" type="tel"></div>
+                <div class="col-sm-6"><input class="form-input" placeholder="Neme company" type="text"></div>
+                <div class="col-sm-6"><input class="form-input" placeholder="E-mail" type="text"></div>
+                <div class="col-12"><textarea class="form-message" placeholder="Your question" type="text"></textarea>
+                </div>
+                <div class="form-description">
+                  <div class="form-text">
+                    <input id="form-policy" class="form-policy" type="checkbox" checked="checked">
+                    <label for="form-policy" class="form-text-description footer-card-policy-text-cheak footer-form-card-policy-text-cheak"><div>I consent to
+                      the
+                      processing of my personal data in accordance with
+                      the terms of the <a href="#">privacy policy</a></div></label>
+                  </div>
+                  <button onclick="sendSuccess()" class="form-button">Send <img class="" src="img/form/send.png"
+                      alt=""></button>
+                </div>
+              </div>
+            </form>
+            <div class="form-img-success">
+              <img src="img/form/success.png" alt="">
+            </div>
           </div>
         </div>
       </div>
     </div>
+
   </section>
   <!-- конец contacts -->
-  <!-- начало footer  -->
+  <!-- начало footer -->
   <footer class="footer">
     <div class="container-custom">
-      <div class="row hide-col-sm">
+      <div class="row ">
         <div class="col-md-3 footer-border-right footer-border-bottom none-sm">
           <a href="#" class="footer-logo"><img src="img/footer/footer-logo.png" alt=""></a>
         </div>
@@ -596,7 +601,7 @@
       </div>
       <div class="row">
         <div
-          class="col-lg-3 col-md-6 order-1 order-md-1 order-lg-1 footer-air-top footer-border-right footer-air-bottom footer-air-right">
+          class="col-lg-3 col-md-6 order-1 order-md-1 order-lg-1 footer-air-top footer-border-right footer-air-bottom footer-air-right footer-air-right-first">
           <div class="footer-card">
             <div class="footer-card-title">Newsletter Subscription</div>
             <div class="footer-card-item footer-card-input"><input class="footer-input" type="text"
@@ -608,8 +613,8 @@
               <label for="policy-footer" class="footer-card-policy-text">
                 <input id="policy-footer" class="policy" type="checkbox" checked="checked">
                 <span class="policy-fake"></span>
-                <span>I consent to the processing of my personal data in accordance with
-                  the terms of the <a href="#">privacy policy</a></span></label>
+                <div class="footer-policy-text">I consent to the processing of my personal data in accordance with
+                  the terms of the <a href="#">privacy policy</a></div></label>
             </div>
 
           </div>
@@ -682,6 +687,7 @@
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="js/slide.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/mainSecond.js"></script>
   <script src="js/headerMenu.js"></script>
 </body>
 

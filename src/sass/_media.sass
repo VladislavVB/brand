@@ -8,13 +8,22 @@
         &-title
             &-img
                 max-height: 420px
-@media screen and ( max-width: 1349px )
+@media screen and ( max-width: 1353px )
     .visible-col
         display: none
     .swiper-container
         max-width: 1070px
     .hidden-card-lg
         display: none
+    .swiper
+        &-container
+            &-sponsor
+                max-width: 897px
+    .newscard
+        &-description
+            max-width: 195px
+        &-img
+            max-width: 82px
 @media screen and ( max-width: 1250px )
     .news
 
@@ -26,15 +35,18 @@
                 //     width: 100%
     .hidden-card-lg
         display: none
-    .swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction
-        bottom: 2px
-@media screen and ( max-width: 1200px )
+    .newscard
+        &-description
+            max-width: 192px
+            margin-left: 0
+@media screen and ( max-width: 1205px )
     .container-custom
         max-width: 1140px
     .visible-col
         display: none
     .hidden-card-lg
         display: none
+    
 @media screen and ( max-width: 1139px )
     .swiper-container
         max-width: 875px
@@ -45,6 +57,10 @@
                 width: 100%
     .hidden-card-lg
         display: none
+    .swiper
+        &-container
+            &-sponsor
+                max-width: 700px
 @media screen and ( max-width: 1024px )
 
     .about
@@ -728,6 +744,7 @@
                     display: flex
                     justify-content: flex-start
     .customers
+        padding-top: 0
         &-content
             &-titles
                 display: flex
@@ -735,6 +752,15 @@
                 justify-content: center
                 max-width: 500px
                 margin: auto
+                padding-top: 40px
+                position: relative
+                &::before
+                    position: absolute
+                    content: ''
+                    width: 630px
+                    height: 0.5px
+                    background-color: rgba($black , 0.3)
+                    top: 0px     
             &-title
                 &-left
                     margin-left: 30px
@@ -769,10 +795,18 @@
     .locations
         background: url(../img/locations/map.png) 70% center/contain no-repeat
 @media screen and ( max-width: 768px )
-    // .display
-    //     &-none
-    //         &-md
-    //             display: none
+    .current-card-text-data
+        margin-top: 20px
+    .customers
+        &-content
+            &-titles
+                &::before
+                    position: absolute
+                    content: ''
+                    width: 430px
+                    height: 0.5px
+                    background-color: rgba($black , 0.3)
+                    top: 0px     
     .menu
         &-firstb
             display: flex
@@ -872,6 +906,15 @@
                             &-md
                                 border-bottom: 0px solid #000
 @media screen and ( max-width: 576px )
+    .countries
+        &-list 
+            li
+                display: inline-block
+                width: 49%
+        &-lists
+            ul
+                padding-left: 0
+
     .bg
         &-light
             &-blue
@@ -1319,6 +1362,7 @@
         &-description
             width: 100%
             margin-left: 15px
+            margin-right: 15px
         &-button
             width: 100%
             display: flex
@@ -1570,7 +1614,7 @@
                     font-size: 12px
                     margin-top: 8px
                 &-data
-                    margin-top: 32px
+                    margin-top: 65px
                     &-text
                         font-size: 14px
                         line-height: 14px
@@ -1695,6 +1739,7 @@
             &-text
                 margin-bottom: 24px
     .customers
+        padding-top: 0
         &-card
             padding: 20px
             margin-bottom: 14px
@@ -1721,6 +1766,68 @@
                     height: 14px
                     img
                         width: 100%
+        &-content
+            &-tab
+                &-show
+                    &-sm
+                        display: block
+                        margin: 0
+                        margin-left: 0
+                        margin-right: 0
+                        padding-top: 24px
+                        padding-bottom: 24px
+                        border-top: 1px solid rgba($black , 0.3)
+                        border-bottom: 1px solid rgba($black , 0.3)
+                        position: relative
+                        cursor: pointer
+                        color: $yellow
+                        font-family: 'Museo Sans Cyrl 500', sans-serif
+                        font-size: 16px
+                        text-transform: uppercase
+                        text-decoration: underline
+                        &::before
+                            position: absolute
+                            content: ''
+                            width: 10px
+                            height: 2px
+                            border-radius: 0.5px
+                            background-color: $yellow
+                            top: 38px
+                            right: 15px
+                            transform: rotate(45deg)
+                        &::after
+                            position: absolute
+                            content: ''
+                            width: 10px
+                            height: 2px
+                            background-color: $yellow
+                            right: 15px
+                            top: 44px
+                            transform: rotate(135deg)
+                        &-active
+                            &::before
+                                transform: rotate(135deg)
+                            &::after
+                                top: 38px
+                                right: 21px
+                                transform: rotate(45deg)
+            &-titles
+                flex-direction: column  
+                padding-top: 8px
+                padding-bottom: 8px
+                border-top: 0 solid #000
+                display: none
+                &::before
+                    content: none  
+                &-active
+                    display: block 
+            &-title
+                &-left
+                    font-size: 14px
+                    margin-bottom: 0
+                    margin-top: 0
+                    padding-top: 16px
+                    padding-bottom: 16px     
     ul.nav-burg-serv li
         width: 100%
     .burger
@@ -1776,7 +1883,22 @@
                         transform: rotate(45deg)
                     .burger-services-title
                         margin-bottom: 8px
-
+    .form
+        &-content
+            &-right
+                padding-right: 15px
+    .opacity
+        &-content
+            &-active
+                position: relative
+                &::before
+                    position: absolute  
+                    content: ''
+                    width: 100%
+                    height: 100%
+                    overflow: hidden
+                    background-color: rgba($black , 0.3 )
+                    z-index: 2
 @media screen and ( max-width: 400px )
     .news-all
         width: 100%
