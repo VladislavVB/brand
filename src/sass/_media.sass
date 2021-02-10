@@ -51,10 +51,6 @@
         padding-bottom: 60px
     .news
         padding-top: 60px
-    .menu
-        &-firstb
-            padding-top: 20px
-            padding-bottom: 20px
     .header-content
         max-width: 400px
         img
@@ -104,14 +100,12 @@
     .no-border-bottom
         display: flex
         border-bottom: none
-
         flex-direction: column
         justify-content: space-between
     .container-custom
         max-width: 960px
     .row-custom-adaptiv
         display: flex
-
     .visible-col
         display: block
     .services
@@ -146,13 +140,9 @@
         text-align: center
         max-width: 1000px
         font-size: 24px
-    // .advantages-content-left
-    //     display: none
     .about-content
         display: flex
         flex-direction: column
-    // .about-content-left
-    //     display: none
     .about-text
         text-align: center
         margin-bottom: 20px
@@ -169,7 +159,6 @@
         img
             width: 100%
     .slide-title
-
         margin: auto
         // margin-top: 120px
         max-width: 1000px
@@ -247,17 +236,11 @@
         padding-right: 40px
     .none-sm
         display: none
-
     .brand-card-title
         font-size: 24px
         text-align: center
-    .firstb-lang
-        margin-left: 20px
-    .thirdb-text
-        margin-left: 20px
     .hide-col
         display: none
-
     .header-content img
         max-height: 50vh
     .brand-card-img-width
@@ -266,6 +249,20 @@
         &-md
             max-width: 100%
 @media screen and ( max-width: 992px )
+    .error
+        &-content
+            &-text
+                font-size: 20px
+                margin-top: 40px
+            &-button
+                &-text
+                    font-size: 16px
+    .firstb
+        &-lang
+            margin-left: 50px
+    .thirdb
+        &-text
+            margin-left: 40px
     .burger
         &-services
             &-title
@@ -772,6 +769,39 @@
     .locations
         background: url(../img/locations/map.png) 70% center/contain no-repeat
 @media screen and ( max-width: 768px )
+    // .display
+    //     &-none
+    //         &-md
+    //             display: none
+    .menu
+        &-firstb
+            display: flex
+            justify-content: space-between
+            width: 100%
+            padding-right: 15px
+            padding-left: 15px
+        &-thirdb
+            display: none
+        &-lang
+            width: 90vw
+            left: 50%
+            transform: translate(-50%,)
+            position: fixed
+            &-active
+                top: 88px
+    .firstb
+        &-menu
+
+            span
+                display: none
+        &-lang
+            margin-right: 15px
+            // span
+            //     margin-right: 10px
+            &-text
+                display: none
+            &-world
+                margin-right: 13px                
     .current
         &-card
             &-sm
@@ -819,8 +849,11 @@
         display: none
     .visible-col
         display: block
-    .footer-border-right
-        border-right: none
+    .footer
+        &-border-right
+            border-right: none
+        &-items
+            display: none
     .form
         &-img
             &-success
@@ -830,7 +863,6 @@
                     img
                         margin: auto
                         left: 50%
-    
     .serm
         &-faq
             &-card
@@ -840,7 +872,12 @@
                             &-md
                                 border-bottom: 0px solid #000
 @media screen and ( max-width: 576px )
-    
+    .error
+        &-content
+            &-description
+                width: 100%
+            &-text
+                font-size: 16px
     .about
         padding-bottom: 0
     .page
@@ -897,13 +934,13 @@
             &-title
                 max-width: 250px
         //
-    .menu
-        &-firstb
-            padding-top: 20px
-            padding-bottom: 20px
-            width: 100%
-            display: flex
-            justify-content: space-between
+    // .menu
+    //     &-firstb
+    //         padding-top: 20px
+    //         padding-bottom: 20px
+    //         width: 100%
+    //         display: flex
+    //         justify-content: space-between
     .section
         padding-top: 60px
         padding-bottom: 60px
@@ -918,12 +955,12 @@
             // max-width: 450px
     .hide-col-sm
         display: none
-    .firstb
-        &-menu
-            span
-                display: none
-            svg
-                width: 35px
+    // .firstb
+    //     &-menu
+    //         span
+    //             display: none
+    //         svg
+    //             width: 35px
     .hidden-card-sm
         display: none
     .news-all
@@ -941,8 +978,6 @@
             justify-content: center
             a
                 margin: auto
-    // .container-custom
-    //     max-width: 540px
     .visible-col
         display: block
 
@@ -961,8 +996,8 @@
         &-sm
             display: none
 
-    .firstb-lang svg
-        margin-right: 10px
+    // .firstb-lang svg
+    //     margin-right: 10px
     .header-content
         img
             width: 240px
