@@ -347,6 +347,10 @@ template {
   height: 100%;
 }
 
+.bg-light-blue {
+  background-color: #fcfcfc;
+}
+
 .container-custom {
   margin: auto;
   max-width: 1440px;
@@ -2475,7 +2479,8 @@ ul.nav-burg-serv li a.burger-services-item {
 }
 
 .locations {
-  background: url("../img/locations/map.png") top center/contain no-repeat;
+  background: url("../img/locations/map.png") center center/contain no-repeat;
+  background-size: 60%;
 }
 
 .locations-content {
@@ -2589,6 +2594,7 @@ ul.nav-burg-serv li a.burger-services-item {
 .form {
   padding-bottom: 0px;
   padding-top: 0;
+  background: url("../img/locations/map.png") center center/contain no-repeat;
 }
 
 .form-content {
@@ -2634,6 +2640,7 @@ ul.nav-burg-serv li a.burger-services-item {
   height: 38px;
   outline: none;
   margin-top: 20px;
+  background-color: transparent;
 }
 
 .form-message {
@@ -2641,6 +2648,7 @@ ul.nav-burg-serv li a.burger-services-item {
   width: 100%;
   padding: 20px;
   height: 100px;
+  background-color: transparent;
 }
 
 .form-width {
@@ -5200,6 +5208,9 @@ ul.nav-burg-serv li a.burger-services-item {
 }
 
 @media screen and (max-width: 576px) {
+  .bg-light-blue {
+    background-color: #ffffff;
+  }
   .error-content-description {
     width: 100%;
   }
