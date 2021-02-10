@@ -2594,7 +2594,6 @@ ul.nav-burg-serv li a.burger-services-item {
 .form {
   padding-bottom: 0px;
   padding-top: 0;
-  background: url("../img/locations/map.png") center center/contain no-repeat;
 }
 
 .form-content {
@@ -2719,6 +2718,10 @@ ul.nav-burg-serv li a.burger-services-item {
 
 .form-form-none {
   display: none;
+}
+
+.form-content-right {
+  padding-right: calc( 50% - 720px);
 }
 
 .footer {
