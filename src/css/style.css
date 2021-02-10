@@ -347,8 +347,12 @@ template {
   height: 100%;
 }
 
+.bg-lighter {
+  background-color: #ffffff;
+}
+
 .bg-light-blue {
-  background-color: #fcfcfc;
+  background-color: #FCFCFC;
 }
 
 .container-custom {
@@ -3745,7 +3749,6 @@ ul.nav-burg-serv li a.burger-services-item {
 }
 
 .serm-faq-card-active .serm-faq-card-trigger {
-  padding-bottom: 150px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
@@ -3822,6 +3825,7 @@ ul.nav-burg-serv li a.burger-services-item {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
   height: 100%;
 }
 
@@ -3861,12 +3865,14 @@ ul.nav-burg-serv li a.burger-services-item {
   font-size: 26px;
   line-height: 31.2px;
   margin-top: 9px;
+  max-width: 170px;
 }
 
 .tools-ebay-card-text {
   margin-top: 30px;
   font-family: 'Museo Sans Cyrl 300', sans-serif;
   font-size: 16px;
+  margin-bottom: 80px;
 }
 
 .tools-ebay-card-text span {
@@ -3894,6 +3900,8 @@ ul.nav-burg-serv li a.burger-services-item {
   padding-left: 40px;
   font-family: 'Museo Sans Cyrl 700', sans-serif;
   font-size: 18px;
+  position: absolute;
+  bottom: 40px;
 }
 
 .tools-ebay-card-button-img {
