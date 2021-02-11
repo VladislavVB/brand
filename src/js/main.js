@@ -3,13 +3,53 @@ const buttomMobileMenu = document.querySelector('.firstb-menu');
 const navigationMenu = document.querySelector('.burger-menu');
 const navigationMenuCross = document.querySelector('.burger-btn');
 const navigationMenuHide = document.querySelector('.menu-hidden');
+const section = document.querySelectorAll('.section');
+const footer = document.querySelector('.footer');
+const bodySecond = document.querySelector('body');
+const burgerMenu = document.querySelector('.burger-menu');
+let closeHeadToggle = true;
+let countScroll = 0;
 buttomMobileMenu.addEventListener('click', () => {
+
+    // if (closeHeadToggle) {
+    //     burgerMenu.style.position = 'fixed';
+    //     setTimeout(() => {
+    //         section.forEach(elem => {
+    //             elem.classList.toggle('display-none-menu');
+    //         });
+    //         footer.classList.toggle('display-none-menu');
+    //         burgerMenu.style.position = 'absolute';
+    //     }, 500);
+    // } else {
+    //     burgerMenu.style.position = 'absolute';
+    // };
+
+    if (closeHeadToggle) {
+        countScroll = window.scrollY;
+        console.log(countScroll);
+        closeHeadToggle = false;
+    } else {
+        setTimeout(() => {
+            console.log(countScroll);
+            window.scrollTo(0, countScroll);
+            closeHeadToggle = true;
+        },);
+    };
+
+    section.forEach(elem => {
+        elem.classList.toggle('display-none-menu');
+    });
+    footer.classList.toggle('display-none-menu');
+
     navigationMenuHide.classList.toggle('burger-menu-hide');
     navigationMenuCross.classList.toggle('burger-menu-cross');
     navigationMenu.classList.toggle('activebur');
-})
+    
 
-// язык lang-vector navigationMenuLang.classList.toggle('rotate-lang'); 
+
+});
+
+// язык lang-vector 
 document.onclick = function (event) {
 
     if (document.querySelector('.menu-lang').classList.value.indexOf('menu-lang-active')) {
@@ -21,7 +61,6 @@ document.onclick = function (event) {
             }
         })
         if (tog) {
-
             return;
         }
         document.querySelector('.menu-lang').classList.remove('menu-lang-active');

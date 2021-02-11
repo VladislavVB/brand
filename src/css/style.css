@@ -343,6 +343,10 @@ template {
   display: none;
 }
 
+.display-none-menu {
+  display: none;
+}
+
 .height100 {
   height: 100%;
 }
@@ -956,7 +960,7 @@ ul.nav-burg-serv li a.burger-services-item {
 }
 
 .burger-menu {
-  width: 100vw;
+  width: 100%;
   padding-top: 80px;
   padding-bottom: 50px;
   background-color: #ffffff;
@@ -966,7 +970,7 @@ ul.nav-burg-serv li a.burger-services-item {
   transition: 0.5s;
   top: -2000px;
   left: 0;
-  overflow-y: auto;
+  overflow: auto;
 }
 
 .burger-menu.activebur {
@@ -4505,6 +4509,9 @@ ul.nav-burg-serv li a.burger-services-item {
 }
 
 @media screen and (max-width: 992px) {
+  body {
+    overflow: auto !important;
+  }
   .error-content-text {
     font-size: 20px;
     margin-top: 40px;
@@ -4575,7 +4582,7 @@ ul.nav-burg-serv li a.burger-services-item {
   }
   .page-title {
     padding-bottom: 80px;
-    padding-top: 95px;
+    padding-top: 160px;
   }
   .page-title-img {
     height: 320px;

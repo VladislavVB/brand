@@ -265,6 +265,8 @@
         &-md
             max-width: 100%
 @media screen and ( max-width: 992px )
+    body
+        overflow: auto !important
     .error
         &-content
             &-text
@@ -336,7 +338,7 @@
             transform: translate(-50%, 0)
         &-title
             padding-bottom: 80px
-            padding-top: 95px
+            padding-top: 160px
             &-img
                 height: 320px
                 img
@@ -794,6 +796,7 @@
     .locations
         background: url(../img/locations/map.png) 70% center/contain no-repeat
 @media screen and ( max-width: 768px )
+    
     .current-card-text-data
         margin-top: 20px
     .customers
