@@ -966,6 +966,7 @@ ul.nav-burg-serv li a.burger-services-item {
   transition: 0.5s;
   top: -2000px;
   left: 0;
+  overflow-y: auto;
 }
 
 .burger-menu.activebur {
@@ -5028,14 +5029,8 @@ ul.nav-burg-serv li a.burger-services-item {
   .brand {
     padding-top: 0;
   }
-  .brand-border-right::before {
-    height: 100px;
-  }
   .brand-border-right-none::before {
     content: none;
-  }
-  .brand-border-left::after {
-    height: 100px;
   }
   .brand-border-left-none::after {
     content: none;
@@ -6018,6 +6013,8 @@ ul.nav-burg-serv li a.burger-services-item {
         -ms-flex-align: center;
             align-items: center;
     margin-left: 28px;
+    margin-top: 40px;
+    margin-bottom: 24px;
   }
   .leadership-card-text::after {
     left: -28px;
