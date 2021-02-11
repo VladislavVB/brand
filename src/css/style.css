@@ -438,6 +438,10 @@ button:focus {
   padding-top: 0;
 }
 
+.page-title-second {
+  padding-top: 220px;
+}
+
 .page-title {
   padding-top: 200px;
   padding-bottom: 120px;
@@ -4590,6 +4594,9 @@ ul.nav-burg-serv li a.burger-services-item {
   .page-title-img img {
     height: 100%;
   }
+  .page-title-second {
+    padding-top: 170px;
+  }
   .container-md {
     max-width: 720px;
   }
@@ -5871,7 +5878,7 @@ ul.nav-burg-serv li a.burger-services-item {
   }
   .page-title {
     font-size: 24px;
-    padding-top: 48px;
+    padding-top: 130px;
     padding-bottom: 48px;
   }
   .page-title-img {
