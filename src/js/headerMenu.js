@@ -25,11 +25,11 @@ $(document).ready(function () {
     burgerMenu.addEventListener('click', () => {
         setTimeout(() => {
             if (scrollToggle) {
-                $('body').css('overflow', 'auto');
+                // $('body').css('overflow', 'auto');
                 // $('body').css('padding-right', 0);
                 scrollToggle = false;
             } else {
-                $('body').css('overflow', 'hidden');
+                // $('body').css('overflow', 'hidden');
                 // $('body').css('padding-right', 17);
                 scrollToggle = true;
             }

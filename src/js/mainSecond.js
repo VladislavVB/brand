@@ -51,3 +51,4 @@ customersContentTabShowSm.addEventListener('click', () => {
     customersContentTitles.classList.toggle('customers-content-titles-active');
     customersContentTabShowSm.classList.toggle('customers-content-tab-show-sm-active');
 });
+

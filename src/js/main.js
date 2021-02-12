@@ -11,19 +11,6 @@ let closeHeadToggle = true;
 let countScroll = 0;
 buttomMobileMenu.addEventListener('click', () => {
 
-    // if (closeHeadToggle) {
-    //     burgerMenu.style.position = 'fixed';
-    //     setTimeout(() => {
-    //         section.forEach(elem => {
-    //             elem.classList.toggle('display-none-menu');
-    //         });
-    //         footer.classList.toggle('display-none-menu');
-    //         burgerMenu.style.position = 'absolute';
-    //     }, 500);
-    // } else {
-    //     burgerMenu.style.position = 'absolute';
-    // };
-
     if (closeHeadToggle) {
         countScroll = window.scrollY;
         console.log(countScroll);
@@ -44,9 +31,8 @@ buttomMobileMenu.addEventListener('click', () => {
     navigationMenuHide.classList.toggle('burger-menu-hide');
     navigationMenuCross.classList.toggle('burger-menu-cross');
     navigationMenu.classList.toggle('activebur');
-    
 
-
+    bodySecond.style.overflow = 'auto';
 });
 
 // язык lang-vector 
@@ -120,22 +106,6 @@ for (let anchor of anchors) {
             block: 'start'
         })
     })
-};
-
-//documents
-const CardsCertificates = document.querySelectorAll('.documents-cards-certificates');
-const ContentTitleLeft = document.querySelectorAll('.documented-content-title-left');
-
-const CardsCertificatesActive = (index) => {
-    CardsCertificates.forEach((elem) => {
-        elem.classList.remove('documents-cards-certificates-active');
-    });
-    CardsCertificates[index].classList.add('documents-cards-certificates-active');
-
-    ContentTitleLeft.forEach((elem) => {
-        elem.classList.remove('documented-content-title-left-active');
-    });
-    ContentTitleLeft[index].classList.add('documented-content-title-left-active');
 };
 
 
