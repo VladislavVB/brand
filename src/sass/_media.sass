@@ -424,6 +424,19 @@
     .brand-border-left-none::after
         content: none
     .advantages
+        &-brand
+            &-border
+                &-right
+                    &::after
+                        
+                        position: absolute
+                        content: ''
+                        width: 1px
+                        height: 198px
+                        background-color: #e6e6e6
+                        bottom: 0px
+                        left: -15px
+                &-left
         &-card
             &-line
                 &-one
@@ -719,13 +732,13 @@
         &-border
             &-right
                 &::before
-                    // height: 100px
+                    height: 100px
                 &-none
                     &::before
                         content: none
             &-left
                 &::after
-                    // height: 100px
+                    height: 100px
                 &-none
                     &::after
                         content: none
@@ -909,6 +922,20 @@
                         &-none
                             &-md
                                 border-bottom: 0px solid #000
+    .advantages
+        &-brand
+            &-border
+                &-right
+                    position: relative
+                    &::after
+                        position: absolute
+                        content: ''
+                        width: 1px
+                        height: 198px
+                        background-color: #e6e6e6
+                        bottom: 0px
+                        left: -15px
+                        
 @media screen and ( max-width: 576px )
     .countries
         &-list 
@@ -1741,9 +1768,82 @@
 
     .documented
         padding-top: 0
+        &-content
+            &-title
+                &-left
+                    font-size: 14px
+                    margin-bottom: 0
+                    margin-top: 0
+                    padding-top: 16px
+                    padding-bottom: 16px   
+                    font-family: 'Museo Sans Cyrl 700', sans-serif
+                    text-transform:  capitalize
+                    color: $yellow
+                    &:hover
+                        text-decoration: none
+                        color: $black
+                    &-active
+                        color: $black
+                        text-decoration: none
+
         &-card
             &-text
                 margin-bottom: 24px
+        &-tabs
+            flex-direction: column
+            margin-left: 30px
+            border-top: none
+            padding-top: 8px
+            padding-bottom: 8px
+            display: none
+            &-active
+                display: block
+            &-title
+                &-show
+                    &-sm
+                        display: block
+                        margin: 0
+                        margin-left: 0
+                        margin-right: 0
+                        margin-bottom: 40px
+                        padding-top: 24px
+                        padding-bottom: 24px
+                        border-top: 1px solid rgba(30, 30, 30, 0.3)
+                        border-bottom: 1px solid rgba(30, 30, 30, 0.3)
+                        position: relative
+                        cursor: pointer
+                        color: #ffb000
+                        font-family: 'Museo Sans Cyrl 500', sans-serif
+                        font-size: 16px
+                        text-transform: uppercase
+                        text-decoration: underline
+                        &::before 
+                            position: absolute
+                            content: ''
+                            width: 10px
+                            height: 2px
+                            border-radius: 0.5px
+                            background-color: #ffb000
+                            top: 38px
+                            right: 15px
+                            transform: rotate(45deg)
+                        &::after 
+                            position: absolute
+                            content: ''
+                            width: 10px
+                            height: 2px
+                            background-color: #ffb000
+                            right: 15px
+                            top: 44px
+                            transform: rotate(135deg)
+                        &-active
+                            margin-bottom: 0
+                            &::after
+                                top: 38px
+                                right: 21px
+                                transform: rotate(45deg)
+                            &::before
+                                transform: rotate(135deg)
     .customers
         padding-top: 0
         &-card
@@ -1833,7 +1933,16 @@
                     margin-bottom: 0
                     margin-top: 0
                     padding-top: 16px
-                    padding-bottom: 16px     
+                    padding-bottom: 16px   
+                    font-family: 'Museo Sans Cyrl 700', sans-serif
+                    text-transform:  capitalize
+                    color: $yellow
+                    &:hover
+                        text-decoration: none
+                        color: $black
+                    &-active
+                        color: $black
+                        text-decoration: none
     ul.nav-burg-serv li
         width: 100%
     .burger

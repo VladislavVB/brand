@@ -1455,7 +1455,6 @@ ul.nav-burg-serv li a.burger-services-item {
 
 .advantages-card {
   width: 100%;
-  height: 198px;
   padding-top: 20px;
   padding-bottom: 20px;
   display: -webkit-box;
@@ -3158,6 +3157,10 @@ ul.nav-burg-serv li a.burger-services-item {
   text-decoration: underline;
 }
 
+.documented-tabs-title-show-sm {
+  display: none;
+}
+
 .documents-cards-certificates {
   display: none;
 }
@@ -4683,6 +4686,15 @@ ul.nav-burg-serv li a.burger-services-item {
   .brand-border-left-none::after {
     content: none;
   }
+  .advantages-brand-border-right::after {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 198px;
+    background-color: #e6e6e6;
+    bottom: 0px;
+    left: -15px;
+  }
   .advantages-card-line-one {
     position: relative;
   }
@@ -5043,8 +5055,14 @@ ul.nav-burg-serv li a.burger-services-item {
   .brand {
     padding-top: 0;
   }
+  .brand-border-right::before {
+    height: 100px;
+  }
   .brand-border-right-none::before {
     content: none;
+  }
+  .brand-border-left::after {
+    height: 100px;
   }
   .brand-border-left-none::after {
     content: none;
@@ -5292,6 +5310,18 @@ ul.nav-burg-serv li a.burger-services-item {
   }
   .serm-faq-card-border-bottom-none-md {
     border-bottom: 0px solid #000;
+  }
+  .advantages-brand-border-right {
+    position: relative;
+  }
+  .advantages-brand-border-right::after {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 198px;
+    background-color: #e6e6e6;
+    bottom: 0px;
+    left: -15px;
   }
 }
 
@@ -6287,8 +6317,94 @@ ul.nav-burg-serv li a.burger-services-item {
   .documented {
     padding-top: 0;
   }
+  .documented-content-title-left {
+    font-size: 14px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-family: 'Museo Sans Cyrl 700', sans-serif;
+    text-transform: capitalize;
+    color: #ffb000;
+  }
+  .documented-content-title-left:hover {
+    text-decoration: none;
+    color: #1e1e1e;
+  }
+  .documented-content-title-left-active {
+    color: #1e1e1e;
+    text-decoration: none;
+  }
   .documented-card-text {
     margin-bottom: 24px;
+  }
+  .documented-tabs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 30px;
+    border-top: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    display: none;
+  }
+  .documented-tabs-active {
+    display: block;
+  }
+  .documented-tabs-title-show-sm {
+    display: block;
+    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 40px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-top: 1px solid rgba(30, 30, 30, 0.3);
+    border-bottom: 1px solid rgba(30, 30, 30, 0.3);
+    position: relative;
+    cursor: pointer;
+    color: #ffb000;
+    font-family: 'Museo Sans Cyrl 500', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
+  .documented-tabs-title-show-sm::before {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 2px;
+    border-radius: 0.5px;
+    background-color: #ffb000;
+    top: 38px;
+    right: 15px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .documented-tabs-title-show-sm::after {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 2px;
+    background-color: #ffb000;
+    right: 15px;
+    top: 44px;
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+  .documented-tabs-title-show-sm-active {
+    margin-bottom: 0;
+  }
+  .documented-tabs-title-show-sm-active::after {
+    top: 38px;
+    right: 21px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .documented-tabs-title-show-sm-active::before {
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
   }
   .customers {
     padding-top: 0;
@@ -6399,6 +6515,17 @@ ul.nav-burg-serv li a.burger-services-item {
     margin-top: 0;
     padding-top: 16px;
     padding-bottom: 16px;
+    font-family: 'Museo Sans Cyrl 700', sans-serif;
+    text-transform: capitalize;
+    color: #ffb000;
+  }
+  .customers-content-title-left:hover {
+    text-decoration: none;
+    color: #1e1e1e;
+  }
+  .customers-content-title-left-active {
+    color: #1e1e1e;
+    text-decoration: none;
   }
   ul.nav-burg-serv li {
     width: 100%;
