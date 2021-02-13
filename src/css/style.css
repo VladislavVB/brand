@@ -5332,6 +5332,15 @@ ul.nav-burg-serv li a.burger-services-item {
   .request-card-promo {
     padding: 30px;
   }
+  .brand-table-black {
+    font-size: 14px;
+  }
+  .brand-table-white {
+    font-size: 16px;
+  }
+  .brand-table-bottom {
+    font-size: 10px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -5487,6 +5496,17 @@ ul.nav-burg-serv li a.burger-services-item {
     background-color: #e6e6e6;
     bottom: 0px;
     left: -15px;
+  }
+  .brand-search {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .brand-search-button {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
   }
 }
 
