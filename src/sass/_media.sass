@@ -426,8 +426,7 @@
         &-brand
             &-border
                 &-right
-                    &::after
-                        
+                    &::before 
                         position: absolute
                         content: ''
                         width: 1px
@@ -809,6 +808,19 @@
                         width: 100%
     .locations
         background: url(../img/locations/map.png) 70% center/contain no-repeat
+    .advantages
+        &-brand
+            &-border
+                &-right
+                    position: relative
+                    &::before 
+                        position: absolute
+                        content: ''
+                        width: 1px
+                        height: 198px
+                        background-color: #e6e6e6
+                        bottom: 0px
+                        right: -15px
 @media screen and ( max-width: 768px )
     
     .current-card-text-data

@@ -4684,7 +4684,7 @@ ul.nav-burg-serv li a.burger-services-item {
   .brand-border-left-none::after {
     content: none;
   }
-  .advantages-brand-border-right::after {
+  .advantages-brand-border-right::before {
     position: absolute;
     content: '';
     width: 1px;
@@ -5164,6 +5164,18 @@ ul.nav-burg-serv li a.burger-services-item {
   }
   .locations {
     background: url(../img/locations/map.png) 70% center/contain no-repeat;
+  }
+  .advantages-brand-border-right {
+    position: relative;
+  }
+  .advantages-brand-border-right::before {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 198px;
+    background-color: #e6e6e6;
+    bottom: 0px;
+    right: -15px;
   }
 }
 
